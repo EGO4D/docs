@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Welcome To Ego4d!
 
-Ego4d is the world's largest egocentric (first person) video ML dataset, with 3,400 hrs of densely narrated video in release 1 (more coming) and a wide range of [annotations](/docs/data/data-overview) across [benchmark tasks](/docs/benchmarks/overview). 
+Ego4d is the world's largest egocentric (first person) video ML dataset, with 3,400 hrs of densely narrated video in release 1 (more coming) and a wide range of [annotations](./data/data-overview.md) across [benchmark tasks](./benchmarks/overview.md). 
 
 # Start Here
 

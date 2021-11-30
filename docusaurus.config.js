@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Ego4D',
   tagline: 'Ego4D Dataset',
-  url: 'https://ego4d-data.org/',
-  baseUrl: '/',
+  url: 'https://ego4d-data.org/docs/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'EGO4D',
-  projectName: 'EGO4D.github.io',
+  projectName: 'docs',
+  trailingSlash: true,
 
   presets: [
     [
@@ -64,7 +65,7 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/docs/intro',
+                to: '/docs/docs/intro',
               },
             ],
           },
