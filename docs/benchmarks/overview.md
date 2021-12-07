@@ -4,11 +4,13 @@ sidebar_position: 1
 
 # Benchmarks
 
-Docusaurus can manage multiple versions of your docs.
-
 ## [Episodic Memory](./episodic-memory.md)
 
-## [AV Diarization](./AV-diarization.md)
+## [Hands and Objects](./hands-and-objects.md)
 
-## [Social](./Social.md)
+## [Audio-Visual Diarization](./AV-diarization.md)
+
+## [Social Interactions](./Social.md)
+
+## [Forecasting](./forecasting.md)
 

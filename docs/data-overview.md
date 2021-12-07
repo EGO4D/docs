@@ -5,59 +5,49 @@ sidebar_position: 3
 
 **WIP: Includes internal links, broken markdown, etc to be resolved**
 
-**[Background](#background) 1**
+**[Background](#background)**
 
-> [Key Information](#key-information) 1
+> [Key Information](#key-information) 
 >
-> [Annotations tl;dr](#annotations-tldr) 2
+> [Annotations tl;dr](#annotations-tldr) 
 
-**[Pre-annotations: Narrations](#pre-annotations-narrations) 4**
+**[Pre-annotations: Narrations](#pre-annotations-narrations)**
 
-**[Annotations](#annotations) 7**
+**[Annotations](#annotations)**
 
-> [Episodic Memory](#episodic-memory) 8
+> [Episodic Memory](#episodic-memory)
 >
-> [Natural Language Queries](#natural-language-queries) 9
+> [Natural Language Queries](#natural-language-querie
 >
-> [Moments](#moments) 12
+> [Moments](#moments)
 >
-> [Visual Object Queries](#visual-object-queries) 14
+> [Visual Object Queries](#visual-object-queries)
 >
 > [Forecasting + Hands & Objects (FHO)](#forecasting-hands-objects-fho)
-> 16
 >
-> [Stage 1 - Critical Frames](#stage-1---critical-frames) 16
+> [Stage 1 - Critical Frames](#stage-1---critical-frames) 
 >
-> [Stage 2 - Pre-condition](#stage-2---pre-condition) 18
+> [Stage 2 - Pre-condition](#stage-2---pre-condition) 
 >
-> [Stage 3 - Post-condition](#stage-3---post-condition) 20
+> [Stage 3 - Post-condition](#stage-3---post-condition) 
 >
-> [Audio-Visual Diarization & Social (AVS)](#audio-visual-diarization-social-avs) 20
+> [Audio-Visual Diarization & Social (AVS)](#audio-visual-diarization-social-avs) 
 >
-> [AV Step 0: Automated Face & Head
-> Detection](#av-step-0-automated-face-head-detection) 21
+> [AV Step 0: Automated Face & Head Detection](#av-step-0-automated-face-head-detection) 
 >
-> [AV Step 1: Face & Head Tracks
-> Correction](#av-step-1-face-head-tracks-correction) 21
+> [AV Step 1: Face & Head Tracks Correction](#av-step-1-face-head-tracks-correction) 
 >
-> [AV Step 2: Speaker Labeling and AV anchor
-> extraction](#av-step-2-speaker-labeling-and-av-anchor-extraction) 23
+> [AV Step 2: Speaker Labeling and AV anchor extraction](#av-step-2-speaker-labeling-and-av-anchor-extraction)
 >
-> [AV Step 3: Speech Segmentation (Per
-> Speaker)](#av-step-3-speech-segmentation-per-speaker) 24
+> [AV Step 3: Speech Segmentation (Per Speaker)](#av-step-3-speech-segmentation-per-speaker)
 >
-> [AV Step 4: Transcription](#av-step-4-transcription) 25
+> [AV Step 4: Transcription](#av-step-4-transcription)
 >
-> [AV Step 5: Correcting Speech Transcriptions
-> \[WIP\]](#av-step-5-correcting-speech-transcriptions-wip) 25
+> [AV Step 5: Correcting Speech Transcriptions](#av-step-5-correcting-speech-transcriptions-wip)
 >
-> [S Step 1: Camera-Wearer Attention](#s-step-1-camera-wearer-attention)
-> 26
+> [Social Step 1: Camera-Wearer Attention](#social-step-1-camera-wearer-attention)
 >
-> [S Step 2: Speech Target
-> Classification](#s-step-2-speech-target-classification) 27
-
-**[Links](#links) 28**
+> [S Step 2: Speech Target Classification](#social-step-2-speech-target-classification)
 
 # Background
 
@@ -66,23 +56,18 @@ ego-centric video for public release.
 
 ## Key Information 
 
--   \~2,600 hours (Jul 21) of unscripted, in-the-wild video data across
-    > 7 countries from 10 different partner groups (+ 400 hours from
-    > [[FRL's Track
-    > 1](https://www.internalfb.com/intern/wiki/Ego4D/Ego4D_Track_1/))
+-   \~3,400 hours of unscripted, in-the-wild video data across:
+    > 9 countries from 13 different partner groups (+ 400 hours from Meta's reality labs).
 
--   746 unique camera-wears recording 120 different scenarios, with
-    > hundreds of different actions and objects
+    > 855 unique camera-wears recording 120 different scenarios, with hundreds of different actions and objects
 
--   2.5M dense textual "narrations" (= individual text sentences
-    > describing \~2,600 hours of video data)\"
+    > 2.5M dense textual "narrations" (= individual text sentences describing \~2,600 hours of video data)\"
 
 **Devices:**
 
 ![](media/image7.png)
 
 **Scenario breakdown:**
-[https://fburl.com/datainsights/y2v5taqv](https://fburl.com/datainsights/y2v5taqv)
 
 ![](media/image16.png)
 
@@ -220,12 +205,12 @@ height="2.076558398950131in"}
 
 **Annotation Stats (Jul 21)**
 
--   **Total hours narrated:** 2700
+-   **Total hours narrated:** 3400
 
 -   **Unique scenarios:** 51
     > ([[breakdown](https://fburl.com/datainsights/oqrnhisc))
 
-![](media/image13.png){width="6.5in" height="2.638888888888889in"}
+![](media/image13.png)
 
 **Links:**
 
@@ -234,11 +219,9 @@ height="2.076558398950131in"}
     > and
     > [instructions](https://l.workplace.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1avjdALDI3x1jrnY3DiCv72GGZJzXSuRRMjbmcQURKS0%2Fedit%3Fusp%3Dsharing&h=AT0SmFl7unFKCRMTaAd_2TRlp8Wc7pA0eZEBsRyDqTA5z_vaAxftnRJsGAtJa1PBX60OS0M98dEFj7bBuOuy797sFTls8HXCPzIrjfegkk1gxJOO3elVYcWiVdl2NOF3W0zO1TepzJVPHXx3HL_K&__tn__=-UK-y-R&c%5B0%5D=AT2NBxuTggKaQcYTPVeWQRgFrhv33HhiCNjdu1zHc2EqWu_nDJd2thvGRuiSyviJKTcpIlGgCiweuV-3X_1fkLBC10oNlFIBGlLAj6sX1A_twCFkuq2dCpP__mpZm_HrKDiRn-BIDyrsuNnymY9Kq2LGA3382FSPPwXvZdK2TX8ksWeu8KPPsuxOdCoRRQwJMmy6)
 
--   [Narration
-    > analysis](https://docs.google.com/presentation/d/1es_hniyef5bGhtMyeSZkBfbdeXKwElPBjT0YXxr7BvA/edit?usp=sharing)
+-   [Narration analysis](https://docs.google.com/presentation/d/1es_hniyef5bGhtMyeSZkBfbdeXKwElPBjT0YXxr7BvA/edit?usp=sharing)
 
--   [Scenario
-    > breakdown](https://l.workplace.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1w1dW1-IyqvufD-X_3SFSBBdLAhOy7JZbNSbhZjDel6I%2Fedit%23gid%3D0&h=AT0JEXfOJJdon1Fc0QP5lnJKL4hMqBvLTnHJPXJleRbSCBAuFMzwiFGE07hyz_YKspJB68Do3y5pyan4963Npz9a4oIBpDhbT1515yy1pJ1uAV0gxJhvCp5EtO-ENJI1yCVueixUaClGp8SIizl6&__tn__=-UK-y-R&c%5B0%5D=AT2NBxuTggKaQcYTPVeWQRgFrhv33HhiCNjdu1zHc2EqWu_nDJd2thvGRuiSyviJKTcpIlGgCiweuV-3X_1fkLBC10oNlFIBGlLAj6sX1A_twCFkuq2dCpP__mpZm_HrKDiRn-BIDyrsuNnymY9Kq2LGA3382FSPPwXvZdK2TX8ksWeu8KPPsuxOdCoRRQwJMmy6)
+-   [Scenario breakdown](https://l.workplace.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1w1dW1-IyqvufD-X_3SFSBBdLAhOy7JZbNSbhZjDel6I%2Fedit%23gid%3D0&h=AT0JEXfOJJdon1Fc0QP5lnJKL4hMqBvLTnHJPXJleRbSCBAuFMzwiFGE07hyz_YKspJB68Do3y5pyan4963Npz9a4oIBpDhbT1515yy1pJ1uAV0gxJhvCp5EtO-ENJI1yCVueixUaClGp8SIizl6&__tn__=-UK-y-R&c%5B0%5D=AT2NBxuTggKaQcYTPVeWQRgFrhv33HhiCNjdu1zHc2EqWu_nDJd2thvGRuiSyviJKTcpIlGgCiweuV-3X_1fkLBC10oNlFIBGlLAj6sX1A_twCFkuq2dCpP__mpZm_HrKDiRn-BIDyrsuNnymY9Kq2LGA3382FSPPwXvZdK2TX8ksWeu8KPPsuxOdCoRRQwJMmy6)
 
 
 # Annotations
@@ -261,9 +244,7 @@ index for an always-on wearable camera
 **Objective**: Given long first-person video, *localize* answers for
 queries about objects and events from first-person experience
 
-> *Who did I sit by at the party? Where are my keys? When did I change
-> the batteries? How often did I read to my child last week? Did I leave
-> the window open?\...*
+*Who did I sit by at the party? Where are my keys? When did I change the batteries? How often did I read to my child last week? Did I leave the window open?\...*
 
 **Query types (annotation sub-tasks)**:
 
@@ -625,8 +606,7 @@ interactions.
 
 ### Stage 1 - Critical Frames
 
-![](media/image5.png){width="4.882327209098863in"
-height="1.276246719160105in"}
+![](media/image5.png)
 
 **Objective:** Annotator watches an egocentric video and marks
 pre-condition (PRE), contact, point of no return (PNR), and
@@ -1134,8 +1114,7 @@ instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq
 
 **Objective:** Correcting Speech Transcription annotation from Step 4.
 
-**Annotation Task** (see [[Annotation
-instructions](https://docs.google.com/document/d/1Wi-dRM9sKPtRdjdLIxGYxJYjfU72on3css-8IjrKAOc/edit?usp=sharing)
+**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1Wi-dRM9sKPtRdjdLIxGYxJYjfU72on3css-8IjrKAOc/edit?usp=sharing)
 \[WIP\]):
 
 +---------------+-------------------------+-------------------------+
@@ -1187,7 +1166,7 @@ instructions](https://docs.google.com/document/d/1Wi-dRM9sKPtRdjdLIxGYxJYjfU72on
 | TBU           |                         |                         |
 +---------------+-------------------------+-------------------------+
 
-### S Step 1: Camera-Wearer Attention 
+### Social Step 1: Camera-Wearer Attention 
 
 **Objective**: Annotate temporal segments in which a person is looking
 at the camera wearer.
@@ -1246,14 +1225,13 @@ instructions](https://docs.google.com/document/d/1CqgM73xrYuva5eKSfTmM4Tby7tso1j
 | 3775820209973753in"} |                      |                      |
 +----------------------+----------------------+----------------------+
 
-### S Step 2: Speech Target Classification 
+### Social Step 2: Speech Target Classification 
 
 **Objective**: Given already annotated AV Voice Activity segmentation,
 the annotator is going to annotate the particular speech segments in
 which the person is talking to the camera wearer.
 
-**Annotation Task** (see [[Annotation
-instructions](https://docs.google.com/document/d/1wnJqZESJpQrwaCkdFZWm8Makmb5bF4r5/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
+**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1wnJqZESJpQrwaCkdFZWm8Makmb5bF4r5/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
 
 +----------------------+----------------------+----------------------+
 | **\#**               | **Step**             | **Sub-step**         |
@@ -1336,25 +1314,6 @@ instructions](https://docs.google.com/document/d/1wnJqZESJpQrwaCkdFZWm8Makmb5bF4
 | 6666666666666665in"} |                      |                      |
 +----------------------+----------------------+----------------------+
 
-# Links
-
-\[1\] [[Ego4D - Track 2 - FAIR Public Dataset
-(Wiki)](https://www.internalfb.com/intern/wiki/Ego4D/Ego4D_FAIR_Annotations_(WIP)/)
-
-\[2\] [[Ego4D - Track 2 - FAIR Public Dataset
-(Note)](https://fb.workplace.com/notes/462529454842221)
-
-\[3\] [[Annotation Activities
-(Diagram)](https://www.internalfb.com/intern/wiki/Ego4D/Ego4D_FAIR_Annotations_(WIP)/Annotation_Activities_(TODO)/)
-
-\[4\] [[Ego4D Track 2 Data
-Dashboard](https://www.internalfb.com/intern/unidash/dashboard/ego4d_track_2/exploration/)
-
-\[5\] [[EGO4D: Egocentric Live 4D Perception (Workplace
-Group)](https://fb.workplace.com/groups/1417482988432448/?ref=invite_via_link&invite_short_link_key=g%2F6uvAelt0x%2FgfeyqgSv)
-
-[^1]: Face track = a temporal sequence of bounding boxes enclosing the
-    face of a person in contiguous frames (one bounding box per frame).
 
 <table>
     <tr><td></td><td></td></tr>
