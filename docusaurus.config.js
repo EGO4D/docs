@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://https://ego4d-data.org/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -38,7 +38,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Ego4d Docs',
+        title: 'Ego4D',
         logo: {
           alt: 'Ego4d Logo',
           src: 'img/ego-4d-logo.png',

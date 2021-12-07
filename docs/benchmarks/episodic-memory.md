@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Episodic Memory
 
+Benchmark Repo: [https://github.com/EGO4D/episodic-memory](https://github.com/EGO4D/episodic-memory)
+
 ## Motivation 
 
 Egocentric video from a wearable camera records the who/what/when/where of an individual’s daily
@@ -12,10 +14,10 @@ life experience. This makes it ideal for what Tulving called episodic memory: sp
 ## Task Definition
 
 Given an egocentric video and a query, the Ego4D Episodic Memory task requires localizing where the answer can be seen within the user’s past video. We consider three query types: 
-(1) Natural language queries (NLQ), in which the query is expressed in text (e.g., “What
+1. Natural language queries (NLQ), in which the query is expressed in text (e.g., “What
 did I put in the drawer?”), and the output response is the temporal window where the answer is visible or deducible.
-(2) Visual queries (VQ), in which the query is a static image of an object, and the output response localizes the object the last time it was seen in the video, both temporally and spatially. The spatial response is a 2D bounding box on the object, and optionally a 3D displacement vector from the current camera position to the object’s 3D bounding box. VQ captures how a user might teach the system an object with an image example, then later ask for its location (“Where is this [picture of my keys]?”). 
-(3) Moments queries (MQ), in which the query is the name of a high-level activity or “moment”, and the response consists of all temporal windows where the activity occurs (e.g., “When did I read to my children?”). 
+2. Visual queries (VQ), in which the query is a static image of an object, and the output response localizes the object the last time it was seen in the video, both temporally and spatially. The spatial response is a 2D bounding box on the object, and optionally a 3D displacement vector from the current camera position to the object’s 3D bounding box. VQ captures how a user might teach the system an object with an image example, then later ask for its location (“Where is this [picture of my keys]?”). 
+3. Moments queries (MQ), in which the query is the name of a high-level activity or “moment”, and the response consists of all temporal windows where the activity occurs (e.g., “When did I read to my children?”). 
 
 ## Annotations
 

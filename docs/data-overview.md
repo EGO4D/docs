@@ -17,7 +17,7 @@ sidebar_position: 3
 
 > [Episodic Memory](#episodic-memory)
 >
-> [Natural Language Queries](#natural-language-querie
+> [Natural Language Queries](#natural-language-queries)
 >
 > [Moments](#moments)
 >
@@ -49,7 +49,7 @@ sidebar_position: 3
 >
 > [S Step 2: Speech Target Classification](#social-step-2-speech-target-classification)
 
-# Background
+## Background
 
 **One-liner:** Building a densely-annotated dataset of \~10,000 hours of
 ego-centric video for public release.
@@ -95,7 +95,7 @@ ego-centric video for public release.
 | [S1: Camera-Wearer Attention](#s-step-1-camera-wearer-attention)      | Temporal segments in which a person is looking at the camera wearer      |       |
 | [S2: Speech Target Classification](#s-step-2-speech-target-classification) | Temporal segments in which a person is talking to the camera wearer      |       |
 
-# Pre-annotations: Narrations
+## Narrations
 
 **Objective:** Annotator provides dense written sentence narrations in
 English on a first-person video clip of length 10-30 minutes + a summary
@@ -107,26 +107,11 @@ taxonomy of labels for actions and objects.
 
 **Annotation task:**
 
-|--------|------------------|------------------|------------------|
+
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
-| 1      | *Narrate the     | Watch the video  | *\[set the start |
-|        | Complete Video   | from the         | time as the      |
-|        | with Temporal    | beginning until  | point when the   |
-|        | Sentences*       | something new    | person has the   |
-|        |                  | occurs.          | knife and the    |
-|        |                  |                  | tomato, and the  |
-|        |                  |                  | end time as the  |
-|        |                  |                  | point when the   |
-|        |                  |                  | person has       |
-|        |                  |                  | finished         |
-|        |                  |                  | chopping, then   |
-|        |                  |                  | type*\]: "C is   |
-|        |                  |                  | chopping a       |
-|        |                  |                  | tomato" into the |
-|        |                  |                  | text input. ("C" |
-|        |                  |                  | refers to the    |
-|        |                  |                  | camera wearer).  |
+|--------|------------------|------------------|------------------|
+| 1 | *Narrate the Complete Video with Temporal Sentences* | Watch the video from the beginning until something new occurs. | set the start time as the point when the person has the knife and the tomato, and the end time as the point when the person has finished chopping, then type: "C is chopping a tomato" into the text input. ("C" refers to the camera wearer).  
+
 |--------|------------------|------------------|------------------|
 |        |                  | At that time,    |                  |
 |        |                  | pause the video, |                  |
@@ -186,24 +171,20 @@ taxonomy of labels for actions and objects.
 
 -   **Narration:**
 
-![](media/image42.png){width="5.429300087489064in"
-height="2.9843755468066493in"}
+![](media/image42.png)
 
 -   **Summary:**
 
-> ![](media/image44.png){width="5.974200568678915in"
-> height="3.307292213473316in"}
+> ![](media/image44.png)
 
 **Annotated videos examples:**
 
 [[Example
 reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
 
-![](media/image35.png){width="3.0196161417322833in"
-height="2.0753379265091865in"}![](media/image32.png){width="2.903805774278215in"
-height="2.076558398950131in"}
+![](media/image35.png)![](media/image32.png)
 
-**Annotation Stats (Jul 21)**
+**Annotation Stats**
 
 -   **Total hours narrated:** 3400
 
@@ -224,17 +205,17 @@ height="2.076558398950131in"}
 -   [Scenario breakdown](https://l.workplace.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1w1dW1-IyqvufD-X_3SFSBBdLAhOy7JZbNSbhZjDel6I%2Fedit%23gid%3D0&h=AT0JEXfOJJdon1Fc0QP5lnJKL4hMqBvLTnHJPXJleRbSCBAuFMzwiFGE07hyz_YKspJB68Do3y5pyan4963Npz9a4oIBpDhbT1515yy1pJ1uAV0gxJhvCp5EtO-ENJI1yCVueixUaClGp8SIizl6&__tn__=-UK-y-R&c%5B0%5D=AT2NBxuTggKaQcYTPVeWQRgFrhv33HhiCNjdu1zHc2EqWu_nDJd2thvGRuiSyviJKTcpIlGgCiweuV-3X_1fkLBC10oNlFIBGlLAj6sX1A_twCFkuq2dCpP__mpZm_HrKDiRn-BIDyrsuNnymY9Kq2LGA3382FSPPwXvZdK2TX8ksWeu8KPPsuxOdCoRRQwJMmy6)
 
 
-# Annotations
+## Benchmark Annotations
 
 ![](media/image18.png)
 
-  **Target**    **\#**   **Benchmark task**                                                        **Research Goal**
-  ------------- -------- ------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Places**    1        [[Episodic Memory](#tdkchjvksenv)                                   Allow an Assistant user to ask free-form, natural language questions, with the answer brought back after analyzing past video (*When was the last time I changed the batteries in the smoke detector?*).
-  **Objects**   2        [[Forecasting](#forecasting-hands-objects-fho)                      To intelligently deliver notifications to a user, an AR system must understand how an action or piece of information may impact the future state of the world.
-                3        [[Hands-Object interaction](#forecasting-hands-objects-fho)         AR applications, e.g. providing users instructions in their egocentric real-world view to accomplish tasks (e.g., cooking a recipe).
-  **People**    4        [[Audio-visual Diarization](#audio-visual-diarization-social-avs)   To effectively aid people in daily life scenarios, augmented reality must be able to detect and track sounds, responding to users queries or information needs.
-                5        [[Social interactions](#audio-visual-diarization-social-avs)        Recognize people's interactions, their roles, and their attention within collaborative and competitive scenarios within a range of social interactions captured in the Ego4D data.
+| **Target**  |  **\#** |  **Benchmark task**  |  **Research Goal** |
+|-------------|---------|----------------------|--------------------|
+|**Places**   |1        |[Episodic Memory](#episodic-memory)                                   |Allow an Assistant user to ask free-form, natural language questions, with the answer brought back after analyzing past video (*When was the last time I changed the batteries in the smoke detector?*). |
+|**Objects**    |2       |[Forecasting](#forecasting--hands--objects-fho)                      | To intelligently deliver notifications to a user, an AR system must understand how an action or piece of information may impact the future state of the world.
+|               |3       |[Hands-Object interaction](#forecasting--hands--objects-fho)         | AR applications, e.g. providing users instructions in their egocentric real-world view to accomplish tasks (e.g., cooking a recipe). 
+| **People**    |4        |[Audio-visual Diarization](#audio-visual-diarization--social-avs)   |To effectively aid people in daily life scenarios, augmented reality must be able to detect and track sounds, responding to users queries or information needs.
+|               |5        |[Social interactions](#audio-visual-diarization--social-avs)        | Recognize people's interactions, their roles, and their attention within collaborative and competitive scenarios within a range of social interactions captured in the Ego4D data.
 
 ## Episodic Memory
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Benchmarks
+# Benchmarks Overview
 
 ## [Episodic Memory](./episodic-memory.md)
 
