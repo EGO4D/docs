@@ -42,6 +42,7 @@ const config = {
         logo: {
           alt: 'Ego4d Logo',
           src: 'img/ego-4d-logo.png',
+          srcDark: 'img/ego-4d-logo-dark.png',
         },
         items: [
           {
