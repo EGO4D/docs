@@ -26,6 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://https://ego4d-data.org/',
+          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -66,7 +67,7 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/docs/docs/intro',
+                to: '/intro',
               },
             ],
           },
