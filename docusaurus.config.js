@@ -9,7 +9,7 @@ const config = {
   title: 'Ego4D',
   tagline: 'Ego4D Dataset',
   url: 'https://ego4d-data.org/',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -65,7 +65,7 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/docs/docs/intro',
+                to: '/docs/intro',
               },
             ],
           },
