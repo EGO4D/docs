@@ -47,7 +47,7 @@ sidebar_position: 4
 >
 > [Social Step 1: Camera-Wearer Attention](#social-step-1-camera-wearer-attention)
 >
-> [S Step 2: Speech Target Classification](#social-step-2-speech-target-classification)
+> [Social Step 2: Speech Target Classification](#social-step-2-speech-target-classification)
 
 ## Background
 
@@ -59,7 +59,7 @@ ego-centric video for public release.
 -   \~3,400 hours of unscripted, in-the-wild video data across:
     > 9 countries from 13 different partner groups (+ 400 hours from Meta's reality labs).
 
-    > 855 unique camera-wears recording 120 different scenarios, with hundreds of different actions and objects
+    > 926 unique camera-wears recording 120 different scenarios, with hundreds of different actions and objects
 
     > 2.5M dense textual "narrations" (= individual text sentences describing \~2,600 hours of video data)\"
 
@@ -77,7 +77,7 @@ ego-centric video for public release.
 |---------------------------|---------------------------|------------|
 | **Pre-annotations**       |                           |            |
 | [Narrations](#pre-annotations-narrations)   | Dense written sentence narrations in English & a summary of the whole video clip |  Full Dataset |
-| **Episodic Memory**       |                           |            |
+| **Episodic Memory (EM)**       |                           |            |
 | [Natural Language Queries](#natural-language-queries)      | N free-form natural anguage queries per video (N=length of video in minutes) selected from a list of query templates + temporal response window from which answers can be deduced        | \~240h     |
 | [Moments](#moments) | Temporal localizations of high level events in a long video clip from a provided taxonomy         |       \~300h     |
 | [Visual Object Queries](#visual-object-queries)      | For N=3 **query objects** (freely chosen and **named** by the annotator) such that each appears at least twice at separate times in a single video, annotations include: <br/> \(1\) **response track**: bounding boxes over time for one continuous occurrence of the query object; <br/> \(2\) **query frame**: a frame that *does* *not* contain the query object, sometime after the response track but before any subsequent occurrence of the object; <br/> \(3\) **visual crop**:  bounding box of a single frame from another occurrence of the same object elsewhere in the video (before or after the originally marked instance)                 |      \~403h      |
@@ -85,7 +85,7 @@ ego-centric video for public release.
 | [1 Critical Frames](#stage-1---critical-frames)             | Pre-condition (PRE), CONTACT, point of no return (PNR), and post-condition (Post) frames for each narrated action in a video      |  \~120h    |
 | [2 Pre-condition](#stage-2---pre-condition)  | Bounding boxes and roles for hands (right/left) and objects (objects of change and tools) for each frame from CONTACT to PRE                    |            |
 | [3 Post-condition](#stage-3---post-condition) | Bounding boxes and roles for hands and objects for each frame from CONTACT to POST                   |            |
-| **[Audio-Visual Diarization & Social](#audio-visual-diarization--social-avs) (AVS)**  |  |  |  
+| **Audio-Visual Diarization & Social (AVS)**  |  |  |  
 | [AV0: Automated Face & Head Detection](#av-step-0-automated-face-head-detection)  | Automated overlaid bounding boxes for faces in video clips       | 50h |
 | [AV1: Face & Head Tracks Correction](#av-step-1-face-head-tracks-correction) | Manually adjusted overlaid bounding boxes for faces in video clips |  |
 | [AV2: Speaker Labeling and AV anchor extraction](#av-step-2-speaker-labeling-and-av-anchor-extraction)  | Anonymous Person IDs for each Face Track in video clip   |      |
@@ -189,7 +189,6 @@ reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp
 -   **Total hours narrated:** 3400
 
 -   **Unique scenarios:** 51
-    > ([[breakdown](https://fburl.com/datainsights/oqrnhisc))
 
 ![](media/image13.png)
 
@@ -333,26 +332,26 @@ video.
 
 **Annotated UI Example:**
 
-  **\#**   **Name**                                         **Example**
-  -------- ------------------------------------------------ -------------------------------------------------------
-  1        Query Set Label                                  *Query Set 1*
-  2        Template Query Category                          *Object*
-  3        Template                                         *Where is object X before/after event Y?*
-  4        Paraphrased template in natural language         *Where were the blue pliers before I picked them up?*
-  5        First slot (X)                                   *Blue pliers*
-  6        Dominant Verb Taxonomy for the first slot (X)    Verb: *\[VERB NOT APPLICABLE\]*
-  7        Second slot (Y)                                  *I picked them up*
-  8        Dominant Verb Taxonomy for the second slot (Y)   *pick*
+  | **\#** |  **Name**                                      |   **Example**  |
+  |--------|------------------------------------------------|-------------------------------------------------------|
+  | 1        | Query Set Label                                  | *Query Set 1* |
+  | 2        | Template Query Category                          | *Object* |
+  | 3        | Template                                         | *Where is object X before/after event Y?* |
+  | 4        | Paraphrased template in natural language         | *Where were the blue pliers before I picked them up?* |
+  | 5        | First slot (X)                                   | *Blue pliers* |
+  | 6        | Dominant Verb Taxonomy for the first slot (X)    | Verb: *\[VERB NOT APPLICABLE\]* |
+  | 7        | Second slot (Y)                                  | *I picked them up* |
+  | 8        | Dominant Verb Taxonomy for the second slot (Y)   | *pick* |
 
 ![](media/image31.png)
 
 **Annotated videos examples:**
 
-[[Example (cooking, bike mechanic)](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
+[Example (cooking, bike mechanic)](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
 
 ![](media/image14.png)
 
-**Annotation Stats (Jul 21):**
+**Annotation Stats (TODO: Jul 21):**
 
 -   **Total hours annotated:** \~240 (x2; one for each vendor)
 
@@ -380,9 +379,8 @@ activity X was last seen.
 
 **Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1lGtcGjxYOOQsf9SalVehEocqjsh26j0LbmhGucojkOw/edit))**:**
 
-+--------+------------------+------------------+------------------+
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
+|--------|------------------|------------------|------------------|
 | 1      | *Review the      |                  | ![]              |
 |        | Taxonomy*        |                  | (media/image15.p |
 |        |                  |                  | ng) |
@@ -440,9 +438,8 @@ recent instance of X, and outlines it in a short track**.**
 
 **Annotation Task:** (see [Annotation instructions](https://docs.google.com/document/d/1Ks9qVQjTE16tJXsC3fh-64Rlkoc_qbQafxyu1c6uNYw/edit?usp=sharing))
 
-+--------+------------------+------------------+------------------+
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
+|--------|------------------|------------------|------------------|
 | 1      | *Identify        | Preview the      |                  |
 |        | **query objects  | entire video     |                  |
 |        | ***              |                  |                  |
@@ -593,11 +590,10 @@ interactions.
 pre-condition (PRE), contact, point of no return (PNR), and
 post-condition (Post) frames.
 
-**Annotation Task** (See [[Annotation instructions](https://docs.google.com/document/d/13BmI98M_4gzd31vYAtQ8wRSLHggpnrts0gOVDTrWnDM/edit?usp=sharing))**:**
+**Annotation Task** (See [Annotation instructions](https://docs.google.com/document/d/13BmI98M_4gzd31vYAtQ8wRSLHggpnrts0gOVDTrWnDM/edit?usp=sharing))**:**
 
-+--------+------------------+------------------+------------------+
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
+|--------|------------------|------------------|------------------|
 | 1      | *Read the        | 1\. Reject       | *Example:* "C    |
 |        | narrated action  | videos that do   | glides hand      |
 |        | to be labeled*   | not contain      | planer along the |
@@ -652,31 +648,25 @@ post-condition (Post) frames.
 
 a.  Example: "light blowtorch"
 
-> ![](media/image38.jpg){width="5.646893044619422in"
-> height="1.1927088801399826in"}
+> ![](media/image38.jpg)
 
 b.  Example: "put down wood" (object already in hands, no CONTACT
-    > frame)![](media/image39.jpg){width="4.238373797025372in"
-    > height="1.1927088801399826in"}
+    > frame)![](media/image39.jpg)
 
-c.  [[VIDEO
-    > EXAMPLES](https://drive.google.com/file/d/1Fvg6ddceiVAbOru69XXB3PExuZAPd7ad/view?usp=sharing)
+c.  [VIDEO EXAMPLES](https://drive.google.com/file/d/1Fvg6ddceiVAbOru69XXB3PExuZAPd7ad/view?usp=sharing)
 
 ### Stage 2 - Pre-condition
 
 **Objective:** Label bounding boxes and roles for hands (right/left) and
 objects (objects of change and tools).
 
-**Annotation Task** (see [[Annotation
-instructions](https://docs.google.com/document/d/1bjbjJVFEUnl_GnTFmjfZry49_7c7DdR_RBotyjLoGgM/edit?usp=sharing)
-and [[video
-tutorial](https://drive.google.com/file/d/14gXr6yMb815L79jp0QN_n2X9e_OXpqIa/view))
-[Note]{.ul}: clips annotated from previous stage play in reverse from
+**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1bjbjJVFEUnl_GnTFmjfZry49_7c7DdR_RBotyjLoGgM/edit?usp=sharing)
+and [video tutorial](https://drive.google.com/file/d/14gXr6yMb815L79jp0QN_n2X9e_OXpqIa/view))
+**Note**: clips annotated from previous stage play in reverse from
 CONTACT to PRE frame:
 
-+--------+------------------+------------------+------------------+
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
+|--------|------------------|------------------|------------------|
 | 1      | *Read the        |                  | *Example:* "C    |
 |        | narrated action  |                  | straightens the  |
 |        | to be labeled*   |                  | cloth"![]        |
@@ -781,14 +771,12 @@ CONTACT to PRE frame:
 **Objective:** Label bounding boxes and roles for hands and objects
 (from Contact to Post frame).
 
-**Annotation Task** (see [[Annotation
-instructions](https://docs.google.com/document/d/18kSRpBNhYirvlFDF6MplpkiRLstGh5BMko4DKHwq_9o/edit?usp=sharing))
+**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/18kSRpBNhYirvlFDF6MplpkiRLstGh5BMko4DKHwq_9o/edit?usp=sharing))
 [Note]{.ul}: clips annotated from Stage 1 play from CONTACT to POST
 frame:
 
-+--------+------------------+------------------+------------------+
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
+|--------|------------------|------------------|------------------|
 | 1      | *Read the        |                  | *Example:* "C    |
 |        | narrated action  |                  | straightens the  |
 |        | to be labeled*   |                  | cloth"![]        |
@@ -863,13 +851,6 @@ tracking attributes of people\'s interactions in a scene, and more high
 level (intent/emotions driven) attributes that drive social and group
 conversations in the real world.
 
-+--------------------------------+----------------------------+
-| **Annotation stats (Aug 21):** | **Scenario Distribution:** |
-|                                |                            |
-| TBU                            |                            |
-|                                |                            |
-| Source:                        |                            |
-+--------------------------------+----------------------------+
 
 ### AV Step 0: Automated Face & Head Detection
 
@@ -882,12 +863,10 @@ overlaid on the input video.
 **Objective:** Have a correct face bounding box around all the faces
 visible in the video
 
-**Annotation Task** (see [[Annotation
-instructions](https://docs.google.com/document/d/1mgPTHJWJt1HWmOiM-UQOp-rc8S7zvnkw/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
+**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1mgPTHJWJt1HWmOiM-UQOp-rc8S7zvnkw/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
 
-+----------------------+----------------------+----------------------+
 | **\#**               | **Step**             | **Sub-step**         |
-+======================+======================+======================+
+|--------|------------------|------------------|
 | 1                    | *For each frame in   | 1.  *Subject **has** |
 |                      | the video, identify  |     > a bounding box |
 |                      | all subjects in the  |     > (bbox):*       |
@@ -964,12 +943,10 @@ instructions](https://docs.google.com/document/d/1mgPTHJWJt1HWmOiM-UQOp-rc8S7zvn
 (for each new subject which has an interaction with the camera-wearer or
 is present in the camera for 500+ frames).
 
-**Annotation Task** (see [[Annotation
-instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq0BmSU2iEDVHDneItZblllefQ?e=1nU14r)):
+**Annotation Task** (see [Annotation instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq0BmSU2iEDVHDneItZblllefQ?e=1nU14r)):
 
-+----------------------+----------------------+----------------------+
 | **\#**               | **Step**             | **Sub-step**         |
-+======================+======================+======================+
+|--------|------------------|------------------|
 | 1                    | *Identify the 'Next  | 1.  *Toggle On the   |
 |                      | Track' and go to the |     'Out-of-Frame'   |
 |                      | first frame of this  |     Track List*      |
@@ -1021,12 +998,11 @@ instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq
 
 **Objective:** Label voice activity for all subjects in the video.
 
-**Annotation Task** (see [[Annotation
-instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq0BmSU2iEDVHDneItZblllefQ?e=1nU14r)):
+**Annotation Task** (see [Annotation instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq0BmSU2iEDVHDneItZblllefQ?e=1nU14r)):
 
-+----------------------+----------------------+----------------------+
+
 | **\#**               | **Step**             | **Sub-step**         |
-+======================+======================+======================+
+|--------|------------------|------------------|
 | 1                    | *Label voice         | 1.  Annotate the     |
 |                      | activity for the     |     video using the  |
 |                      | **camera wearer**    |     time segment     |
@@ -1098,9 +1074,8 @@ instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq
 **Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1Wi-dRM9sKPtRdjdLIxGYxJYjfU72on3css-8IjrKAOc/edit?usp=sharing)
 \[WIP\]):
 
-+---------------+-------------------------+-------------------------+
 | **\#**        | **Step**                | **Sub-step**            |
-+===============+=========================+=========================+
+|--------|------------------|------------------|
 | 0             | *Pre-load the           | The task begins with    |
 |               | annotation tool.*       | the pre-load of the     |
 |               |                         | following things:       |
@@ -1152,12 +1127,10 @@ instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq
 **Objective**: Annotate temporal segments in which a person is looking
 at the camera wearer.
 
-**Annotation Task** (see [[Annotation
-instructions](https://docs.google.com/document/d/1CqgM73xrYuva5eKSfTmM4Tby7tso1jXX/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
+**Annotation Task** (see [[Annotation instructions](https://docs.google.com/document/d/1CqgM73xrYuva5eKSfTmM4Tby7tso1jXX/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
 
-+----------------------+----------------------+----------------------+
 | **\#**               | **Step**             | **Sub-step**         |
-+======================+======================+======================+
+|--------|------------------|------------------|
 | 1                    | *Watch the video and |                      |
 |                      | find the time when   |                      |
 |                      | someone is looking   |                      |
@@ -1199,11 +1172,7 @@ instructions](https://docs.google.com/document/d/1CqgM73xrYuva5eKSfTmM4Tby7tso1j
 | NbhUZ61iT0bckCj1Vno- |                      |                      |
 | G7/view?usp=sharing) |                      |                      |
 |                      |                      |                      |
-| ![](media/           |                      |                      |
-| image17.png){width=" |                      |                      |
-| 6.239583333333333in" |                      |                      |
-| height="3.           |                      |                      |
-| 3775820209973753in"} |                      |                      |
+| ![](media/image17.png) | | |
 +----------------------+----------------------+----------------------+
 
 ### Social Step 2: Speech Target Classification 
@@ -1214,9 +1183,8 @@ which the person is talking to the camera wearer.
 
 **Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1wnJqZESJpQrwaCkdFZWm8Makmb5bF4r5/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
 
-+----------------------+----------------------+----------------------+
 | **\#**               | **Step**             | **Sub-step**         |
-+======================+======================+======================+
+|--------|------------------|------------------|
 | 1                    | *Watch the video     |                      |
 |                      | with AV voice        |                      |
 |                      | segmentation results |                      |
