@@ -1,6 +1,6 @@
 ---
 title: "Ego4D Data Overview"
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 **WIP: Includes internal links, broken markdown, etc to be resolved**

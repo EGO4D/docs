@@ -8,24 +8,33 @@ Let's first walk through downloading the core dataset, what options are availabl
 
 The rough flow for a typical researcher will be:
 
-1. [Sign the license.](#sign-the-license)  (It's takes 48 to receive credentials - do this first.)
+1. [Review and accept the terms of our license agreement.](#EGO4D-License-Agreement)  (It's takes 48 to receive credentials - do this first.)
 1. [Download the CLI.](#Download-The-CLI)
 1. [Select your subset of interest](#Select-Your-Subset-Of-Interest)
 1. [Download The Data](#Download-The-Data)
 
-## Sign The License
+## EGO4D License Agreement
 
-Obtaining the dataset or any annotations requires you first sign a license.  [Go here (ego4ddataset.com)](https://ego4ddataset.com/) to sign the license, and you will be emailed a set of AWS credentials when your signature is approved, which will take ~ 48 hrs.  (In the meantime, you can check out data overiew & sample notebooks here to get familiar with the dataset, and can download the CLI & dataloaders to get setup in advance.)
+Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms.  [Go here (ego4ddataset.com)](https://ego4ddataset.com/) to review and execute this agreement, and you will be emailed a set of AWS access credentials when your license agreement is approved, which will take ~ 48 hrs.  (In the meantime, you can check out data overiew & sample notebooks here to get familiar with the dataset, and can download the CLI & dataloaders to get setup in advance.)
 
-Note that you are signing the license as an individual, not for your university.  Also note that your credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.  If you would like a copy of the license to review prior to signing, [go here](https://ego4ddataset.com/).
+Note that licensees have the option to execute our license agreements as either an individual or on behalf of your institution. Please carefully consider which approach is most appropriate in your context and engage the cognizant stakeholders at your institution as needed. Our license agreement contains important terms and conditions and should be reviewed carefully before execution. 
+
+Additionally, please note that EGO4D is led by an international consortium of 13 universities in partnership with Facebook AI. Each consortium member owns copyrights to the specific data they have collected as part of the initiative. Accordingly, researchers seeking access to EGO4D must individually execute 13 individual licenses with each university partner. Fortunately, all these licenses are essentially identical, simplifying the license reviewing and execution requirements. If you would like a copy of the license to review prior to signing, [go here](https://ego4ddataset.com/).
+
+Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS. 
+
+Meta AI licenses annotations on all EGO4D data under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
+
 
 ## Download The CLI
 
-Download the CLI from **[Ego4d CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
+Download the CLI from **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
 
 ## Select Your Subset Of Interest
 
-You likely won't want the full dataset!
+TODO: You likely won't want the full dataset!  
+
+The EGO4D CLI, for example, enables researchers to access data matching their baseline, benchmark, scenario, or data type of interest. 
 
 ## Download The Data
 
@@ -34,6 +43,7 @@ Run the CLI to download the dataset (likely to a network share if you're downloa
 ```
 python -m ego4d.cli.cli --output_directory="~/ego4d_data" --datasets full_scale annotations
 ```
+
 
 :::tip Standard Dataset
 This would download the full 5 TB videos + annotations.  Use ```--standard``` to get started with just the annotations and visualization data to explore the dataset before selecting which subset you're interested in.
