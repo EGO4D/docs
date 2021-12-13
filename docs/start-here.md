@@ -21,7 +21,7 @@ Note that you are signing the license as an individual, not for your university.
 
 ## Download The CLI
 
-Download the CLI from **[Ego4d CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
+Download the CLI from **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
 
 ## Select Your Subset Of Interest
 
