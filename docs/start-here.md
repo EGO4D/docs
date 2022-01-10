@@ -15,7 +15,7 @@ The rough flow for a typical researcher will be:
 
 ## EGO4D License Agreement
 
-Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms.  [Go here (ego4ddataset.com)](https://ego4ddataset.com/) to review and execute this agreement, and you will be emailed a set of AWS access credentials when your license agreement is approved, which will take ~ 48 hrs.  (In the meantime, you can check out data overiew & sample notebooks here to get familiar with the dataset, and can download the CLI & dataloaders to get setup in advance.)
+Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms.  [Go here (ego4ddataset.com)](https://ego4ddataset.com/) to review and execute this agreement, and you will be emailed a set of AWS access credentials when your license agreement is approved, which will take ~ 48 hrs.  (In the meantime, you can check out data overview & sample notebooks here to get familiar with the dataset, and can download the CLI & dataloaders to get setup in advance.)
 
 Note that licensees have the option to execute our license agreements as either an individual or on behalf of your institution. Please carefully consider which approach is most appropriate in your context and engage the cognizant stakeholders at your institution as needed. Our license agreement contains important terms and conditions and should be reviewed carefully before execution. 
 

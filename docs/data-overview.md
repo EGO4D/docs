@@ -167,15 +167,6 @@ taxonomy of labels for actions and objects.
 |        |                  | happened.        |                  |
 |--------|------------------|------------------|------------------|
 
-**UI Examples**
-
--   **Narration:**
-
-![](media/image42.png)
-
--   **Summary:**
-
-> ![](media/image44.png)
 
 **Annotated videos examples:**
 
@@ -192,17 +183,6 @@ reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp
 
 ![](media/image13.png)
 
-**Links:**
-
--   Narration
-    > [notes](https://docs.google.com/document/d/1kHHgJFQM2wbm2M81GjyicoZnGfgix7vnIHhEfkcB0_8/edit#heading=h.zb77nl2kkug0)
-    > and
-    > [instructions](https://l.workplace.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1avjdALDI3x1jrnY3DiCv72GGZJzXSuRRMjbmcQURKS0%2Fedit%3Fusp%3Dsharing&h=AT0SmFl7unFKCRMTaAd_2TRlp8Wc7pA0eZEBsRyDqTA5z_vaAxftnRJsGAtJa1PBX60OS0M98dEFj7bBuOuy797sFTls8HXCPzIrjfegkk1gxJOO3elVYcWiVdl2NOF3W0zO1TepzJVPHXx3HL_K&__tn__=-UK-y-R&c%5B0%5D=AT2NBxuTggKaQcYTPVeWQRgFrhv33HhiCNjdu1zHc2EqWu_nDJd2thvGRuiSyviJKTcpIlGgCiweuV-3X_1fkLBC10oNlFIBGlLAj6sX1A_twCFkuq2dCpP__mpZm_HrKDiRn-BIDyrsuNnymY9Kq2LGA3382FSPPwXvZdK2TX8ksWeu8KPPsuxOdCoRRQwJMmy6)
-
--   [Narration analysis](https://docs.google.com/presentation/d/1es_hniyef5bGhtMyeSZkBfbdeXKwElPBjT0YXxr7BvA/edit?usp=sharing)
-
--   [Scenario breakdown](https://l.workplace.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1w1dW1-IyqvufD-X_3SFSBBdLAhOy7JZbNSbhZjDel6I%2Fedit%23gid%3D0&h=AT0JEXfOJJdon1Fc0QP5lnJKL4hMqBvLTnHJPXJleRbSCBAuFMzwiFGE07hyz_YKspJB68Do3y5pyan4963Npz9a4oIBpDhbT1515yy1pJ1uAV0gxJhvCp5EtO-ENJI1yCVueixUaClGp8SIizl6&__tn__=-UK-y-R&c%5B0%5D=AT2NBxuTggKaQcYTPVeWQRgFrhv33HhiCNjdu1zHc2EqWu_nDJd2thvGRuiSyviJKTcpIlGgCiweuV-3X_1fkLBC10oNlFIBGlLAj6sX1A_twCFkuq2dCpP__mpZm_HrKDiRn-BIDyrsuNnymY9Kq2LGA3382FSPPwXvZdK2TX8ksWeu8KPPsuxOdCoRRQwJMmy6)
-
 
 ## Benchmark Annotations
 
@@ -210,7 +190,7 @@ reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp
 
 | **Target**  |  **\#** |  **Benchmark task**  |  **Research Goal** |
 |-------------|---------|----------------------|--------------------|
-|**Places**   |1        |[Episodic Memory](#episodic-memory)                                   |Allow an Assistant user to ask free-form, natural language questions, with the answer brought back after analyzing past video (*When was the last time I changed the batteries in the smoke detector?*). |
+|**Places**   |1        |[Episodic Memory](#episodic-memory)                                   |Allow an user to ask free-form, natural language questions, with the answer brought back after analyzing past video (*When was the last time I changed the batteries in the smoke detector?*). |
 |**Objects**    |2       |[Forecasting](#forecasting--hands--objects-fho)                      | To intelligently deliver notifications to a user, an AR system must understand how an action or piece of information may impact the future state of the world.
 |               |3       |[Hands-Object interaction](#forecasting--hands--objects-fho)         | AR applications, e.g. providing users instructions in their egocentric real-world view to accomplish tasks (e.g., cooking a recipe). 
 | **People**    |4        |[Audio-visual Diarization](#audio-visual-diarization--social-avs)   |To effectively aid people in daily life scenarios, augmented reality must be able to detect and track sounds, responding to users queries or information needs.
@@ -242,59 +222,28 @@ c.  Visual/object queries (response = temporal+spatial)
 interesting questions and their corresponding answers for the given
 video.
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1RGbm4BjKt8bZ6a95gYno8DJemuCZBhM2d6WWt_W3vLY/edit?usp=sharing))**:**
+**Annotation Task:**
+
+<table>
+    <tr><td><b>#</b></td><td><b>Step</b></td><td><b>Sub-step</b></td><td><b>Example</b></td></tr>
+    <tr><td>0</td><td><b>Annotator watches video</b></td><td></td><td></td></tr>
+    <tr><td>1</td><td><b>Asks free-form natural language query at end of video, selecting from list of query templates.</b></td><td>- Select an interesting query template & template category<br/>     
+- Paraphrase the question in the past tense.</td><td>- [Template]: "What **X** is **Y**?"<br/> 
+- [Template Category]: "Objects"<br/>   
+- [Paraphrased query:] "What **color** shirt did **the person performing on the road** wear?"</td></tr>
+    <tr><td></td><td></td><td>Using **"free-form"** text, fill the **query slots** (X, Y, \...) in the template to form a meaningful question equivalent to the paraphrase. </td><td>First free-form  query slot: "**color**" <br/>Second free-form query slot: "**the shirt of the person performing on the road**" </td></tr>
+    <tr><td></td><td></td><td>Pick the closest verb for each of the slots in the respective drop-down menus </td><td>- [Paraphrased query]: What **instrument** was **the musician playing**?<br/>-   [First verb drop-down selection]: "\[VERB NOT APPLICABLE\]"<br/> </td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+</table>
 
 +--------+------------------+------------------+------------------+
-| **\#** | **Step**         | **Sub-step**     | **Example**      |
-+========+==================+==================+==================+
-| 0      | *Annotator       |                  |                  |
-|        | watches video*   |                  |                  |
-+--------+------------------+------------------+------------------+
-| 1      | *Asks free-form  | -   Select an    | -                |
-|        | natural language |     interesting  | [Template]: |
-|        | query at end of  |     query        |     "What **X**  |
-|        | video, selecting |     template &   |     is **Y**?"   |
-|        | from list of     |     template     |                  |
-|        | query            |     category     | -   [Template    |
-|        | templates.*      |                  |                  |
-|        |                  | -   Paraphrase   |  [Category]: |
-|        |                  |     question in  |     "Objects"    |
-|        |                  |     the past     |                  |
-|        |                  |     tense.       | -   [Paraphrased |
-|        |                  |                  |     query:] |
-|        |                  |                  |     "What        |
-|        |                  |                  |     **color**    |
-|        |                  |                  |     shirt did    |
-|        |                  |                  |     **the person |
-|        |                  |                  |     performing   |
-|        |                  |                  |     on the       |
-|        |                  |                  |     road**       |
-|        |                  |                  |     wear?"       |
-+--------+------------------+------------------+------------------+
-|        |                  | Using            | First free-form  |
-|        |                  | **"free-form"**  | query slot:      |
-|        |                  | text, fill the   | "**color**"      |
-|        |                  | **query slots**  |                  |
-|        |                  | (X, Y, \...) in  | Second free-form |
-|        |                  | the template to  | query slot:      |
-|        |                  | form a           | "**the shirt of  |
-|        |                  | meaningful       | the person       |
-|        |                  | question         | performing on    |
-|        |                  | equivalent to    | the road**"      |
-|        |                  | the paraphrase.  |                  |
-+--------+------------------+------------------+------------------+
-|        |                  | Pick the closest | -   [Paraphrased |
-|        |                  | verb for each of |     query]: |
-|        |                  | the slots in the |     What         |
-|        |                  | respective       |                  |
-|        |                  | drop-down menus  |   **instrument** |
-|        |                  |                  |     was **the    |
-|        |                  |                  |     musician     |
-|        |                  |                  |     playing**?   |
+|        |                  | c |    |
 |        |                  |                  |                  |
-|        |                  |                  | -   [First verb  |
-|        |                  |                  |     drop-down selection]: |
-|        |                  |                  |     "\[VERB NOT APPLICABLE\]" |
+|        |                  |                  |  |
 |        |                  |                  |                  |
 |        |                  |                  | -   Second verb  |
 |        |                  |                  |     drop-down    |
@@ -326,30 +275,6 @@ video.
 |        | queries*         |                  |                  |
 +--------+------------------+------------------+------------------+
 
-**UI Examples:**
-
-![](media/image43.png)
-
-**Annotated UI Example:**
-
-  | **\#** |  **Name**                                      |   **Example**  |
-  |--------|------------------------------------------------|-------------------------------------------------------|
-  | 1        | Query Set Label                                  | *Query Set 1* |
-  | 2        | Template Query Category                          | *Object* |
-  | 3        | Template                                         | *Where is object X before/after event Y?* |
-  | 4        | Paraphrased template in natural language         | *Where were the blue pliers before I picked them up?* |
-  | 5        | First slot (X)                                   | *Blue pliers* |
-  | 6        | Dominant Verb Taxonomy for the first slot (X)    | Verb: *\[VERB NOT APPLICABLE\]* |
-  | 7        | Second slot (Y)                                  | *I picked them up* |
-  | 8        | Dominant Verb Taxonomy for the second slot (Y)   | *pick* |
-
-![](media/image31.png)
-
-**Annotated videos examples:**
-
-[Example (cooking, bike mechanic)](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
-
-![](media/image14.png)
 
 **Annotation Stats (TODO: Jul 21):**
 
@@ -377,7 +302,7 @@ implicit query from a user would be "When is the last time I did X?",
 and the response from the system would be to show the time window where
 activity X was last seen.
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1lGtcGjxYOOQsf9SalVehEocqjsh26j0LbmhGucojkOw/edit))**:**
+**Annotation Task:**
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
@@ -416,13 +341,9 @@ activity X was last seen.
 |        |                  |     1-3          |                  |
 +--------+------------------+------------------+------------------+
 
-**UI Examples:**
-
-![](media/image45.png)
-
 **Annotation Stats (Jul 21):**
 
--   **Total hours annotated:** \~300 (x3 raters)
+-   **Total hours annotated:** \~300 (x3 annotators)
 
 ### Visual Object Queries
 
@@ -436,7 +357,7 @@ a user asks at time T "where did I last see X?", and the system scans
 back in the video history starting at query frame T, finds the most
 recent instance of X, and outlines it in a short track**.**
 
-**Annotation Task:** (see [Annotation instructions](https://docs.google.com/document/d/1Ks9qVQjTE16tJXsC3fh-64Rlkoc_qbQafxyu1c6uNYw/edit?usp=sharing))
+**Annotation Task:** 
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
@@ -590,7 +511,7 @@ interactions.
 pre-condition (PRE), contact, point of no return (PNR), and
 post-condition (Post) frames.
 
-**Annotation Task** (See [Annotation instructions](https://docs.google.com/document/d/13BmI98M_4gzd31vYAtQ8wRSLHggpnrts0gOVDTrWnDM/edit?usp=sharing))**:**
+**Annotation Task:**
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
@@ -660,8 +581,7 @@ c.  [VIDEO EXAMPLES](https://drive.google.com/file/d/1Fvg6ddceiVAbOru69XXB3PExuZ
 **Objective:** Label bounding boxes and roles for hands (right/left) and
 objects (objects of change and tools).
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1bjbjJVFEUnl_GnTFmjfZry49_7c7DdR_RBotyjLoGgM/edit?usp=sharing)
-and [video tutorial](https://drive.google.com/file/d/14gXr6yMb815L79jp0QN_n2X9e_OXpqIa/view))
+**Annotation Task:**
 **Note**: clips annotated from previous stage play in reverse from
 CONTACT to PRE frame:
 
@@ -771,8 +691,8 @@ CONTACT to PRE frame:
 **Objective:** Label bounding boxes and roles for hands and objects
 (from Contact to Post frame).
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/18kSRpBNhYirvlFDF6MplpkiRLstGh5BMko4DKHwq_9o/edit?usp=sharing))
-[Note]{.ul}: clips annotated from Stage 1 play from CONTACT to POST
+**Annotation Task:**
+[Note]: clips annotated from Stage 1 play from CONTACT to POST
 frame:
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
@@ -833,11 +753,7 @@ frame:
 
 **Objective:**
 
--   **AV**: Locate each speaker spatially and temporally, segment and
-    > transcribe the speech content (in a given video), assign each
-    > speaker an anonymous label. [[Audio Visual Detection & Tracking
-    > Annotations Summary
-    > \[Updated\]](https://docs.google.com/document/d/188OjXu_UvwB2vLX5SestusNuhdao7QcZ11BbuKd5-8U/edit?usp=sharing)
+-   **AV**: Locate each speaker spatially and temporally, segment and transcribe the speech content (in a given video), assign each speaker an anonymous label. 
 
 -   **S:** predict the following social cues:
 
@@ -863,7 +779,7 @@ overlaid on the input video.
 **Objective:** Have a correct face bounding box around all the faces
 visible in the video
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1mgPTHJWJt1HWmOiM-UQOp-rc8S7zvnkw/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
+**Annotation Task:**
 
 | **\#**               | **Step**             | **Sub-step**         |
 |--------|------------------|------------------|
@@ -943,7 +859,7 @@ visible in the video
 (for each new subject which has an interaction with the camera-wearer or
 is present in the camera for 500+ frames).
 
-**Annotation Task** (see [Annotation instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq0BmSU2iEDVHDneItZblllefQ?e=1nU14r)):
+**Annotation Task:**
 
 | **\#**               | **Step**             | **Sub-step**         |
 |--------|------------------|------------------|
@@ -998,8 +914,7 @@ is present in the camera for 500+ frames).
 
 **Objective:** Label voice activity for all subjects in the video.
 
-**Annotation Task** (see [Annotation instructions](https://fb-my.sharepoint.com/:w:/p/sallyyoo/EXSVyiXDcypOjOdvgE24Rq0BmSU2iEDVHDneItZblllefQ?e=1nU14r)):
-
+**Annotation:**
 
 | **\#**               | **Step**             | **Sub-step**         |
 |--------|------------------|------------------|
@@ -1071,7 +986,7 @@ is present in the camera for 500+ frames).
 
 **Objective:** Correcting Speech Transcription annotation from Step 4.
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1Wi-dRM9sKPtRdjdLIxGYxJYjfU72on3css-8IjrKAOc/edit?usp=sharing)
+**Annotation Task:**
 \[WIP\]):
 
 | **\#**        | **Step**                | **Sub-step**            |
@@ -1127,7 +1042,7 @@ is present in the camera for 500+ frames).
 **Objective**: Annotate temporal segments in which a person is looking
 at the camera wearer.
 
-**Annotation Task** (see [[Annotation instructions](https://docs.google.com/document/d/1CqgM73xrYuva5eKSfTmM4Tby7tso1jXX/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
+**Annotation Task:**
 
 | **\#**               | **Step**             | **Sub-step**         |
 |--------|------------------|------------------|
@@ -1181,7 +1096,7 @@ at the camera wearer.
 the annotator is going to annotate the particular speech segments in
 which the person is talking to the camera wearer.
 
-**Annotation Task** (see [Annotation instructions](https://docs.google.com/document/d/1wnJqZESJpQrwaCkdFZWm8Makmb5bF4r5/edit?usp=sharing&ouid=109871152660798629950&rtpof=true&sd=true)):
+**Annotation Task:**
 
 | **\#**               | **Step**             | **Sub-step**         |
 |--------|------------------|------------------|
