@@ -28,6 +28,14 @@ the video. In this case, the extraction point is backed up such that a
 window with `W` frames from the video is used. This occurs when the
 number of frames in the canonical video is not divisble by the stride.
 
+
+## Example Window Stride
+
+Let's say a video has 39 frames. The frames for extraction will be (in frame numbers):
+
+- [0, 31]
+- [7, 38] which is “back-padded” from [16, 47] to fit the last window
+
 ## Implementation
 
 - Read the README on the Ego4D github (TODO link) to run or use the code yourself
