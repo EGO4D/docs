@@ -11,5 +11,3 @@ For any questions or data/code issues, please raise on issue on the [primary rep
 
 For direct contact, press inquiries or any concerns: [email us](mailto:info@ego4d-data.org).
 
-TODO: Stackoverflow and/or community options?
-

@@ -8,7 +8,7 @@ Let's first walk through downloading the core dataset, what options are availabl
 
 The rough flow for a typical researcher will be:
 
-1. [Review and accept the terms of our license agreement.](#EGO4D-License-Agreement)  (It's takes 48 to receive credentials - do this first.)
+1. [Review and accept the terms of our license agreement.](#EGO4D-License-Agreement)  (It takes 48 to receive credentials - do this first.)
 1. [Download the CLI.](#Download-The-CLI)
 1. [Select your subset of interest](#Select-Your-Subset-Of-Interest)
 1. [Download The Data](#Download-The-Data)
@@ -32,9 +32,7 @@ Download the CLI from **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/bl
 
 ## Select Your Subset Of Interest
 
-TODO: You likely won't want the full dataset!  
-
-The EGO4D CLI, for example, enables researchers to access data matching their baseline, benchmark, scenario, or data type of interest. 
+For most purposes, you'll want to select the baseline, benchmark, scenario, or data type of interest first, and then specify the subset accordingly rather than downloading the full (> 5TB) dataset.  Please refer to the **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)** documentation for the dataset commands, the approximate sizing below, and the [benchmark](./benchmarks/overview.md) and [annotation](./annotations.md) documentation for details of what's available.
 
 ## Download The Data
 
