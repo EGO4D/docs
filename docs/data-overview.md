@@ -3,58 +3,13 @@ title: "Ego4D Data Overview"
 sidebar_position: 4
 ---
 
-**WIP: Includes internal links, broken markdown, etc to be resolved**
-
-**[Background](#background)**
-
-> [Key Information](#key-information) 
->
-> [Annotations tl;dr](#annotations-tldr) 
-
-**[Pre-annotations: Narrations](#pre-annotations-narrations)**
-
-**[Annotations](#annotations)**
-
-> [Episodic Memory](#episodic-memory)
->
-> [Natural Language Queries](#natural-language-queries)
->
-> [Moments](#moments)
->
-> [Visual Object Queries](#visual-object-queries)
->
-> [Forecasting + Hands & Objects (FHO)](#forecasting-hands-objects-fho)
->
-> [Stage 1 - Critical Frames](#stage-1---critical-frames) 
->
-> [Stage 2 - Pre-condition](#stage-2---pre-condition) 
->
-> [Stage 3 - Post-condition](#stage-3---post-condition) 
->
-> [Audio-Visual Diarization & Social (AVS)](#audio-visual-diarization-social-avs) 
->
-> [AV Step 0: Automated Face & Head Detection](#av-step-0-automated-face-head-detection) 
->
-> [AV Step 1: Face & Head Tracks Correction](#av-step-1-face-head-tracks-correction) 
->
-> [AV Step 2: Speaker Labeling and AV anchor extraction](#av-step-2-speaker-labeling-and-av-anchor-extraction)
->
-> [AV Step 3: Speech Segmentation (Per Speaker)](#av-step-3-speech-segmentation-per-speaker)
->
-> [AV Step 4: Transcription](#av-step-4-transcription)
->
-> [AV Step 5: Correcting Speech Transcriptions](#av-step-5-correcting-speech-transcriptions-wip)
->
-> [Social Step 1: Camera-Wearer Attention](#social-step-1-camera-wearer-attention)
->
-> [Social Step 2: Speech Target Classification](#social-step-2-speech-target-classification)
-
+**WIP: Includes internal links to be resolved**
 ## Background
 
 **One-liner:** Building a densely-annotated dataset of \~10,000 hours of
 ego-centric video for public release.
 
-## Key Information 
+## Key Information
 
 -   \~3,400 hours of unscripted, in-the-wild video data across:
     > 9 countries from 13 different partner groups (+ 400 hours from Meta's reality labs).
@@ -85,7 +40,7 @@ ego-centric video for public release.
 | [1 Critical Frames](#stage-1---critical-frames)             | Pre-condition (PRE), CONTACT, point of no return (PNR), and post-condition (Post) frames for each narrated action in a video      |  \~120h    |
 | [2 Pre-condition](#stage-2---pre-condition)  | Bounding boxes and roles for hands (right/left) and objects (objects of change and tools) for each frame from CONTACT to PRE                    |            |
 | [3 Post-condition](#stage-3---post-condition) | Bounding boxes and roles for hands and objects for each frame from CONTACT to POST                   |            |
-| **Audio-Visual Diarization & Social (AVS)**  |  |  |  
+| **Audio-Visual Diarization & Social (AVS)**  |  |  |
 | [AV0: Automated Face & Head Detection](#av-step-0-automated-face-head-detection)  | Automated overlaid bounding boxes for faces in video clips       | 50h |
 | [AV1: Face & Head Tracks Correction](#av-step-1-face-head-tracks-correction) | Manually adjusted overlaid bounding boxes for faces in video clips |  |
 | [AV2: Speaker Labeling and AV anchor extraction](#av-step-2-speaker-labeling-and-av-anchor-extraction)  | Anonymous Person IDs for each Face Track in video clip   |      |
@@ -110,68 +65,12 @@ taxonomy of labels for actions and objects.
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
-| 1 | *Narrate the Complete Video with Temporal Sentences* | Watch the video from the beginning until something new occurs. | set the start time as the point when the person has the knife and the tomato, and the end time as the point when the person has finished chopping, then type: "C is chopping a tomato" into the text input. ("C" refers to the camera wearer).  
+| 1 | *Narrate the Complete Video with Temporal Sentences* | Watch the video from the beginning until something new occurs. <hr/>At that time, pause the video, mark the temporal window for which the sentence applies, then "narrate" what you see in the video by typing in a simple sentence into the free-form text input. <hr/> Next, resume watching the video. Once you recognize an action to narrate, immediately pause again and repeat. | *[set the start time as the point when the person has the knife and the tomato, and the end time as the point when the person has finished chopping, then type]:* "C is chopping a tomato" into the text input.<br/>("C" refers to the camera wearer).
+| 2 | *Provide a Summary of the Entire Video* | As needed, watch the entire video on fast forward to recall the content of the entire video.<br/><br/>Provide a short summary in text about the contents of the entire video (1-3 sentences).<br/><br/>This summary should convey the main setting(s) of the video clip (e.g., an apartment, a restaurant, a shop, etc.) as well as an overview of what happened.|#summary C fixed their breakfast, ate it, then got dressed and left the house."
 
-|--------|------------------|------------------|------------------|
-|        |                  | At that time,    |                  |
-|        |                  | pause the video, |                  |
-|        |                  | mark the         |                  |
-|        |                  | *temporal        |                  |
-|        |                  | window* for      |                  |
-|        |                  | which the        |                  |
-|        |                  | sentence         |                  |
-|        |                  | applies, then    |                  |
-|        |                  | "narrate" what   |                  |
-|        |                  | you see in the   |                  |
-|        |                  | video by typing  |                  |
-|        |                  | in a simple      |                  |
-|        |                  | sentence into    |                  |
-|        |                  | the free-form    |                  |
-|        |                  | text input.      |                  |
-|--------|------------------|------------------|------------------|
-|        |                  | Next, resume     |                  |
-|        |                  | watching the     |                  |
-|        |                  | video. Once you  |                  |
-|        |                  | recognize an     |                  |
-|        |                  | action to        |                  |
-|        |                  | narrate,         |                  |
-|        |                  | immediately      |                  |
-|        |                  | pause again and  |                  |
-|        |                  | repeat.          |                  |
-|--------|------------------|------------------|------------------|
-| 2      | *Provide a       | As needed, watch | \#summary C      |
-|        | Summary of the   | the entire video | fixed their      |
-|        | Entire Video*    | on fast forward  | breakfast, ate   |
-|        |                  | to recall the    | it, then got     |
-|        |                  | content of the   | dressed and left |
-|        |                  | entire video.    | the house."      |
-|        |                  |                  |                  |
-|        |                  | Provide a short  |                  |
-|        |                  | summary in text  |                  |
-|        |                  | about the        |                  |
-|        |                  | contents of the  |                  |
-|        |                  | entire video     |                  |
-|        |                  | (1-3 sentences). |                  |
-|        |                  |                  |                  |
-|        |                  | This summary     |                  |
-|        |                  | should convey    |                  |
-|        |                  | the main         |                  |
-|        |                  | setting(s) of    |                  |
-|        |                  | the video clip   |                  |
-|        |                  | (e.g., an        |                  |
-|        |                  | apartment, a     |                  |
-|        |                  | restaurant, a    |                  |
-|        |                  | shop, etc.) as   |                  |
-|        |                  | well as an       |                  |
-|        |                  | overview of what |                  |
-|        |                  | happened.        |                  |
-|--------|------------------|------------------|------------------|
+**Annotated video examples:**
 
-
-**Annotated videos examples:**
-
-[[Example
-reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
+[Example Reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
 
 ![](media/image35.png)![](media/image32.png)
 
@@ -192,7 +91,7 @@ reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp
 |-------------|---------|----------------------|--------------------|
 |**Places**   |1        |[Episodic Memory](#episodic-memory)                                   |Allow an user to ask free-form, natural language questions, with the answer brought back after analyzing past video (*When was the last time I changed the batteries in the smoke detector?*). |
 |**Objects**    |2       |[Forecasting](#forecasting--hands--objects-fho)                      | To intelligently deliver notifications to a user, an AR system must understand how an action or piece of information may impact the future state of the world.
-|               |3       |[Hands-Object interaction](#forecasting--hands--objects-fho)         | AR applications, e.g. providing users instructions in their egocentric real-world view to accomplish tasks (e.g., cooking a recipe). 
+|               |3       |[Hands-Object interaction](#forecasting--hands--objects-fho)         | AR applications, e.g. providing users instructions in their egocentric real-world view to accomplish tasks (e.g., cooking a recipe).
 | **People**    |4        |[Audio-visual Diarization](#audio-visual-diarization--social-avs)   |To effectively aid people in daily life scenarios, augmented reality must be able to detect and track sounds, responding to users queries or information needs.
 |               |5        |[Social interactions](#audio-visual-diarization--social-avs)        | Recognize people's interactions, their roles, and their attention within collaborative and competitive scenarios within a range of social interactions captured in the Ego4D data.
 
@@ -216,7 +115,7 @@ c.  Visual/object queries (response = temporal+spatial)
 
 ### Natural Language Queries
 
-### ![](media/image4.png) 
+### ![](media/image4.png)
 
 **Objective:** Create and annotate **N (N=length of video in minutes)**
 interesting questions and their corresponding answers for the given
@@ -224,56 +123,14 @@ video.
 
 **Annotation Task:**
 
-<table>
-    <tr><td><b>#</b></td><td><b>Step</b></td><td><b>Sub-step</b></td><td><b>Example</b></td></tr>
-    <tr><td>0</td><td><b>Annotator watches video</b></td><td></td><td></td></tr>
-    <tr><td>1</td><td><b>Asks free-form natural language query at end of video, selecting from list of query templates.</b></td><td>- Select an interesting query template & template category<br/>     
-- Paraphrase the question in the past tense.</td><td>- [Template]: "What **X** is **Y**?"<br/> 
-- [Template Category]: "Objects"<br/>   
-- [Paraphrased query:] "What **color** shirt did **the person performing on the road** wear?"</td></tr>
-    <tr><td></td><td></td><td>Using **"free-form"** text, fill the **query slots** (X, Y, \...) in the template to form a meaningful question equivalent to the paraphrase. </td><td>First free-form  query slot: "**color**" <br/>Second free-form query slot: "**the shirt of the person performing on the road**" </td></tr>
-    <tr><td></td><td></td><td>Pick the closest verb for each of the slots in the respective drop-down menus </td><td>- [Paraphrased query]: What **instrument** was **the musician playing**?<br/>-   [First verb drop-down selection]: "\[VERB NOT APPLICABLE\]"<br/> </td></tr>
-    <tr><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td></tr>
-    <tr><td></td><td></td><td></td><td></td></tr>
-</table>
-
-+--------+------------------+------------------+------------------+
-|        |                  | c |    |
-|        |                  |                  |                  |
-|        |                  |                  |  |
-|        |                  |                  |                  |
-|        |                  |                  | -   Second verb  |
-|        |                  |                  |     drop-down    |
-|        |                  |                  |     selection:   |
-|        |                  |                  |     "**play**"   |
-+--------+------------------+------------------+------------------+
-| 2      | *Identifies the  | Seek in the      |                  |
-|        | temporal         | video to the     |                  |
-|        | response window  | temporal window  |                  |
-|        | from which       | where the        |                  |
-|        | answer can be    | response to the  |                  |
-|        | deduced*         | natural language |                  |
-|        |                  | query can be     |                  |
-|        |                  | deduced visually |                  |
-|        |                  |                  |                  |
-|        |                  | Specify query to |                  |
-|        |                  | have only one    |                  |
-|        |                  | valid,           |                  |
-|        |                  | contiguous       |                  |
-|        |                  | temporal window  |                  |
-|        |                  | response         |                  |
-+--------+------------------+------------------+------------------+
-| 3      | *Repeat this     |                  |                  |
-|        | process N=length |                  |                  |
-|        | of video in      |                  |                  |
-|        | minutes creating |                  |                  |
-|        | N diverse        |                  |                  |
-|        | language         |                  |                  |
-|        | queries*         |                  |                  |
-+--------+------------------+------------------+------------------+
+| **\#** | **Step**         | **Sub-step**     | **Example**      |
+|--------|------------------|------------------|------------------|
+| 0 | *Annotator watches video* | |
+| 1 | *Asks free-form natural language query at end of video, selecting from list of query templates.* | - Select an interesting query template & template category. <br/>- Paraphrase question in the past tense. | - <ins>Template</ins>: "What <span style={{color: '#cb4b16'}}><strong>X</strong></span> is <span style={{color: '#268bd2'}}><strong>Y</strong></span>?" <br/>- <ins>Template Category</ins>: "Objects" <br/> - <ins>Paraphrased query</ins>: "What <span style={{color: '#cb4b16'}}><strong>color</strong></span> shirt did the <span style={{color: '#268bd2'}}><strong>person performing on the road</strong></span> wear?"
+| | | Using **"free-form"** text, fill the **query slots** (X, Y, ...) in the template to form a meaningful question equivalent to the paraphrase. | First free-form query slot: "<span style={{color: '#cb4b16'}}><strong>color</strong></span>" <br/><br/>Second free-form query slot: "<span style={{color: '#268bd2'}}><strong>the shirt of the person performing on the road</strong></span>"
+| | | Pick the closest verb for each of the slots in the respective drop-down menus | - <ins>Paraphrased query</ins>: What <span style={{color: '#cb4b16'}}><strong>instrument</strong></span> was <span style={{color: '#268bd2'}}><strong>the musician playing</strong></span>? <br/>- <ins>First verb drop-down selection</ins>: "[VERB NOT APPLICABLE]" <br/> Second verb drop-down selection:  "**play**"
+| 2 | *Identifies the temporal response window from which answer can be deduced* | Seek in the video to the temporal window where the response to the natural language query can be deduced visually. <br/><br/> Specify query to have only one valid, contiguous temporal window response. |
+| 3 | *Repeat this process N=length of video in minutes creating N diverse language queries* | |
 
 
 **Annotation Stats (TODO: Jul 21):**
@@ -306,40 +163,8 @@ activity X was last seen.
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
-| 1      | *Review the      |                  | ![]              |
-|        | Taxonomy*        |                  | (media/image15.p |
-|        |                  |                  | ng) |
-+--------+------------------+------------------+------------------+
-| 2      | *Annotate the    | 1.  Play the     | *See [[UI        |
-|        | Video*           |     video until  | Examples]  |
-|        |                  |     you observe  | (#llbjhw5qjwgg)* |
-|        |                  |     an activity, |                  |
-|        |                  |     then pause.  |                  |
-|        |                  |                  |                  |
-|        |                  | 2.  Draw a       |                  |
-|        |                  |     temporal     |                  |
-|        |                  |     window       |                  |
-|        |                  |     around the   |                  |
-|        |                  |     time span    |                  |
-|        |                  |     where the    |                  |
-|        |                  |     activity     |                  |
-|        |                  |     occurs       |                  |
-|        |                  |                  |                  |
-|        |                  | 3.  Select from  |                  |
-|        |                  |     the dropdown |                  |
-|        |                  |     list the     |                  |
-|        |                  |     name for     |                  |
-|        |                  |     that         |                  |
-|        |                  |     activity     |                  |
-|        |                  |                  |                  |
-|        |                  | 4.  Play the     |                  |
-|        |                  |     video from   |                  |
-|        |                  |     the start of |                  |
-|        |                  |     the previous |                  |
-|        |                  |     activity,    |                  |
-|        |                  |     repeat steps |                  |
-|        |                  |     1-3          |                  |
-+--------+------------------+------------------+------------------+
+| 1 | *Review the Taxonomy* | | ![](media/image15.png) |
+| 2 | *Annotate the Video* | 1. Play the video until you observe an activity, then pause.<br/>2. Draw a temporal window around the time span where the activity occurs. <br/> 3. Select from the dropdown list the name for that activity. <br/> 4. Play the video from the start of the previous activity, repeat steps 1-3. | ![](media/image45.png)
 
 **Annotation Stats (Jul 21):**
 
@@ -357,104 +182,16 @@ a user asks at time T "where did I last see X?", and the system scans
 back in the video history starting at query frame T, finds the most
 recent instance of X, and outlines it in a short track**.**
 
-**Annotation Task:** 
+**Annotation Task:**
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
-| 1      | *Identify        | Preview the      |                  |
-|        | **query objects  | entire video     |                  |
-|        | ***              |                  |                  |
-|        |                  | Identify a set   |                  |
-|        |                  | of N=3           |                  |
-|        |                  | interesting      |                  |
-|        |                  | objects to label |                  |
-|        |                  | as queries (=    |                  |
-|        |                  | objects that     |                  |
-|        |                  | appear at least  |                  |
-|        |                  | twice at         |                  |
-|        |                  | distinct         |                  |
-|        |                  | non-contiguous   |                  |
-|        |                  | parts of the     |                  |
-|        |                  | video clip)      |                  |
-+--------+------------------+------------------+------------------+
-| 2      | *Select a        | -   Select one   | ![]              |
-|        | **response       |     occurrence   | (media/image30.g |
-|        | track***         |     of the query | if){width="1.895 |
-|        |                  |     object.      | 8333333333333in" |
-|        |                  |                  | height="1.0694   |
-|        |                  | -   Mark the     | 444444444444in"} |
-|        |                  |     query object |                  |
-|        |                  |     with a       |                  |
-|        |                  |     bounding box |                  |
-|        |                  |     over time,   |                  |
-|        |                  |     from the     |                  |
-|        |                  |     frame the    |                  |
-|        |                  |     object       |                  |
-|        |                  |     enters the   |                  |
-|        |                  |     field of     |                  |
-|        |                  |     view until   |                  |
-|        |                  |     it leaves    |                  |
-|        |                  |     the field of |                  |
-|        |                  |     view, for    |                  |
-|        |                  |     that object  |                  |
-|        |                  |     occurrence.  |                  |
-+--------+------------------+------------------+------------------+
-| 3      | *Select a        | -   Select a     | ![               |
-|        | **query frame*** |     frame that   | ](media/image9.p |
-|        |                  |     does *not*   | ng){width="1.833 |
-|        |                  |     contain the  | 3333333333333in" |
-|        |                  |     query        | height="1.25in"} |
-|        |                  |     object,      |                  |
-|        |                  |     sometime far |                  |
-|        |                  |     *after* that |                  |
-|        |                  |     object       |                  |
-|        |                  |     occurrence,  |                  |
-|        |                  |     but *before* |                  |
-|        |                  |     any          |                  |
-|        |                  |     subsequent   |                  |
-|        |                  |     occurrence   |                  |
-|        |                  |     of the       |                  |
-|        |                  |     object.      |                  |
-|        |                  |                  |                  |
-|        |                  | -   Mark the     |                  |
-|        |                  |     time point   |                  |
-|        |                  |     with a large |                  |
-|        |                  |     bounding     |                  |
-|        |                  |     box.         |                  |
-+--------+------------------+------------------+------------------+
-| 4      | *Select a        | -   Find another | ![]              |
-|        | **visual crop*** |     occurrence   | (media/image11.p |
-|        |                  |     of the same  | ng){width="1.895 |
-|        |                  |     object       | 8333333333333in" |
-|        |                  |     elsewhere in | height="1.25in"} |
-|        |                  |     the video    |                  |
-|        |                  |     (before or   |                  |
-|        |                  |     after the    |                  |
-|        |                  |     originally   |                  |
-|        |                  |     marked       |                  |
-|        |                  |     instance     |                  |
-|        |                  |     from Step 2) |                  |
-|        |                  |                  |                  |
-|        |                  | -   Draw a       |                  |
-|        |                  |     bounding box |                  |
-|        |                  |     in           |                  |
-|        |                  |     [one]{.ul}   |                  |
-|        |                  |     frame around |                  |
-|        |                  |     that object. |                  |
-+--------+------------------+------------------+------------------+
-| 5      | ***Name**        |                  |                  |
-|        | **the**          |                  |                  |
-|        | **object** using |                  |                  |
-|        | the **free       |                  |                  |
-|        | text** box*      |                  |                  |
-+--------+------------------+------------------+------------------+
-| 6      | *Repeat Steps    |                  |                  |
-|        | 1-5 three times  |                  |                  |
-|        | for the same     |                  |                  |
-|        | video clip and   |                  |                  |
-|        | different        |                  |                  |
-|        | objects*         |                  |                  |
-+--------+------------------+------------------+------------------+
+| 1 | *Identify __query objects__* | Preview the entire video.<br/>Identify a set of N=3 interesting objects to label as queries (= objects that appear at least twice at distinct non-contiguous parts of the video clip) |
+| 2 | *Select a __response track__* | - Select one occurrence of the query object.<br/> - Mark the query object with a bounding box over time, from the frame the object enters the field of view until it leaves the field of view, for that object occurrence. | ![](media/image30.gif)
+| 3 | *Select a __query frame__* | - Select a frame that does not contain the query object, sometime far after that object occurrence, but before any subsequent occurrence of the object.<br/> - Mark the time point with a large bounding box. | ![](media/image9.png)
+| 4 | *Select a __visual crop__* | - Find another occurrence of the same object elsewhere in the video (before or after the originally marked instance from Step 2). <br/> - Draw a bounding box in one frame around that object. | ![](media/image11.png)
+| 5 | *__Name the object__ using the __free text__ box* | |
+| 6 | *Repeat Steps 1-5 three times for the same video clip and different objects* | |
 
 **Annotation Stats (Jul 21):**
 
@@ -475,34 +212,9 @@ happen (F).
 **Motivation:** Understanding and anticipating human-object
 interactions.
 
-**Scenario Distribution:**
-
-![](media/image19.png)
-
+| **Annotation Stats** | **Scenario Distribution** |
 |----------------------------------|----------------------------------|
-| **Annotation**                   | **Scenario Distribution:**       |
-| (Aug 21):**                      |                                  |
-|                                  |                                  |
-| Labeled videos: 1,074            |                                  |
-|                                  |                                  |
-| Labeled clips: 1,672             |                                  |
-|                                  |                                  |
-| Labeled hours: 116.274           |                                  |
-|                                  |                                  |
-| Number of scenarios: 53          |                                  |
-|                                  |                                  |
-| Number of universities: 7        |                                  |
-|                                  |                                  |
-| Number of participants: 397      |                                  |
-|                                  |                                  |
-| Num interactions: 91,002         |                                  |
-|                                  |                                  |
-| Num rejected: 18,839             |                                  |
-|                                  |                                  |
-| Num with state change: 70,718    |                                  |
-|                                  |                                  |
-+----------------------------------+----------------------------------+
-
+| Labeled videos: 1,074 <br/><br/> Labeled clips: 1,672 <br/><br/> Labeled hours: 116.274 <br/><br/> Number of scenarios: 53 <br/><br/> Number of universities: 7 <br/><br/> Number of participants: 397 <br/><br/> Num interactions: 91,002 <br/><br/> Num rejected: 18,839 <br/><br/> Num with state change: 70,718 <img width="500px"/> | ![](media/image19.png)
 ### Stage 1 - Critical Frames
 
 ![](media/image5.png)
@@ -515,55 +227,10 @@ post-condition (Post) frames.
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
-| 1      | *Read the        | 1\. Reject       | *Example:* "C    |
-|        | narrated action  | videos that do   | glides hand      |
-|        | to be labeled*   | not contain      | planer along the |
-|        |                  | hand-object      | wood"![]         |
-|        |                  | interactions     | (media/image46.p |
-|        |                  |                  | ng){width="1.895 |
-|        |                  | 2\. Reject       | 8333333333333in" |
-|        |                  | videos that not  | height="1.0277   |
-|        |                  | contain the      | 777777777777in"} |
-|        |                  | narrated action  |                  |
-+--------+------------------+------------------+------------------+
-| 2      | *Select the verb | -   If an        | ![]              |
-|        | corresponding to |     appropriate  | (media/image28.p |
-|        | the narration*   |     verb is not  | ng){width="1.895 |
-|        |                  |     available,   | 8333333333333in" |
-|        |                  |     select OTHER | height="1.0in"}  |
-|        |                  |     from the     |                  |
-|        |                  |     dropdown and |                  |
-|        |                  |     type in the  |                  |
-|        |                  |     verb in the  |                  |
-|        |                  |     text box.    |                  |
-+--------+------------------+------------------+------------------+
-| 3      | *Select the      | -   Select one   | ![]              |
-|        | **state change   |     > of 8       | (media/image22.p |
-|        | type** present   |     > options    | ng){width="1.895 |
-|        | in the video*    |     > from the   | 8333333333333in" |
-|        |                  |     > dropdown   | height="1.0277   |
-|        |                  |                  | 777777777777in"} |
-+--------+------------------+------------------+------------------+
-| 4      | *Mark the        | -   Find the     | ![]              |
-|        | **CONTACT**      |     > CONTACT    | (media/image47.p |
-|        | (only if         |     > frame      | ng){width="1.895 |
-|        | present),*       |                  | 8333333333333in" |
-|        | **PRE** and      | -   Pause the    | height="1.0138   |
-|        | **POST** frames. |     > video      | 888888888888in"} |
-|        |                  |                  |                  |
-|        |                  | -   Select the   |                  |
-|        |                  |     > "Contact   |                  |
-|        |                  |     > Frame"     |                  |
-|        |                  |     > from the   |                  |
-|        |                  |     > dropdown   |                  |
-|        |                  |                  |                  |
-|        |                  | -   Repeat the   |                  |
-|        |                  |     > same       |                  |
-|        |                  |     > protocol   |                  |
-|        |                  |     > for PRE    |                  |
-|        |                  |     > and POST   |                  |
-|        |                  |     > frames.    |                  |
-+--------+------------------+------------------+------------------+
+| 1 | *Read the narrated action to be labeled* | 1. Reject videos that do not contain hand-object interactions<br/> 2. Reject videos that not contain the narrated action | *Example:* "C glides hand planer along the wood"<br/>![](media/image46.png)
+| 2 | *Select the verb corresponding to the narration* | - If an appropriate verb is not available, select OTHER from the dropdown and type in the verb in the text box. | ![](media/image28.png)
+| 3 | *Select the __state change type__ present in the video | - Select from one of 8 options from the dropdown | ![](media/image22.png)
+| 4 | *Mark the __CONTACT__ (only if present), __PRE__ and __POST__ frames. | - Find the CONTACT frame <br/> - Pause the video <br/> - Select the "Contact Frame" from the dropdown <br/> - Repeat the same protocol for PRE and POST frames. | ![](media/image47.png)
 
 **PRE, CONTACT, PNR, POST examples:**
 
@@ -571,120 +238,25 @@ a.  Example: "light blowtorch"
 
 > ![](media/image38.jpg)
 
-b.  Example: "put down wood" (object already in hands, no CONTACT
-    > frame)![](media/image39.jpg)
+b.  Example: "put down wood" (object already in hands, no CONTACT frame)
+> ![](media/image39.jpg)
 
-c.  [VIDEO EXAMPLES](https://drive.google.com/file/d/1Fvg6ddceiVAbOru69XXB3PExuZAPd7ad/view?usp=sharing)
+c.  [Video Examples](https://drive.google.com/file/d/1Fvg6ddceiVAbOru69XXB3PExuZAPd7ad/view?usp=sharing)
 
 ### Stage 2 - Pre-condition
 
 **Objective:** Label bounding boxes and roles for hands (right/left) and
 objects (objects of change and tools).
 
-**Annotation Task:**
-**Note**: clips annotated from previous stage play in reverse from
-CONTACT to PRE frame:
+**Annotation Task:** (see [Annotation instructions](https://docs.google.com/document/d/1bjbjJVFEUnl_GnTFmjfZry49_7c7DdR_RBotyjLoGgM/edit?usp=sharing) and [video tutorial](https://drive.google.com/file/d/14gXr6yMb815L79jp0QN_n2X9e_OXpqIa/view)) <ins>Note</ins>: clips annotated from previous stage play in reverse from CONTACT to PRE frame:
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
-| 1      | *Read the        |                  | *Example:* "C    |
-|        | narrated action  |                  | straightens the  |
-|        | to be labeled*   |                  | cloth"![]        |
-|        |                  |                  | (media/image25.p |
-|        |                  |                  | ng){width="1.895 |
-|        |                  |                  | 8333333333333in" |
-|        |                  |                  | height="0.9861   |
-|        |                  |                  | 111111111112in"} |
-+--------+------------------+------------------+------------------+
-| 2      | *Label the       | Label **right    | ![]              |
-|        | contact frame    | and left hands** | (media/image29.p |
-|        | (first frame     | (if visible), by | ng){width="1.895 |
-|        | shown)*          | correcting the   | 8333333333333in" |
-|        |                  | existing         | height="0.9722   |
-|        |                  | bounding box or  | 222222222222in"} |
-|        |                  | adding a new     |                  |
-|        |                  | one.             |                  |
-+--------+------------------+------------------+------------------+
-|        |                  | ​​Label the      | ![]              |
-|        |                  | **object(s) of   | (media/image36.p |
-|        |                  | change**:        | ng){width="1.895 |
-|        |                  |                  | 8333333333333in" |
-|        |                  | -   Draw the     | height="0.9722   |
-|        |                  |     [bounding    | 222222222222in"} |
-|        |                  |     box]{.ul}    |                  |
-|        |                  |                  |                  |
-|        |                  | -   Mark the     |                  |
-|        |                  |     object as    |                  |
-|        |                  |     Object of    |                  |
-|        |                  |     change       |                  |
-|        |                  |                  |                  |
-|        |                  | -   Select the   |                  |
-|        |                  |     [name of the |                  |
-|        |                  |     object]{.ul} |                  |
-|        |                  |     from list    |                  |
-|        |                  |     provided     |                  |
-|        |                  |                  |                  |
-|        |                  | -   Select       |                  |
-|        |                  |     [instance    |                  |
-|        |                  |     ID]{.ul}     |                  |
-|        |                  |     (for         |                  |
-|        |                  |     multiple     |                  |
-|        |                  |     objects of   |                  |
-|        |                  |     the same     |                  |
-|        |                  |     type)        |                  |
-|        |                  |                  |                  |
-|        |                  | -   Repeat for   |                  |
-|        |                  |     each object  |                  |
-|        |                  |     of change    |                  |
-+--------+------------------+------------------+------------------+
-|        |                  | > Label the      | ![]              |
-|        |                  | > **tool** (if   | (media/image27.p |
-|        |                  | > present):      | ng){width="1.895 |
-|        |                  |                  | 8333333333333in" |
-|        |                  | -   Draw the     | height="0.9722   |
-|        |                  |     > [bounding  | 222222222222in"} |
-|        |                  |     > box]{.ul}  |                  |
-|        |                  |                  |                  |
-|        |                  | -   Mark the     |                  |
-|        |                  |     > object as  |                  |
-|        |                  |     > Tool       |                  |
-|        |                  |                  |                  |
-|        |                  | -   Select the   |                  |
-|        |                  |     > [name of   |                  |
-|        |                  |     > the        |                  |
-|        |                  |     > tool]{.ul} |                  |
-|        |                  |     > from list  |                  |
-|        |                  |     > provided   |                  |
-|        |                  |                  |                  |
-|        |                  | -   Select       |                  |
-|        |                  |     > [instance  |                  |
-|        |                  |     > ID]{.ul}   |                  |
-|        |                  |     > (for       |                  |
-|        |                  |     > multiple   |                  |
-|        |                  |     > objects of |                  |
-|        |                  |     > the same   |                  |
-|        |                  |     > type)      |                  |
-+--------+------------------+------------------+------------------+
-| 3      | *Label the       | -   Go to the    | ![]              |
-|        | remaining        |     > next frame | (media/image41.p |
-|        | frames*          |                  | ng){width="1.895 |
-|        |                  | -   Adjust the   | 8333333333333in" |
-|        |                  |     > hand boxes | height="0.9861   |
-|        |                  |                  | 111111111112in"} |
-|        |                  | -   Adjust the   |                  |
-|        |                  |     > object of  |                  |
-|        |                  |     > change box |                  |
-|        |                  |                  |                  |
-|        |                  | -   Adjust the   |                  |
-|        |                  |     > tool box   |                  |
-|        |                  |     > (if        |                  |
-|        |                  |     > present)   |                  |
-|        |                  |                  |                  |
-|        |                  | -   Repeat for   |                  |
-|        |                  |     > the        |                  |
-|        |                  |     > remaining  |                  |
-|        |                  |     > frames     |                  |
-+--------+------------------+------------------+------------------+
+| 1 | *Read the narrated action to be labeled* | | *Example*: "C straightens the cloth" ![](media/image25.png)
+| 2 | *Label the contact frame (first frame shown)* | Label right and left hands (if visible), by correcting the existing bounding box or adding a new one. | ![](media/image29.png)
+| | | Label the **object(s) of change**:<br/><br/> - Draw the <ins>bounding box</ins> <br/> - Mark the object as Object of change <br/> - Select the <ins>name of the object</ins> from list provided <br/> - Select <ins>instance ID</ins> (for multiple objects of the same type) <br/> - Repeat for each object of change | ![](media/image36.png)
+| | | Label the **tool** (if present): Draw the <ins>bounding box</ins> <br/> - Mark the object as Tool <br/> - Select the <ins>name of the tool</ins> from list provided <br/> - Select <ins>instance ID</ins> (for multiple objects of the same type) | ![](media/image27.png)
+| 3 | *Label the remaining frames* | Go to the next frame <br/> - Adjust the hand boxes <br/> - Adjust the object of change box <br/> - Adjust the tool box (if present) <br/> - Repeat for the remaining frames | ![](media/image41.png)
 
 ### Stage 3 - Post-condition
 
@@ -697,63 +269,14 @@ frame:
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
-| 1      | *Read the        |                  | *Example:* "C    |
-|        | narrated action  |                  | straightens the  |
-|        | to be labeled*   |                  | cloth"![]        |
-|        |                  |                  | (media/image25.p |
-|        |                  |                  | ng){width="1.895 |
-|        |                  |                  | 8333333333333in" |
-|        |                  |                  | height="0.9861   |
-|        |                  |                  | 111111111112in"} |
-+--------+------------------+------------------+------------------+
-| 2      | *Check the       | Contact frame    |                  |
-|        | contact frame    | will already be  |                  |
-|        | (first frame     | labeled with:    |                  |
-|        | shown)*          |                  |                  |
-|        |                  | -   Left hand    |                  |
-|        |                  |     > (if        |                  |
-|        |                  |     > visible)   |                  |
-|        |                  |                  |                  |
-|        |                  | -   Right hand   |                  |
-|        |                  |     > (if        |                  |
-|        |                  |     > visible)   |                  |
-|        |                  |                  |                  |
-|        |                  | -   Active       |                  |
-|        |                  |     > object     |                  |
-|        |                  |                  |                  |
-|        |                  | -   Tool (if     |                  |
-|        |                  |                  |                  |
-|        |                  |    > applicable) |                  |
-+--------+------------------+------------------+------------------+
-|        |                  |                  |                  |
-+--------+------------------+------------------+------------------+
-| 3      | *Label the       | -   Go to the    | ![]              |
-|        | remaining        |     > next frame | (media/image37.p |
-|        | frames*          |                  | ng){width="1.895 |
-|        |                  | -   Adjust (or   | 8333333333333in" |
-|        |                  |     > add) the   | height="0.9722   |
-|        |                  |     > hand boxes | 222222222222in"} |
-|        |                  |                  |                  |
-|        |                  | -   Adjust the   |                  |
-|        |                  |     > object of  |                  |
-|        |                  |     > change box |                  |
-|        |                  |                  |                  |
-|        |                  | -   Adjust the   |                  |
-|        |                  |     > tool box   |                  |
-|        |                  |     > (if        |                  |
-|        |                  |     > present)   |                  |
-|        |                  |                  |                  |
-|        |                  | -   Repeat for   |                  |
-|        |                  |     > the        |                  |
-|        |                  |     > remaining  |                  |
-|        |                  |     > frames     |                  |
-+--------+------------------+------------------+------------------+
-
+| 1 | *Read the narrated action to be labeled* | | *Example:* "C straightens the cloth"<br/> ![](media/image25.png)
+| 2 | *Check the contact frame (first frame shown)* | Contact frame will already be labeled with: <br/> - Left hand (if visible) <br/> - Right hand (if visible) <br/> - Active object <br/> - Tool (if applicable)
+| 3 | *Label the remaining frames* | - Go to the next frame <br/> - Adjust (or add) the hand boxes <br/> - Adjust the object of change box <br/> - Adjust the tool box (if present) <br/> - Repeat for the remaining frames | ![](media/image37.png)
 ## Audio-Visual Diarization & Social (AVS)
 
 **Objective:**
 
--   **AV**: Locate each speaker spatially and temporally, segment and transcribe the speech content (in a given video), assign each speaker an anonymous label. 
+-   **AV**: Locate each speaker spatially and temporally, segment and transcribe the speech content (in a given video), assign each speaker an anonymous label.
 
 -   **S:** predict the following social cues:
 
@@ -781,77 +304,18 @@ visible in the video
 
 **Annotation Task:**
 
-| **\#**               | **Step**             | **Sub-step**         |
+| **\#** | **Step**         | **Sub-step**     |
 |--------|------------------|------------------|
-| 1                    | *For each frame in   | 1.  *Subject **has** |
-|                      | the video, identify  |     > a bounding box |
-|                      | all subjects in the  |     > (bbox):*       |
-|                      | frame and check to   |                      |
-|                      | see if they have     |     a.  *Bbox is     |
-|                      | bounding boxes.*     |                      |
-|                      |                      |        > **PASSING** |
-|                      |                      |         > → Move     |
-|                      |                      |         > onto the   |
-|                      |                      |         > next       |
-|                      |                      |         > subject in |
-|                      |                      |         > the frame* |
-|                      |                      |                      |
-|                      |                      |     b.  *Bbox is     |
-|                      |                      |                      |
-|                      |                      |        > **FAILING** |
-|                      |                      |         > →          |
-|                      |                      |                      |
-|                      |                      |     > Adjust/Re-draw |
-|                      |                      |         > the bbox   |
-|                      |                      |         > (making    |
-|                      |                      |         > sure the   |
-|                      |                      |         > right face |
-|                      |                      |         > track is   |
-|                      |                      |         > selected)* |
-|                      |                      |                      |
-|                      |                      | 2.  *Subject         |
-|                      |                      |     > **doesn't      |
-|                      |                      |     > have** a bbox  |
-|                      |                      |     > → Create a new |
-|                      |                      |     > bounding box   |
-|                      |                      |     > and either     |
-|                      |                      |     > assign it a    |
-|                      |                      |     > new track o    |
-|                      |                      |     > merge an       |
-|                      |                      |     > existing face  |
-|                      |                      |     > track.*        |
-|                      |                      |                      |
-|                      |                      | 3.  *Bbox does not   |
-|                      |                      |     > capture a face |
-|                      |                      |     > → Delete       |
-|                      |                      |     > bbox.*         |
-+----------------------+----------------------+----------------------+
-| **Examples:**        |                      |                      |
-+----------------------+----------------------+----------------------+
-| **Passing** Bbox     | ![image.png](media   |                      |
-|                      | /image6.png){width=" |                      |
-|                      | 4.104166666666667in" |                      |
-|                      | height="2.           |                      |
-|                      | 2916666666666665in"} |                      |
-+----------------------+----------------------+----------------------+
-| **Failing** bbox     | ![image.png](media/  |                      |
-|                      | image12.png){width=" |                      |
-|                      | 4.104166666666667in" |                      |
-|                      | height="2.           |                      |
-|                      | 2916666666666665in"} |                      |
-+----------------------+----------------------+----------------------+
-| **Missing** bbox     | ![image.png](media/  |                      |
-|                      | image23.png){width=" |                      |
-|                      | 4.104166666666667in" |                      |
-|                      | height="2.           |                      |
-|                      | 2916666666666665in"} |                      |
-+----------------------+----------------------+----------------------+
-| Bbox to be           | ![image.png](media/  |                      |
-| **deleted**          | image20.png){width=" |                      |
-|                      | 4.104166666666667in" |                      |
-|                      | height="2.           |                      |
-|                      | 3055555555555554in"} |                      |
-+----------------------+----------------------+----------------------+
+| 1 | *For each frame in the video, identify all subjects in the frame and check to see if they have bounding boxes.* | 1. Subject has a bounding box (bbox): <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Bbox is PASSING  →  Move onto the next subject in the frame. <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Bbox is FAILING → Adjust/Re-draw the bbox (making sure the right face track is selected) <br/> 2. Subject doesn't have a bbox → Create a new bounding box and either assign it a new track or merge an existing face track. <br/> 3. Bbox does not capture a face → Delete bbox.
+
+**Examples:**
+
+||
+|--------|------------------|
+| **Passing** Bbox | ![](media/image6.png)
+| **Failing** Bbox | ![](media/image12.png)
+| **Missing** Bbox | ![](media/image23.png)
+| Bbox to be **deleted** | ![](media/image20.png)
 
 ### AV Step 2: Speaker Labeling and AV anchor extraction
 
@@ -861,124 +325,32 @@ is present in the camera for 500+ frames).
 
 **Annotation Task:**
 
-| **\#**               | **Step**             | **Sub-step**         |
+| **\#** | **Step**         | **Sub-step**     |
 |--------|------------------|------------------|
-| 1                    | *Identify the 'Next  | 1.  *Toggle On the   |
-|                      | Track' and go to the |     'Out-of-Frame'   |
-|                      | first frame of this  |     Track List*      |
-|                      | track.*              |                      |
-|                      |                      | 2.  *Select the next |
-|                      |                      |     Track from the   |
-|                      |                      |     list*            |
-|                      |                      |                      |
-|                      |                      | 3.  *Click 'First    |
-|                      |                      |     Key Frame'*      |
-+----------------------+----------------------+----------------------+
-| 2                    | *Assign this Track a | 1.  *Use the drop    |
-|                      | unique 'Person ID'   |     down menu to     |
-|                      | (e.g. Person 1,      |     select a Person  |
-|                      | Person 2, ect)*      |     ID*              |
-|                      |                      |                      |
-|                      |                      | 2.  *Each time this  |
-|                      |                      |     person appears   |
-|                      |                      |     in the video,    |
-|                      |                      |     assign their     |
-|                      |                      |     Track \# to      |
-|                      |                      |     their designated |
-|                      |                      |     Person ID*       |
-+----------------------+----------------------+----------------------+
-| 3                    | *Repeat steps 1-4    |                      |
-|                      | until all tracks     |                      |
-|                      | have Person ID's     |                      |
-|                      | assigned.*           |                      |
-+----------------------+----------------------+----------------------+
-| **Examples:**        |                      |                      |
-+----------------------+----------------------+----------------------+
-| [[AV - Step 2 -      |                      |                      |
-| Person ID Example    |                      |                      |
-| Annot                |                      |                      |
-| ation.mp4](htt |                      |                      |
-| ps://drive.google.co |                      |                      |
-| m/file/d/1R1R1BXXMTx |                      |                      |
-| FsZKl98tM73gIWRrMCZj |                      |                      |
-| O2/view?usp=sharing) |                      |                      |
-|                      |                      |                      |
-| ![](media/           |                      |                      |
-| image26.png){width=" |                      |                      |
-| 6.203125546806649in" |                      |                      |
-| height="2            |                      |                      |
-| .077746062992126in"} |                      |                      |
-+----------------------+----------------------+----------------------+
+| 1 | *Identify the 'Next Track' and go to the first frame of this track.* | 1. Toggle On the 'Out-of-Frame' Track List <br/> 2. Select the next Track from the list <br/> 3. Click 'First Key Frame'
+| 2 | *Assign this Track a unique ‘Person ID’ (e.g. Person 1, Person 2, ect)* | 1. Use the drop down menu to select a Person ID <br/> 2. Each time this person appears in the video, assign their Track # to their designated Person ID
+| 3 | *Repeat steps 1-4 until all tracks have Person ID’s assigned.*
 
+**Examples:**
+
+| [AV - Step 2 - Person ID Example Annotation.mp4](https://drive.google.com/file/d/1R1R1BXXMTxFsZKl98tM73gIWRrMCZjO2/view?usp=sharing) ![](media/image26.png) <br/>  |
+|--------------------------|
 ### AV Step 3: Speech Segmentation (Per Speaker)
 
 **Objective:** Label voice activity for all subjects in the video.
 
 **Annotation:**
 
-| **\#**               | **Step**             | **Sub-step**         |
+| **\#** | **Step**         | **Sub-step**     |
 |--------|------------------|------------------|
-| 1                    | *Label voice         | 1.  Annotate the     |
-|                      | activity for the     |     video using the  |
-|                      | **camera wearer**    |     time segment     |
-|                      | first and then for   |     tool             |
-|                      | each Person ID.*     |                      |
-|                      |                      | 2.  Start an         |
-|                      |                      |     annotation when  |
-|                      |                      |     a person makes a |
-|                      |                      |     sound (speech,   |
-|                      |                      |     coughing, sigh,  |
-|                      |                      |     **any            |
-|                      |                      |     utterance**).    |
-|                      |                      |                      |
-|                      |                      | 3.  Stop an          |
-|                      |                      |     annotation when  |
-|                      |                      |     a person stops   |
-|                      |                      |     making sounds.   |
-|                      |                      |                      |
-|                      |                      | 4.  Do not stop an   |
-|                      |                      |     annotation if a  |
-|                      |                      |     person starts    |
-|                      |                      |     making sound     |
-|                      |                      |     again within 1   |
-|                      |                      |     second after     |
-|                      |                      |     they stopped     |
-|                      |                      |                      |
-|                      |                      | 5.  Label the        |
-|                      |                      |     segment          |
-|                      |                      |     according to the |
-|                      |                      |     Person ID        |
-|                      |                      |     displayed in the |
-|                      |                      |     bounding box     |
-|                      |                      |     around their     |
-|                      |                      |     head             |
-|                      |                      |                      |
-|                      |                      | 6.  Repeat the       |
-|                      |                      |     process for all  |
-|                      |                      |     sounds made by   |
-|                      |                      |     the people in    |
-|                      |                      |     the video.       |
-+----------------------+----------------------+----------------------+
-| **Examples:**        |                      |                      |
-+----------------------+----------------------+----------------------+
-| [[AV - Step 3 -      |                      |                      |
-| Voice Activity       |                      |                      |
-| Annotation           |                      |                      |
-| Ex                   |                      |                      |
-| ample.mp4](htt |                      |                      |
-| ps://drive.google.co |                      |                      |
-| m/file/d/19zHRx6nC-l |                      |                      |
-| i7wC0ivImC5b-KCjLMES |                      |                      |
-| Pt/view?usp=sharing) |                      |                      |
-|                      |                      |                      |
-| ![](media/           |                      |                      |
-| image34.png){width=" |                      |                      |
-| 6.239583333333333in" |                      |                      |
-| height="2            |                      |                      |
-| .236111111111111in"} |                      |                      |
-+----------------------+----------------------+----------------------+
+| 1 | *Label voice activity for the __camera wearer__ first and then for each Person ID.* | 1. Annotate the video using the time segment tool. <br/> 2. Start an annotation when a person makes a sound (speech, coughing, sigh, any utterance). <br/> 3. Stop an annotation when a person stops making sounds. <br/> 4. Do not stop an annotation if a person starts making sound again within 1 second after they stopped. <br/> 5. Label the segment according to the Person ID displayed in the bounding box around their head. <br/> 6. Repeat the process for all sounds made by the people in the video.
 
-### AV Step 4: Transcription 
+**Examples:**
+
+| [AV - Step 3 - Voice Activity Example Annotation.mp4](https://drive.google.com/file/d/19zHRx6nC-li7wC0ivImC5b-KCjLMESPt/view?usp=sharing) ![](media/image34.png) <br/>  |
+|--------------------------|
+
+### AV Step 4: Transcription
 
 **Objective:** Transcribe voice activity for all subjects in the video.
 
@@ -987,110 +359,35 @@ is present in the camera for 500+ frames).
 **Objective:** Correcting Speech Transcription annotation from Step 4.
 
 **Annotation Task:**
-\[WIP\]):
 
-| **\#**        | **Step**                | **Sub-step**            |
+| **\#** | **Step**         | **Sub-step**     |
 |--------|------------------|------------------|
-| 0             | *Pre-load the           | The task begins with    |
-|               | annotation tool.*       | the pre-load of the     |
-|               |                         | following things:       |
-|               |                         |                         |
-|               |                         | -   Output of AV Step 3 |
-|               |                         |     > (Speech           |
-|               |                         |     > Segmentation per  |
-|               |                         |     > Person ID)        |
-|               |                         |                         |
-|               |                         | -   Output of AV Step 4 |
-|               |                         |     > (Human            |
-|               |                         |     > transcriptions)   |
-|               |                         |                         |
-|               |                         | -   Automatic           |
-|               |                         |     > transcriptions    |
-|               |                         |     > from ASR          |
-|               |                         |     > algorithms.       |
-+---------------+-------------------------+-------------------------+
-| 1             | *For each human         | For each person with    |
-|               | transcription chunk,    | the active voice        |
-|               | identify the            | activity:               |
-|               | corresponding person    |                         |
-|               | IDs with voice activity | -   Listen to the video |
-|               | on*                     |                         |
-|               |                         | -   If the person's     |
-|               |                         |     > speech is = to    |
-|               |                         |     > the content in    |
-|               |                         |     > the transcription |
-|               |                         |     > chunk, then copy  |
-|               |                         |     > this speech       |
-|               |                         |     > content from      |
-|               |                         |     > transcript into a |
-|               |                         |     > new dialog        |
-|               |                         |     > box/tag that      |
-|               |                         |     > corresponds to    |
-|               |                         |     > the person.       |
-+---------------+-------------------------+-------------------------+
-| 2             | *Repeat Step 1 for the  |                         |
-|               | machine generated       |                         |
-|               | transcription chunks.*  |                         |
-+---------------+-------------------------+-------------------------+
-| **Examples:** |                         |                         |
-+---------------+-------------------------+-------------------------+
-| TBU           |                         |                         |
-+---------------+-------------------------+-------------------------+
+| 0 | *Pre-load the annotation tool.* | The task begins with the pre-load of the following things: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Output of AV Step 3 (Speech Segmentation per Person ID) <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Output of AV Step 4 (Human transcriptions) <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Automatic transcriptions from ASR algorithms.
+| 1 | *For each human transcription chunk, identify the corresponding person IDs with voice activity on.* | For each person with the active voice activity: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Listen to the video<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If the person’s speech is = to the content in the transcription chunk, then copy this speech content from transcript into a new dialog box/tag that corresponds to the person.
+| 2 | *Repeat Step 1 for the machine generated transcription chunks* |
 
-### Social Step 1: Camera-Wearer Attention 
+**Examples:**
+
+| < To Be Uploaded > |
+|--------------------------|
+### Social Step 1: Camera-Wearer Attention
 
 **Objective**: Annotate temporal segments in which a person is looking
 at the camera wearer.
 
 **Annotation Task:**
 
-| **\#**               | **Step**             | **Sub-step**         |
+| **\#** | **Step**         | **Sub-step**     |
 |--------|------------------|------------------|
-| 1                    | *Watch the video and |                      |
-|                      | find the time when   |                      |
-|                      | someone is looking   |                      |
-|                      | at the camera        |                      |
-|                      | wearer*              |                      |
-+----------------------+----------------------+----------------------+
-| 2                    | *Annotate the time   | 1.  Start an         |
-|                      | segment using the    |     annotation when  |
-|                      | time segment tool: * |     a person start   |
-|                      |                      |     to look at the   |
-|                      |                      |     camera wearer    |
-|                      |                      |                      |
-|                      |                      | 2.  Stop an          |
-|                      |                      |     annotation when  |
-|                      |                      |     a person stops   |
-|                      |                      |     looking at the   |
-|                      |                      |     camera wearer    |
-|                      |                      |                      |
-|                      |                      | 3.  Label the        |
-|                      |                      |     segment          |
-|                      |                      |     according to the |
-|                      |                      |     Person ID        |
-|                      |                      |     displayed in the |
-|                      |                      |     bounding box     |
-|                      |                      |     around their     |
-|                      |                      |     head             |
-|                      |                      |                      |
-|                      |                      | 4.  Repeat the       |
-|                      |                      |     process for all  |
-|                      |                      |     cases in the     |
-|                      |                      |     video.           |
-+----------------------+----------------------+----------------------+
-| **Examples:**        |                      |                      |
-+----------------------+----------------------+----------------------+
-| [[social_annotation  |                      |                      |
-| _demo.mp4](htt |                      |                      |
-| ps://drive.google.co |                      |                      |
-| m/file/d/10Z0Ge0bIXJ |                      |                      |
-| NbhUZ61iT0bckCj1Vno- |                      |                      |
-| G7/view?usp=sharing) |                      |                      |
-|                      |                      |                      |
-| ![](media/image17.png) | | |
-+----------------------+----------------------+----------------------+
+| 1 | *Watch the video and find the time when someone is looking at the camera wearer* |
+| 2 | *Annotate the time segment using the time segment tool:* | 1. Start an annotation when a person start to look at the camera wearer. <br/> 2. Stop an annotation when a person stops looking at the camera wearer. <br/> 3. Label the segment according to the Person ID displayed in the bounding box around their head. <br/> 4. Repeat the process for all cases in the video.
 
-### Social Step 2: Speech Target Classification 
+**Examples:**
+
+| [social_annotation_demo.mp4](https://drive.google.com/file/d/10Z0Ge0bIXJNbhUZ61iT0bckCj1Vno-G7/view?usp=sharing) <br/> ![](media/image17.png) |
+|--------------------------|
+
+### Social Step 2: Speech Target Classification
 
 **Objective**: Given already annotated AV Voice Activity segmentation,
 the annotator is going to annotate the particular speech segments in
@@ -1098,87 +395,12 @@ which the person is talking to the camera wearer.
 
 **Annotation Task:**
 
-| **\#**               | **Step**             | **Sub-step**         |
+| **\#** | **Step**         | **Sub-step**     |
 |--------|------------------|------------------|
-| 1                    | *Watch the video     |                      |
-|                      | with AV voice        |                      |
-|                      | segmentation results |                      |
-|                      | (start-end time,     |                      |
-|                      | person ID)*          |                      |
-+----------------------+----------------------+----------------------+
-| 2                    | *Annotate segments   | 1.  *Identify a      |
-|                      | where someone is     |     > segment in     |
-|                      | talking to the       |     > which someone  |
-|                      | camera wearer*       |     > is talking to  |
-|                      |                      |     > the camera     |
-|                      | *Repeat the process  |     > wearer*        |
-|                      | for all cases in the |                      |
-|                      | video.*              | 2.  *Click the time  |
-|                      |                      |     > segment, then  |
-|                      |                      |     > you can see    |
-|                      |                      |     > the Voice      |
-|                      |                      |     > activity       |
-|                      |                      |     > annotation     |
-|                      |                      |     > information on |
-|                      |                      |     > the left side  |
-|                      |                      |     > bar.*          |
-|                      |                      |                      |
-|                      |                      | 3.  *Click the drop  |
-|                      |                      |     > down box below |
-|                      |                      |     > the "Target of |
-|                      |                      |                      |
-|                      |                      |  > Speech"*![](media |
-|                      |                      | /image8.png){width=" |
-|                      |                      | 3.198122265966754in" |
-|                      |                      |     > height="1      |
-|                      |                      | .030867235345582in"} |
-|                      |                      |                      |
-|                      |                      | 4.  *In the dropdown |
-|                      |                      |     > menu, select   |
-|                      |                      |                      |
-|                      |                      |    > "Camera-Wearer" |
-|                      |                      |     > if the speech  |
-|                      |                      |     > is only toward |
-|                      |                      |     > the camera     |
-|                      |                      |     > wearer.*       |
-|                      |                      |                      |
-|                      |                      | 5.  *Choose          |
-|                      |                      |     > "Camera-Wearer |
-|                      |                      |     > and others" if |
-|                      |                      |     > the speech     |
-|                      |                      |     > segment is     |
-|                      |                      |     > toward         |
-|                      |                      |     > multiple       |
-|                      |                      |     > people         |
-|                      |                      |     > including the  |
-|                      |                      |     > camera wearer  |
-|                      |                      |     > (e.g., talking |
-|                      |                      |     > to multiple    |
-|                      |                      |     > audience       |
-|                      |                      |     > members).*     |
-|                      |                      |                      |
-|                      |                      | 6.  *Repeat the      |
-|                      |                      |     > process for    |
-|                      |                      |     > all relevant   |
-|                      |                      |     > segments.*     |
-+----------------------+----------------------+----------------------+
-| **Examples:**        |                      |                      |
-+----------------------+----------------------+----------------------+
-| [[social_step2_ex    |                      |                      |
-| ample.mp4](htt |                      |                      |
-| ps://drive.google.co |                      |                      |
-| m/file/d/1KUuaEr86sa |                      |                      |
-| nTGI0-oNAYlgrvxru1TN |                      |                      |
-| fw/view?usp=sharing) |                      |                      |
-|                      |                      |                      |
-| ![](media/           |                      |                      |
-| image40.png){width=" |                      |                      |
-| 6.239583333333333in" |                      |                      |
-| height="3.           |                      |                      |
-| 6666666666666665in"} |                      |                      |
-+----------------------+----------------------+----------------------+
+| 1 | *Watch the video with AV voice segmentation results (start-end time, person ID)* |
+| 2 | *Annotate segments where someone is talking to the camera wearer. Repeat the process for all cases in the video.* | 1. Identify a segment in which someone is talking to the camera wearer. <br/> 2. Click the time segment, then you can see the Voice activity annotation information on the left side bar. <br/> 3. Click the drop down box below the "Target of Speech."<br/>![](media/image8.png) <br/> 4. In the dropdown menu, select "Camera-Wearer" if the speech is only toward the camera wearer. <br/> 5. Choose "Camera-Wearer and others" if the speech segment is toward multiple people including the camera wearer (e.g., talking to multiple audience members). <br/> 6. Repeat the process for all relevant segments.
 
+**Examples:**
 
-<table>
-    <tr><td></td><td></td></tr>
-</table>
+| [social_step2_example.mp4](https://drive.google.com/file/d/1KUuaEr86sanTGI0-oNAYlgrvxru1TNfw/view?usp=sharing) <br/> ![](media/image40.png) |
+|--------------------------|
