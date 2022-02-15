@@ -8,12 +8,12 @@ Let's first walk through downloading the core dataset, what options are availabl
 
 The rough flow for a typical researcher will be:
 
-1. [Review and accept the terms of our license agreement.](#EGO4D-License-Agreement)  (It takes 48 to receive credentials - do this first.)
-1. [Download the CLI.](#Download-The-CLI)
-1. [Select your subset of interest](#Select-Your-Subset-Of-Interest)
-1. [Download The Data](#Download-The-Data)
+1. [Review and accept the terms of our license agreement.](#license-agreement)  (It takes 48 to receive credentials - do this first.)
+1. [Download the CLI.](#cli-download)
+1. [Select your subset of interest](#select-subset)
+1. [Download The Data](#download-data)
 
-## EGO4D License Agreement
+## EGO4D License Agreement {#license-agreement}
 
 Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms.  [Go here (ego4ddataset.com)](https://ego4ddataset.com/) to review and execute this agreement, and you will be emailed a set of AWS access credentials when your license agreement is approved, which will take ~ 48 hrs.  (In the meantime, you can check out data overview & sample notebooks here to get familiar with the dataset, and can download the CLI & dataloaders to get setup in advance.)
 
@@ -26,15 +26,15 @@ Also note that once approved your access credentials will expire in 14 days - yo
 Meta AI licenses annotations on all EGO4D data under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
 
 
-## Download The CLI
+## Download The CLI {#cli-download}
 
 Download the CLI from **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
 
-## Select Your Subset Of Interest
+## Select Your Subset Of Interest {#select-subset}
 
 For most purposes, you'll want to select the baseline, benchmark, scenario, or data type of interest first, and then specify the subset accordingly rather than downloading the full (> 5TB) dataset.  Please refer to the **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)** documentation for the dataset commands, the approximate sizing below, and the [benchmark](./benchmarks/overview.md) and [annotation](./annotations.md) documentation for details of what's available.
 
-## Download The Data
+## Download The Data {#download-data}
 
 Run the CLI to download the dataset (likely to a network share if you're download the full scale videos):
 
