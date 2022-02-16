@@ -1,5 +1,5 @@
 ---
-title: "Ego4D Data Overview"
+title: "Annotation Guidelines"
 sidebar_position: 4
 ---
 
@@ -21,6 +21,7 @@ ego-centric video for public release.
 **Devices:**
 
 ![](media/image7.png)
+
 
 **Scenario breakdown:**
 
