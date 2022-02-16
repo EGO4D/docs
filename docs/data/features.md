@@ -4,6 +4,14 @@ sidebar_position: 7
 
 # Features
 
+Pre-extracted feature vectors are available for every video in the
+dataset. They can be accessed with the **[EGO4D
+CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
+with the `--features` option.
+
+
+## Description
+
 Here is a table of the features pre-extracted from Ego4D. These
 features are extracted from the canonical videos. Canonical videos are
 all 30FPS.
