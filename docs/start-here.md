@@ -43,8 +43,8 @@ python -m ego4d.cli.cli --output_directory="~/ego4d_data" --datasets full_scale 
 ```
 
 
-:::tip Standard Dataset
-This would download the full 5 TB videos + annotations.  Use ```--standard``` to get started with just the annotations and visualization data to explore the dataset before selecting which subset you're interested in.
+:::tip Visualization First
+This would download the full 5 TB videos + annotations.  Use ```--datasets viz``` and follow the [visualization setup](https://github.com/facebookresearch/Ego4d/blob/main/viz/narrations/README.md) to explore the dataset before selecting which subset you're interested in.
 :::
 
 
@@ -66,6 +66,6 @@ Note this is a video dataset and as such the downloads are large!  Approximate d
 |  Episodic Memory Only | ~         |
 |  AV/Social Only       | ~         |
 
-:::note
+:::note Download Time
 Average broadband speeds are in the ~100 Mbps ballpark.  For 5 TB, you're looking at ~5 days to download.
 :::

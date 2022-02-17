@@ -8,9 +8,8 @@ sidebar_position: 1
 
 ## [Hands and Objects](./hands-and-objects.md)
 
-## [Audio-Visual Diarization](./AV-diarization.md)
+## [Audio-Visual Diarization](./av-diarization.md)
 
-## [Social Interactions](./Social.md)
+## [Social Interactions](./social.md)
 
 ## [Forecasting](./forecasting.md)
-
