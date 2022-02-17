@@ -45,19 +45,7 @@ const config = {
           src: 'img/ego-4d-logo.png',
           srcDark: 'img/ego-4d-logo-dark.png',
         },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Start Here',
-          },
-          {
-            href: 'https://github.com/EGO4D/',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+        items: [],
       },
       footer: {
         style: 'dark',
@@ -67,16 +55,19 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/intro',
+                to: '/',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/ego4d',
+                label: 'Data Overview',
+                to: '/data-overview',
+              },
+              {
+                label: 'Ego4D Challenge',
+                to: '/challenge',
+              },
+              {
+                label: 'Contact Us',
+                to: '/contact',
               },
             ],
           },
@@ -91,6 +82,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/Ego4d',
               },
+              {
+                label: 'Ego4D Main Site',
+                href: 'https://ego4d-data.org/'
+              }
             ],
           },
         ],

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
 # Welcome To EGO4D!
@@ -11,4 +12,3 @@ EGO4D is the world's largest egocentric (first person) video ML dataset and benc
 [Read the paper here](https://arxiv.org/abs/2110.07058) for a more complete introduction.
 
 [Read about the benchmarks here](./benchmarks/overview.md) for details on the specific tasks and annotations.
-
