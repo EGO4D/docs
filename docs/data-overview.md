@@ -11,12 +11,12 @@ ego-centric video for public release.
 
 ## Key Information
 
--   \~3,400 hours of unscripted, in-the-wild video data across:
+-   \3,670 hours of unscripted, in-the-wild video data across:
     > 9 countries from 13 different partner groups (+ 400 hours from Meta's reality labs).
 
     > 926 unique camera-wears recording 120 different scenarios, with hundreds of different actions and objects
 
-    > 2.5M dense textual "narrations" (= individual text sentences describing \~2,600 hours of video data)\"
+    > 2.5M dense textual "narrations" (= individual text sentences describing the entirety of the video data)\"
 
 **Devices:**
 
@@ -34,7 +34,7 @@ ego-centric video for public release.
 | **Pre-annotations**       |                           |            |
 | [Narrations](#pre-annotations-narrations)   | Dense written sentence narrations in English & a summary of the whole video clip |  Full Dataset |
 | **Episodic Memory (EM)**       |                           |            |
-| [Natural Language Queries](#natural-language-queries)      | N free-form natural anguage queries per video (N=length of video in minutes) selected from a list of query templates + temporal response window from which answers can be deduced        | \~240h     |
+| [Natural Language Queries](#natural-language-queries)      | N free-form natural language queries per video (N=length of video in minutes) selected from a list of query templates + temporal response window from which answers can be deduced        | \~240h     |
 | [Moments](#moments) | Temporal localizations of high level events in a long video clip from a provided taxonomy         |       \~300h     |
 | [Visual Object Queries](#visual-object-queries)      | For N=3 **query objects** (freely chosen and **named** by the annotator) such that each appears at least twice at separate times in a single video, annotations include: <br/> \(1\) **response track**: bounding boxes over time for one continuous occurrence of the query object; <br/> \(2\) **query frame**: a frame that *does* *not* contain the query object, sometime after the response track but before any subsequent occurrence of the object; <br/> \(3\) **visual crop**:  bounding box of a single frame from another occurrence of the same object elsewhere in the video (before or after the originally marked instance)                 |      \~403h      |
 | **Forecasting + Hands & Objects (FHO)**           |                           |            |
@@ -70,8 +70,6 @@ taxonomy of labels for actions and objects.
 | 2 | *Provide a Summary of the Entire Video* | As needed, watch the entire video on fast forward to recall the content of the entire video.<br/><br/>Provide a short summary in text about the contents of the entire video (1-3 sentences).<br/><br/>This summary should convey the main setting(s) of the video clip (e.g., an apartment, a restaurant, a shop, etc.) as well as an overview of what happened.|#summary C fixed their breakfast, ate it, then got dressed and left the house."
 
 **Annotated video examples:**
-
-[Example Reel](https://drive.google.com/file/d/14NrVdpYT2RyJU_rKG99AkIToIwNO6JEY/view?usp=sharing)
 
 ![](media/image35.png)![](media/image32.png)
 
@@ -134,7 +132,7 @@ video.
 | 3 | *Repeat this process N=length of video in minutes creating N diverse language queries* | |
 
 
-**Annotation Stats (TODO: Jul 21):**
+**Annotation Stats:**
 
 -   **Total hours annotated:** \~240 (x2; one for each vendor)
 
@@ -167,9 +165,9 @@ activity X was last seen.
 | 1 | *Review the Taxonomy* | | ![](media/image15.png) |
 | 2 | *Annotate the Video* | 1. Play the video until you observe an activity, then pause.<br/>2. Draw a temporal window around the time span where the activity occurs. <br/> 3. Select from the dropdown list the name for that activity. <br/> 4. Play the video from the start of the previous activity, repeat steps 1-3. | ![](media/image45.png)
 
-**Annotation Stats (Jul 21):**
+**Annotation Stats:**
 
--   **Total hours annotated:** \~300 (x3 annotators)
+-   **Total hours annotated:** \~328 (x3 annotators)
 
 ### Visual Object Queries
 
@@ -194,9 +192,9 @@ recent instance of X, and outlines it in a short track**.**
 | 5 | *__Name the object__ using the __free text__ box* | |
 | 6 | *Repeat Steps 1-5 three times for the same video clip and different objects* | |
 
-**Annotation Stats (Jul 21):**
+**Annotation Stats:**
 
--   **Total hours annotated:** \~403
+-   **Total hours annotated:** \~432
 
 > ![](media/image1.png)
 
