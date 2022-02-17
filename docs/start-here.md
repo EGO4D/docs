@@ -57,6 +57,7 @@ Note this is a video dataset and as such the downloads are large!  Approximate d
 |  **Data Types**       | **Size**  |
 |  Full Scale Videos    | ~ 5 TB    |
 |  Annotations          | ~ 2 GB    |
+|  Benchmark Clips      | ~ 1 TB    |
 |  Visualization Data   | ~ 500 MB  |
 |                       |           |
 |  **Benchmark Subset** | **Size**  |

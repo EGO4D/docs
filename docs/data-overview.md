@@ -1,9 +1,10 @@
 ---
-title: "Annotation Guidelines"
+title: "Data Overview"
 sidebar_position: 4
 ---
 
-**WIP: Includes internal links to be resolved**
+This page contains context mostly on the annotation guidelines used in each tasks.  Please also see [annotations](./data/annotations.md) for the specific formats and [benchmark tasks](./benchmarks/overview.md) for more detail on the tasks themselves and links to the 
+
 ## Background
 
 **One-liner:** Building a densely-annotated dataset of \~10,000 hours of
@@ -11,7 +12,7 @@ ego-centric video for public release.
 
 ## Key Information
 
--   \3,670 hours of unscripted, in-the-wild video data across:
+-   3,670 hours of unscripted, in-the-wild video data across:
     > 9 countries from 13 different partner groups (+ 400 hours from Meta's reality labs).
 
     > 926 unique camera-wears recording 120 different scenarios, with hundreds of different actions and objects
@@ -75,7 +76,7 @@ taxonomy of labels for actions and objects.
 
 **Annotation Stats**
 
--   **Total hours narrated:** 3400
+-   **Total hours narrated:** 3670
 
 -   **Unique scenarios:** 51
 
@@ -240,14 +241,13 @@ a.  Example: "light blowtorch"
 b.  Example: "put down wood" (object already in hands, no CONTACT frame)
 > ![](media/image39.jpg)
 
-c.  [Video Examples](https://drive.google.com/file/d/1Fvg6ddceiVAbOru69XXB3PExuZAPd7ad/view?usp=sharing)
-
 ### Stage 2 - Pre-condition
 
 **Objective:** Label bounding boxes and roles for hands (right/left) and
 objects (objects of change and tools).
 
-**Annotation Task:** (see [Annotation instructions](https://docs.google.com/document/d/1bjbjJVFEUnl_GnTFmjfZry49_7c7DdR_RBotyjLoGgM/edit?usp=sharing) and [video tutorial](https://drive.google.com/file/d/14gXr6yMb815L79jp0QN_n2X9e_OXpqIa/view)) <ins>Note</ins>: clips annotated from previous stage play in reverse from CONTACT to PRE frame:
+**Annotation Task:** 
+<ins>Note</ins>: clips annotated from previous stage play in reverse from CONTACT to PRE frame:
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
 |--------|------------------|------------------|------------------|
@@ -330,9 +330,6 @@ is present in the camera for 500+ frames).
 | 2 | *Assign this Track a unique ‘Person ID’ (e.g. Person 1, Person 2, ect)* | 1. Use the drop down menu to select a Person ID <br/> 2. Each time this person appears in the video, assign their Track # to their designated Person ID
 | 3 | *Repeat steps 1-4 until all tracks have Person ID’s assigned.*
 
-**Examples:**
-
-| [AV - Step 2 - Person ID Example Annotation.mp4](https://drive.google.com/file/d/1R1R1BXXMTxFsZKl98tM73gIWRrMCZjO2/view?usp=sharing) ![](media/image26.png) <br/>  |
 |--------------------------|
 ### AV Step 3: Speech Segmentation (Per Speaker)
 
@@ -344,9 +341,6 @@ is present in the camera for 500+ frames).
 |--------|------------------|------------------|
 | 1 | *Label voice activity for the __camera wearer__ first and then for each Person ID.* | 1. Annotate the video using the time segment tool. <br/> 2. Start an annotation when a person makes a sound (speech, coughing, sigh, any utterance). <br/> 3. Stop an annotation when a person stops making sounds. <br/> 4. Do not stop an annotation if a person starts making sound again within 1 second after they stopped. <br/> 5. Label the segment according to the Person ID displayed in the bounding box around their head. <br/> 6. Repeat the process for all sounds made by the people in the video.
 
-**Examples:**
-
-| [AV - Step 3 - Voice Activity Example Annotation.mp4](https://drive.google.com/file/d/19zHRx6nC-li7wC0ivImC5b-KCjLMESPt/view?usp=sharing) ![](media/image34.png) <br/>  |
 |--------------------------|
 
 ### AV Step 4: Transcription
@@ -381,9 +375,6 @@ at the camera wearer.
 | 1 | *Watch the video and find the time when someone is looking at the camera wearer* |
 | 2 | *Annotate the time segment using the time segment tool:* | 1. Start an annotation when a person start to look at the camera wearer. <br/> 2. Stop an annotation when a person stops looking at the camera wearer. <br/> 3. Label the segment according to the Person ID displayed in the bounding box around their head. <br/> 4. Repeat the process for all cases in the video.
 
-**Examples:**
-
-| [social_annotation_demo.mp4](https://drive.google.com/file/d/10Z0Ge0bIXJNbhUZ61iT0bckCj1Vno-G7/view?usp=sharing) <br/> ![](media/image17.png) |
 |--------------------------|
 
 ### Social Step 2: Speech Target Classification
@@ -399,7 +390,4 @@ which the person is talking to the camera wearer.
 | 1 | *Watch the video with AV voice segmentation results (start-end time, person ID)* |
 | 2 | *Annotate segments where someone is talking to the camera wearer. Repeat the process for all cases in the video.* | 1. Identify a segment in which someone is talking to the camera wearer. <br/> 2. Click the time segment, then you can see the Voice activity annotation information on the left side bar. <br/> 3. Click the drop down box below the "Target of Speech."<br/>![](media/image8.png) <br/> 4. In the dropdown menu, select "Camera-Wearer" if the speech is only toward the camera wearer. <br/> 5. Choose "Camera-Wearer and others" if the speech segment is toward multiple people including the camera wearer (e.g., talking to multiple audience members). <br/> 6. Repeat the process for all relevant segments.
 
-**Examples:**
-
-| [social_step2_example.mp4](https://drive.google.com/file/d/1KUuaEr86sanTGI0-oNAYlgrvxru1TNfw/view?usp=sharing) <br/> ![](media/image40.png) |
 |--------------------------|

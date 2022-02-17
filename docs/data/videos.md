@@ -4,22 +4,15 @@ sidebar_position: 0
 
 # Videos
 
-Videos are sourced from a variety of devices in a variety of
-scenarios.
+Videos are sourced from a variety of devices, locations and participants across a wide range of
+scenarios.  The original source videos (**video components**) that were captured by university participants were composed into standardized, full length videos (**canonical videos**, the primary videos in the dataset).  Shorter clips of the longer videos were then annotated to generate the dataset annotations, and finally shorter **canonical clips** were formed from the videos and exported with the dataset.
 
-Each video is composed of multiple video files (termed "video
-component") that are associated to one larger parent video. For
-example, a 30minute recording is commonly split up into three 10minute
-chunks.
+Accordingly, video data is available in three forms for the dataset. Each form can be identified with a unique identifier string (uuid4):
+1. **Canonical videos** - Derived from the video components
+2. **Canonical Clips** - Clips associated to specific [annotation](annotations.md) data and derived from the canonical videos.
+3. Video Components - The raw components used to construct the videos and primary provided as an ancillarly export for thoroughness.
 
-Video data is available in three forms. Each form can be identified with a unique identifier string (uuid4):
-1. **Canonical videos** (derived from the video components)
-2. **Canonical Clips**
-   - Clips associated to specific [annotation](annotations.md) data.
-   - These clips are derived from the canonical videos
-3. Video Components
-
-The canonical videos or the canonical clips are the **reccomended** way to use the dataset.
+The canonical videos or the canonical clips are the **recomended** way to use the dataset.
 
 ## Background
 
