@@ -59,7 +59,7 @@ const config = {
               },
               {
                 label: 'Data Overview',
-                to: '/data-overview',
+                to: '/data/data-overview',
               },
               {
                 label: 'Ego4D Challenge',

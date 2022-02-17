@@ -27,13 +27,4 @@ For moments, we established a taxonomy of 110 activities in a data-driven, semi-
 
 For NLQ and VQ, we ask annotators to generate language/visual queries and couple them with the “responsetrack” in the video. For MQ, we provide the taxonomy of labels and ask annotators to label clips with each and every temporal segment containing a moment instance. In total, we have ∼74K total queries spanning 800 hours of video.
 
-# Visual Queries
-
-
-
-# Natural Language Queries
-
-
-
-# Moments
 

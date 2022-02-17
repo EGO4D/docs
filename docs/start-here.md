@@ -32,7 +32,7 @@ Download the CLI from **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/bl
 
 ## Select Your Subset Of Interest {#select-subset}
 
-For most purposes, you'll want to select the baseline, benchmark, scenario, or data type of interest first, and then specify the subset accordingly rather than downloading the full (> 5TB) dataset.  Please refer to the **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)** documentation for the dataset commands, the approximate sizing below, and the [benchmark](./benchmarks/overview.md) and [annotation](./data/annotations.md) documentation for details of what's available.
+For most purposes, you'll want to select the baseline, benchmark, scenario, or data type of interest first, and then specify the subset accordingly rather than downloading the full (> 5TB) dataset.  Please refer to the **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)** documentation for the dataset commands, the approximate sizing below, and the [benchmark](./benchmarks/overview.md) and [annotation](./data/annotation-guidelines.md) documentation for details of what's available.
 
 ## Download The Data {#download-data}
 
