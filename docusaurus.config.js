@@ -56,8 +56,8 @@ const config = {
                 to: '/',
               },
               {
-                label: 'Data Overview',
-                to: '/data/data-overview',
+                label: 'Annotation Guidelines',
+                to: '/data/annotation-guidelines',
               },
               {
                 label: 'Ego4D Challenge',
