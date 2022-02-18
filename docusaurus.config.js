@@ -24,8 +24,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://https://ego4d-data.org/',
           routeBasePath: '/',
         },
         theme: {
