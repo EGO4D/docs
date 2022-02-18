@@ -46,5 +46,5 @@ Let's say a video has 39 frames. The frames for extraction will be (in frame num
 
 ## Implementation
 
-- Read the README on the Ego4D github (TODO link) to run or use the code yourself
+- Read the [README on the Ego4D github](https://github.com/facebookresearch/Ego4d/tree/main/ego4d/features) to run or use the code yourself
 - [UniformClipSampler](https://pytorchvideo.readthedocs.io/en/latest/api/data/data.html?highlight=ClipSampler#pytorchvideo.data.UniformClipSampler) from PytorchVideo is used
