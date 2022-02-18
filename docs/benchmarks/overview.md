@@ -16,10 +16,10 @@ Hands & Objects aims to understand the camera-wearers present activity in terms 
 
 Forecasting movements and interactions requires comprehending the camera wearer’s intention.
 
-## [Audio-Visual Diarization](./benchmarks/AV-diarization.md)
+## [Audio-Visual Diarization](./benchmarks/av-diarization.md)
 
 The Audio-Visual Diarization tasks involve localizing and tracking of the participants, detecting each speaker's activity, and transcribing all speech content.
 
-## [Social Interactions](./benchmarks/Social.md)
+## [Social Interactions](./benchmarks/social.md)
 
 The Social benchmark focuses on multimodal understanding of conversational interactions via attention and speech.
