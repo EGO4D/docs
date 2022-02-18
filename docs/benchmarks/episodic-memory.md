@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Episodic Memory
 
-Benchmark Repo: [https://github.com/EGO4D/episodic-memory](https://github.com/EGO4D/episodic-memory)
+Benchmark Repo: [https://github.com/EGO4D-Consortium/episodic-memory](https://github.com/EGO4D-Consortium/episodic-memory)
 
 ## Motivation 
 
