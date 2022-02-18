@@ -50,23 +50,26 @@ This would download the full 5 TB videos + annotations.  Use ```--datasets viz``
 
 Note this is a video dataset and as such the downloads are large!  Approximate download size:
 
-|  **Dataset**          | **Size**  |
-|-----------------------|-----------|
-|  **Full Dataset**     | ~ 5.5 TB  |
-|                       |           |
-|  **Data Types**       | **Size**  |
-|  Full Scale Videos    | ~ 5 TB    |
-|  Annotations          | ~ 2 GB    |
-|  Benchmark Clips      | ~ 1 TB    |
-|  Visualization Data   | ~ 500 MB  |
-|                       |           |
-|  **Benchmark Subset** | **Size**  |
-|  Narrations Only      | ~ 350 MB  |
-|  Forecasting Only     | ~         |
-|  Hands & Objects Only | ~         |
-|  Episodic Memory Only | ~         |
-|  AV/Social Only       | ~         |
+| **Dataset**          | **Size** |
+|----------------------|----------|
+| **Full Dataset**     | ~7.1 TB  |
+|                      |          |
+| **Data Types**       | **Size** |
+| Full Scale Videos    | ~ 7 TB   |
+| Annotations          | ~ 2 GB   |
+| Benchmark Clips      | ~ 1 TB   |
+| Visualization Data   | ~ 500 MB |
+| Video Components     | ~ 20 TB  |
+| Features             | ~ 220 GB |
+|                      |          |
+| **Benchmark Subset** | **Size** |
+| Narrations Only      | ~ 350 MB |
+| Forecasting Only     | ~        |
+| Hands & Objects Only | ~        |
+| Episodic Memory Only | ~        |
+| AV/Social Only       | ~        |
 
 :::note Download Time
-Average broadband speeds are in the ~100 Mbps ballpark.  For 5 TB, you're looking at ~5 days to download.
+Average broadband speeds are in the ~100 Mbps ballpark. For 7 TB,
+you're looking at ~6-7 days to download.
 :::
