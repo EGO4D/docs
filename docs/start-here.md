@@ -17,14 +17,9 @@ The rough flow for a typical researcher will be:
 
 Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms.  [Go here (ego4ddataset.com)](https://ego4ddataset.com/) to review and execute this agreement, and you will be emailed a set of AWS access credentials when your license agreement is approved, which will take ~48hrs. In the meantime, you can check out data overview & sample notebooks here to get familiar with the dataset, and can download the CLI & dataloaders to get setup in advance.
 
-Note that licenses have the option to execute our license agreements as either an individual or on behalf of your institution. Please carefully consider which approach is most appropriate in your context and engage the cognizant stakeholders at your institution as needed. Our license agreement contains important terms and conditions and should be reviewed carefully before execution.
-
-Additionally, please note that EGO4D is led by an international consortium of 13 universities in partnership with Facebook AI. Each consortium member owns copyrights to the specific data they have collected as part of the initiative. Accordingly, researchers seeking access to EGO4D must individually execute 13 individual licenses with each university partner. Fortunately, all these licenses are essentially identical, simplifying the license reviewing and execution requirements. If you would like a copy of the license to review prior to signing, [go here](https://ego4d-data.org/pdfs/Ego4D-Licenses-Draft.pdf).
+Note that licenses have the option to execute our license agreements as either an individual or on behalf of your institution. You will likely sign the license as an individual. Typically, only institutional signatories at a director or executive level can agree to license terms on behalf of an entire organization.
 
 Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.
-
-Meta AI licenses annotations on all EGO4D data under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-
 
 ## Download The CLI {#cli-download}
 
