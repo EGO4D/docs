@@ -7,7 +7,7 @@ sidebar_position: 7
 Pre-extracted feature vectors are available for every video in the
 dataset. They can be accessed with the **[EGO4D
 CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
-with the `--features` option.
+with the `--dataset slowfast8x8_r101_k400` option.
 
 
 ## Description
