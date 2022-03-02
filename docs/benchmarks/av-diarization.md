@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # AV Diarization
 
+Benchmark Repo: [https://github.com/EGO4D/audio-visual](https://github.com/EGO4D/audio-visual)
+
 ## Motivation
 
 People communicate using spoken language, making the capture of conversational content in business meetings and social settings a problem of great scientific and practical interest. While diarization has been a standard problem in the speech recognition community, Ego4D brings in two new aspects (1) simultaneous capture of video and audio (2) the egocentric perspective of a participant in the conversation.
