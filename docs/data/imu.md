@@ -9,7 +9,7 @@ The IMU data is normalized to a flat CSV file per
 with associated timestamps to the canonical videos and video
 components.
 
-Unprocessed IMU data is not currently available. Some IMU data is
+Unprocessed IMU data is available. Some IMU data is
 available on video components and can be parsed with
 [gpmf-parser](https://github.com/gopro/gpmf-parser).
 
@@ -40,6 +40,27 @@ normalize the IMU data:
 1. IMU timestamps relative to the video stream are found (via a simple offset)
 2. Timestamps are then offset with respect to where each video
    component starts in the canonical videos
+
+:::note
+An assumption is made about the first IMU timestamp, specifically it being aligned to the original container's `t=0` point
+:::
+
+## Artifacts / Known Issues
+
+Please read to understand the limitations
+
+1. Some videos with IMU do not have all components covered, i.e. there are more video components than associated IMU components.
+2. Missing acceleration values for some files
+3. IMU timestamps can be significantly large or small
+   - Due to some unknown artifact when extracting the IMU data
+4. IMU timestamp can be non-monotonic
+   - Either due to the above, or:
+   - This is simply due to the packets of the data from the original extracted IMU data
+     - In this case, the resulting canonical timestamps will be appropriately computed.
+     - **You should sort the data by the canonical timestamp**
+5. No callibration of the IMU was taken place, there is likely measurement bias present for IMU data.
+
+You can query the above issues from the [top level metadata file](./metadata.md).
 
 ## Download
 
