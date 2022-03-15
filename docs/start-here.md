@@ -47,7 +47,8 @@ Note this is a video dataset and as such the downloads are large!  Approximate d
 
 | **Dataset**                          | **Size** |
 |--------------------------------------|----------|
-| **Full Dataset**                     | ~7.1 TB  |
+| **Full Primary Dataset**             | ~7.1 TB  |
+| **Entire Dataset**                   | 30+ TB   |
 |                                      |          |
 | **Data Types**                       | **Size** |
 | Full Scale Videos (canonical videos) | ~ 7 TB   |

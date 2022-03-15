@@ -6,6 +6,10 @@ sidebar_position: 2
 
 Benchmark Repo: [https://github.com/EGO4D/episodic-memory](https://github.com/EGO4D-Consortium/episodic-memory)
 
+:::note Repo Updated
+Please note the repository was moved from the ego4d-consortium account to EGO4D (where the rest of the benchmark code is being released).  If you've already checked out a copy, you'll need to checkout again (or reset).  We apologize for the inconvenience!
+:::
+
 ## Motivation
 
 Egocentric video from a wearable camera records the who/what/when/where of an individual’s daily
