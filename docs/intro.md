@@ -12,7 +12,3 @@ EGO4D is the world's largest egocentric (first person) video ML dataset and benc
 [Read the paper here](https://arxiv.org/abs/2110.07058) for a more complete introduction.
 
 [Read about the benchmarks here](./benchmarks/overview.md) for details on the specific tasks and annotations.
-
-:::note Paper Update Pending
-Please note the current arxiv paper is based on an earlier version of the dataset and an update will be available shortly with numbers reflecting minor changes to the final dataset.
-:::

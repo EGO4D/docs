@@ -2,6 +2,144 @@
 sidebar_position: 9
 ---
 
-# Ego4D Challenge
+# Ego4D Challenge 2022
 
-The EGO4D consortium and Meta will be sponsoring a series of challenges around CVPR '22 for most of the benchmark tasks.  More detail will be released here and on [ego4d-data.org](https://ego4d-data.org/).  Please check back in the near future, and in the meantime check out the [benchmark tasks](./benchmarks/overview.md) and [download the dataset](./start-here.md) to get started.
+## Overview
+
+In 2022, we will host 16 challenges, representing each of Ego4D’s five benchmarks. These are: 
+
+### [Episodic memory](./benchmarks/episodic-memory.md):
+
+* [Visual queries with 2D localization](https://eval.ai/web/challenges/challenge-page/1619/overview) and [VQ 3D localization](https://eval.ai/web/challenges/challenge-page/1646/overview): Given an egocentric video clip and an image crop depicting the query object, return the last time the object was seen in the input video, in terms of the tracked bounding box (2D + temporal localization) or the 3D displacement vector from the camera to the object in the environment. 
+* [Natural language queries](https://eval.ai/web/challenges/challenge-page/1629/overview): Given a video clip and a query expressed in natural language, localize the temporal window within all the video history where the answer to the question is evident.   
+* [Moments queries](https://eval.ai/web/challenges/challenge-page/1626/overview): Given an egocentric video and an activity name (e.g., a “moment”), localize all instances of that activity in the past video 
+
+   
+
+### [Hands and Objects](./benchmarks/hands-and-objects.md): 
+
+* [Temporal localization and classification](https://eval.ai/web/challenges/challenge-page/1622/overview): Given an egocentric video clip, localize temporally the key frames that indicate an object state change and identify what kind of state change it is.
+* [State change object detection](https://eval.ai/web/challenges/challenge-page/1632/overview): Given an egocentric video clip, identify the objects whose states are changing and outline them with bounding boxes. 
+
+### [Audio-Visual Diarization & Social](./benchmarks/av-diarization.md):
+
+* [Audio-visual localization](https://eval.ai/web/challenges/challenge-page/1633/overview): Given an egocentric video clip, localize the speakers in the visual field of view. 
+* [Audio-visual speaker diarization](https://eval.ai/web/challenges/challenge-page/1640/overview): Given an egocentric video clip, identify which person spoke and when they spoke.
+* [Audio-only Diarization Challenge](https://eval.ai/web/challenges/challenge-page/1641/overview)
+* [Speech transcription](https://eval.ai/web/challenges/challenge-page/1637/overview): Given an egocentric video clip, transcribe the speech of each person.
+* Talking to me: Given an egocentric video clip, identify whether someone in the scene is talking to the camera wearer.
+* Looking at me: Given an egocentric video clip, identify whether someone in the scene is looking at the camera wearer.
+
+### [Forecasting](./benchmarks/forecasting.md): 
+
+* **Locomotion forecasting**: Given a video frame and the past trajectory, predict the future ego positions of the camera wearer (in the form of a 3D trajectory).
+* [Hand forecasting](https://eval.ai/web/challenges/challenge-page/1630/overview): Given a short preceding video clip, predict where the hand will be visible in the future, in terms of a bounding box center in keyframes.  
+* [Short-term hand object prediction](https://eval.ai/web/challenges/challenge-page/1623/overview): Given a video clip, predict the next active objects, the next action, and the time to contact. 
+* [Long-term activity prediction](https://eval.ai/web/challenges/challenge-page/1598/overview): Given a video clip, the goal is to predict what sequence of activities will happen in the future? For example, after kneading dough, what will the baker do next?  
+
+### Privacy: 
+
+* Beyond these challenges, we will launch a privacy-oriented challenge in the coming weeks, specifically calling for novel and impactful plans using annotations and data from the Ego4D AV and Social benchmarks for privacy-preserving research. 
+
+## Dataset 
+
+Ego4D challenge participants will use Ego4D’s annotated data set of more than 3,670 hours of video data, capturing the daily-life scenarios of more than 900 unique individuals from nine different countries around the world. Unique train, validation and unannotated test sets are available to download per challenge at [https://ego4d-data.org/docs/](https://ego4d-data.org/docs/). 
+
+## Participation Guidelines
+
+Participate in the contest by registering on the [EvalAI challenge page](https://eval.ai/) and create a team. All participants must register as a part of a “participating team” on EvalAI to ensure the submission limits are honored. Participants will upload their predictions in the format specified for the specific challenge, and will be evaluated on AWS instance by comparing to ground truth predictions. Instructions for training, local evaluation, and online submission are provided at EvalAI. Please refer to the individual EvalAI pages for each challenge for submission guidelines, task specifications, and evaluation criteria: 
+
+* Visual Queries 
+* Natural Language Queries 
+* PNR Temporal Localization 
+* Object State Change Classification
+* Short-term Object Interaction Anticipation 
+* Long-term Action Anticipation
+
+## Dates 
+
+The Ego4D challenge begins with a subset of six competition tracks: 
+
+* Visual Queries 
+* Natural Language Queries 
+* PNR Temporal Localization 
+* Object State Change Classification
+* Short-term Object Interaction Anticipation 
+* Long-term Action Anticipation
+
+For these tracks, the challenge will begin in March 2022 with the leaderboard closing on June 1, 2022. Winners will be announced at the [Joint International 1st Ego4D and 10th EPIC Workshop at CVPR 2022](https://sites.google.com/view/cvpr2022w-ego4d-epic/). 
+
+The remaining challenges will launch later this month and run until October.  The challenges concluding at CVPR would be reopened after the winners are announced, and run until October.
+
+## Competition Rules and Prize Information
+
+Competition rules can be found [here](https://ego4d-interactive-fig1.s3.eu-west-2.amazonaws.com/tc.pdf). Additionally, we are thrilled that FAIR is able to offer the following prize thresholds per challenges: 
+
+* First place: $3,000 
+* Second place: $2,000
+* Third place: $1,000
+
+## Acknowledgements
+
+The Ego4D challenge would not have been possible without the infrastructure and support of the [EvalAI team](https://eval.ai/team). Thank you! 
+
+### Organizers
+
+**Rohit Girdhar**
+
+Santhosh Kumar Ramakrishnan	
+
+Chen Zhao
+
+Merey Ramazanova
+
+Satwik Kottur	
+
+Mengmeng Xu
+
+Vincent Cartillier	
+
+Yifei Huang	
+
+Qichen Fu	
+
+Siddhant Bansal	
+
+Hao Jiang	
+
+Vamsi Ithapu
+
+Jachym Kolar
+
+Christian Fuegen,
+
+Leda Sari
+
+Eric Zhongcong Xu	 
+
+Yunyi Zhu  
+
+Murong Ma 
+
+Zachary Chavis	
+
+Wenqi Jia
+
+Miao Liu
+
+Antonino Furnari	
+
+Tushar Nagarajan
+
+Karttikeya Mangalam 
+
+Dima Damen
+
+Giovanni Maria Farinella
+
+Michael Wray
+
+Gene Byrne
+
+Andrew Westbury
+
