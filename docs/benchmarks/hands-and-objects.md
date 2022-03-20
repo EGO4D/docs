@@ -27,89 +27,89 @@ We select the data to annotate based on activities that are likely to involve ha
 <details>
   <summary>Point-of-no-Return Temporal Localization - fho_hands_&lt;set>.json schema</summary>
 
-- **`version`** *(string)*
-- **`date`** *(string)*
-- **`description`** *(string)*
-- **`manifest`** *(string)*
-- **`split`** *(string)*
-- **`clips`** *(array)*
-  - **Items** *(object)*
-    - **`clip_id`** *(integer)*
-    - **`clip_uid`** *(string)*
-    - **`video_uid`** *(string)*
-    - **`frames`** *(array)*
-      - **Items** *(object)*
-        - **`action_start_sec`** *(number)*
-        - **`action_end_sec`** *(number)*
-        - **`action_start_frame`** *(integer)*
-        - **`action_end_frame`** *(integer)*
-        - **`action_clip_start_sec`** *(number)*
-        - **`action_clip_end_sec`** *(number)*
-        - **`action_clip_start_frame`** *(integer)*
-        - **`action_clip_end_frame`** *(integer)*
-        - **`pre_45`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
-        - **`pre_30`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
-        - **`pre_15`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
-        - **`post_frame`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
-        - **`pre_frame`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
-        - **`pnr_frame`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
-        - **`contact_frame`** *(object)*
-          - **`frame`** *(integer)*
-          - **`clip_frame`** *(integer)*
-          - **`boxes`** *(array)*
-            - **Items** *(object)*
-              - **`left_hand`** *(array)*
-                - **Items** *(number)*
-              - **`right_hand`** *(array)*
-                - **Items** *(number)*
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`manifest`** *(string)*
+  - **`split`** *(string)*
+  - **`clips`** *(array)*
+    - **Items** *(object)*
+      - **`clip_id`** *(integer)*
+      - **`clip_uid`** *(string)*
+      - **`video_uid`** *(string)*
+      - **`frames`** *(array)*
+        - **Items** *(object)*
+          - **`action_start_sec`** *(number)*
+          - **`action_end_sec`** *(number)*
+          - **`action_start_frame`** *(integer)*
+          - **`action_end_frame`** *(integer)*
+          - **`action_clip_start_sec`** *(number)*
+          - **`action_clip_end_sec`** *(number)*
+          - **`action_clip_start_frame`** *(integer)*
+          - **`action_clip_end_frame`** *(integer)*
+          - **`pre_45`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+          - **`pre_30`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+          - **`pre_15`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+          - **`post_frame`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
+          - **`pre_frame`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+          - **`pnr_frame`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+          - **`contact_frame`** *(object)*
+            - **`frame`** *(integer)*
+            - **`clip_frame`** *(integer)*
+            - **`boxes`** *(array)*
+              - **Items** *(object)*
+                - **`left_hand`** *(array)*
+                  - **Items** *(number)*
+                - **`right_hand`** *(array)*
+                  - **Items** *(number)*
 
 </details>
 
@@ -117,63 +117,91 @@ We select the data to annotate based on activities that are likely to involve ha
 <details>
   <summary>State Change Object Detection - fho_scod_&lt;set>.json schema</summary>
 
-- **`version`** *(string)*
-- **`date`** *(string)*
-- **`description`** *(string)*
-- **`split`** *(string)*
-- **`clips`** *(array)*
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`split`** *(string)*
+  - **`clips`** *(array)*
+    - **Items** *(object)*
+      - **`video_uid`** *(string)*
+      - **`clip_id`** *(string)*
+      - **`clip_uid`** *(string)*
+      - **`clip_parent_start_sec`** *(number)*
+      - **`clip_parent_end_sec`** *(number)*
+      - **`clip_parent_start_frame`** *(integer)*
+      - **`clip_parent_end_frame`** *(integer)*
+      - **`pre_frame`** *(object)*
+        - **`frame_number`** *(integer)*
+        - **`clip_frame_number`** *(integer)*
+        - **`width`** *(integer)*
+        - **`height`** *(integer)*
+        - **`bbox`** *(array)*
+          - **Items** *(object)*
+            - **`object_type`** *(string)*
+            - **`structured_noun`** *(['null', 'string'])*
+            - **`instance_number`** *(['integer', 'null'])*
+            - **`bbox`** *(object)*
+              - **`x`** *(number)*
+              - **`y`** *(number)*
+              - **`width`** *(number)*
+              - **`height`** *(number)*
+      - **`pnr_frame`** *(object)*
+        - **`frame_number`** *(integer)*
+        - **`clip_frame_number`** *(integer)*
+        - **`width`** *(integer)*
+        - **`height`** *(integer)*
+        - **`bbox`** *(array)*
+          - **Items** *(object)*
+            - **`object_type`** *(string)*
+            - **`structured_noun`** *(['null', 'string'])*
+            - **`instance_number`** *(['integer', 'null'])*
+            - **`bbox`** *(object)*
+              - **`x`** *(number)*
+              - **`y`** *(number)*
+              - **`width`** *(number)*
+              - **`height`** *(number)*
+      - **`post_frame`** *(object)*
+        - **`frame_number`** *(integer)*
+        - **`clip_frame_number`** *(integer)*
+        - **`width`** *(integer)*
+        - **`height`** *(integer)*
+        - **`bbox`** *(array)*
+          - **Items** *(object)*
+            - **`object_type`** *(string)*
+            - **`structured_noun`** *(['null', 'string'])*
+            - **`instance_number`** *(['integer', 'null'])*
+            - **`bbox`** *(object)*
+              - **`x`** *(number)*
+              - **`y`** *(number)*
+              - **`width`** *(number)*
+              - **`height`** *(number)*
+
+</details>
+
+<details>
+  <summary>Object State Change Classification (Point of No Return) - fho_oscc-pnr_&lt;set>.json schema</summary>
+
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`split`** *(string)*
+  - **`clips`** *(array)*
   - **Items** *(object)*
-    - **`video_uid`** *(string)*
+    - **`clip_uid`** *(['null', 'string'])*
     - **`clip_id`** *(string)*
-    - **`clip_uid`** *(string)*
-    - **`clip_parent_start_sec`** *(number)*
-    - **`clip_parent_end_sec`** *(number)*
-    - **`clip_parent_start_frame`** *(integer)*
-    - **`clip_parent_end_frame`** *(integer)*
-    - **`pre_frame`** *(object)*
-      - **`frame_number`** *(integer)*
-      - **`clip_frame_number`** *(integer)*
-      - **`width`** *(integer)*
-      - **`height`** *(integer)*
-      - **`bbox`** *(array)*
-        - **Items** *(object)*
-          - **`object_type`** *(string)*
-          - **`structured_noun`** *(['null', 'string'])*
-          - **`instance_number`** *(['integer', 'null'])*
-          - **`bbox`** *(object)*
-            - **`x`** *(number)*
-            - **`y`** *(number)*
-            - **`width`** *(number)*
-            - **`height`** *(number)*
-    - **`pnr_frame`** *(object)*
-      - **`frame_number`** *(integer)*
-      - **`clip_frame_number`** *(integer)*
-      - **`width`** *(integer)*
-      - **`height`** *(integer)*
-      - **`bbox`** *(array)*
-        - **Items** *(object)*
-          - **`object_type`** *(string)*
-          - **`structured_noun`** *(['null', 'string'])*
-          - **`instance_number`** *(['integer', 'null'])*
-          - **`bbox`** *(object)*
-            - **`x`** *(number)*
-            - **`y`** *(number)*
-            - **`width`** *(number)*
-            - **`height`** *(number)*
-    - **`post_frame`** *(object)*
-      - **`frame_number`** *(integer)*
-      - **`clip_frame_number`** *(integer)*
-      - **`width`** *(integer)*
-      - **`height`** *(integer)*
-      - **`bbox`** *(array)*
-        - **Items** *(object)*
-          - **`object_type`** *(string)*
-          - **`structured_noun`** *(['null', 'string'])*
-          - **`instance_number`** *(['integer', 'null'])*
-          - **`bbox`** *(object)*
-            - **`x`** *(number)*
-            - **`y`** *(number)*
-            - **`width`** *(number)*
-            - **`height`** *(number)*
+    - **`unique_id`** *(string)*
+    - **`video_uid`** *(string)*
+    - **`clip_start_sec`** *(number)*
+    - **`clip_end_sec`** *(number)*
+    - **`parent_start_sec`** *(number)*
+    - **`parent_end_sec`** *(number)*
+    - **`clip_start_frame`** *(integer)*
+    - **`clip_end_frame`** *(integer)*
+    - **`parent_start_frame`** *(integer)*
+    - **`parent_end_frame`** *(integer)*
+    - **`state_change`** *(boolean)*
+    - **`clip_pnr_frame`** *(integer)*
+    - **`parent_pnr_frame`** *(integer)*
+    - **`pnr_frame`** *(null)*
 
 </details>

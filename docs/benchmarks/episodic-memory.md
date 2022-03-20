@@ -35,86 +35,97 @@ For NLQ and VQ, we ask annotators to generate language/visual queries and couple
 <details>
   <summary>Natural Language Queries - nlq_&lt;set>.json schema</summary>
 
-- **`version`** *(string)*
-- **`date`** *(string)*
-- **`description`** *(string)*
-- **`manifest`** *(string)*
-- **`videos`** *(array)*
-  - **Items** *(object)*
-    - **`video_uid`** *(string)*
-    - **`clips`** *(array)*
-      - **Items** *(object)*
-        - **`clip_uid`** *(string)*
-        - **`video_start_sec`** *(number)*
-        - **`video_end_sec`** *(number)*
-        - **`video_start_frame`** *(integer)*
-        - **`video_end_frame`** *(integer)*
-        - **`clip_start_sec`** *(integer)*
-        - **`clip_end_sec`** *(number)*
-        - **`clip_start_frame`** *(integer)*
-        - **`clip_end_frame`** *(integer)*
-        - **`source_clip_uid`** *(string)*
-        - **`annotations`** *(array)*
-          - **Items** *(object)*
-            - **`language_queries`** *(array)*
-              - **Items** *(object)*
-                - **`clip_start_sec`** *(number)*
-                - **`clip_end_sec`** *(number)*
-                - **`video_start_sec`** *(number)*
-                - **`video_end_sec`** *(number)*
-                - **`video_start_frame`** *(integer)*
-                - **`video_end_frame`** *(integer)*
-                - **`template`** *(['null', 'string'])*
-                - **`query`** *(['null', 'string'])*
-                - **`slot_x`** *(['null', 'string'])*
-                - **`verb_x`** *(['null', 'string'])*
-                - **`slot_y`** *(['null', 'string'])*
-                - **`verb_y`** *(string)*
-                - **`raw_tags`** *(array)*
-                  - **Items** *(['null', 'string'])*
-            - **`annotation_uid`** *(string)*
-    - **`split`** *(string)*
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`manifest`** *(string)*
+  - **`videos`** *(array)*
+    - **Items** *(object)*
+      - **`video_uid`** *(string)*
+      - **`clips`** *(array)*
+        - **Items** *(object)*
+          - **`clip_uid`** *(string)*
+          - **`video_start_sec`** *(number)*
+          - **`video_end_sec`** *(number)*
+          - **`video_start_frame`** *(integer)*
+          - **`video_end_frame`** *(integer)*
+          - **`clip_start_sec`** *(integer)*
+          - **`clip_end_sec`** *(number)*
+          - **`clip_start_frame`** *(integer)*
+          - **`clip_end_frame`** *(integer)*
+          - **`source_clip_uid`** *(string)*
+          - **`annotations`** *(array)*
+            - **Items** *(object)*
+              - **`language_queries`** *(array)*
+                - **Items** *(object)*
+                  - **`clip_start_sec`** *(number)*
+                  - **`clip_end_sec`** *(number)*
+                  - **`video_start_sec`** *(number)*
+                  - **`video_end_sec`** *(number)*
+                  - **`video_start_frame`** *(integer)*
+                  - **`video_end_frame`** *(integer)*
+                  - **`template`** *(['null', 'string'])*
+                  - **`query`** *(['null', 'string'])*
+                  - **`slot_x`** *(['null', 'string'])*
+                  - **`verb_x`** *(['null', 'string'])*
+                  - **`slot_y`** *(['null', 'string'])*
+                  - **`verb_y`** *(string)*
+                  - **`raw_tags`** *(array)*
+                    - **Items** *(['null', 'string'])*
+              - **`annotation_uid`** *(string)*
+      - **`split`** *(string)*
 
 </details>
 
 <details>
   <summary>Visual Queries - vq_&lt;set>.json schema</summary>
 
-- **`version`** *(string)*
-- **`date`** *(string)*
-- **`description`** *(string)*
-- **`manifest`** *(string)*
-- **`videos`** *(array)*
-  - **Items** *(object)*
-    - **`video_uid`** *(string)*
-    - **`split`** *(string)*
-    - **`clips`** *(array)*
-      - **Items** *(object)*
-        - **`clip_uid`** *(string)*
-        - **`video_start_sec`** *(number)*
-        - **`video_end_sec`** *(number)*
-        - **`video_start_frame`** *(integer)*
-        - **`video_end_frame`** *(integer)*
-        - **`clip_start_sec`** *(integer)*
-        - **`clip_end_sec`** *(number)*
-        - **`clip_start_frame`** *(integer)*
-        - **`clip_end_frame`** *(integer)*
-        - **`clip_fps`** *(number)*
-        - **`annotation_complete`** *(boolean)*
-        - **`source_clip_uid`** *(string)*
-        - **`annotations`** *(array)*
-          - **Items** *(object)*
-            - **`query_sets`** *(object)*
-              - **`1`** *(object)*
-                - **`is_valid`** *(boolean)*
-                - **`errors`** *(array)*
-                  - **Items** *(string)*
-                - **`warnings`** *(array)*
-                  - **Items** *(string)*
-                - **`query_frame`** *(integer)*
-                - **`query_video_frame`** *(integer)*
-                - **`response_track`** *(array)*
-                  - **Items** *(object)*
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`manifest`** *(string)*
+  - **`videos`** *(array)*
+    - **Items** *(object)*
+      - **`video_uid`** *(string)*
+      - **`split`** *(string)*
+      - **`clips`** *(array)*
+        - **Items** *(object)*
+          - **`clip_uid`** *(string)*
+          - **`video_start_sec`** *(number)*
+          - **`video_end_sec`** *(number)*
+          - **`video_start_frame`** *(integer)*
+          - **`video_end_frame`** *(integer)*
+          - **`clip_start_sec`** *(integer)*
+          - **`clip_end_sec`** *(number)*
+          - **`clip_start_frame`** *(integer)*
+          - **`clip_end_frame`** *(integer)*
+          - **`clip_fps`** *(number)*
+          - **`annotation_complete`** *(boolean)*
+          - **`source_clip_uid`** *(string)*
+          - **`annotations`** *(array)*
+            - **Items** *(object)*
+              - **`query_sets`** *(object)*
+                - **`1`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                    - **Items** *(string)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`query_frame`** *(integer)*
+                  - **`query_video_frame`** *(integer)*
+                  - **`response_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
                     - **`frame_number`** *(integer)*
                     - **`x`** *(number)*
                     - **`y`** *(number)*
@@ -124,27 +135,27 @@ For NLQ and VQ, we ask annotators to generate language/visual queries and couple
                     - **`original_width`** *(integer)*
                     - **`original_height`** *(integer)*
                     - **`video_frame_number`** *(integer)*
-                - **`object_title`** *(string)*
-                - **`visual_crop`** *(object)*
-                  - **`frame_number`** *(integer)*
-                  - **`x`** *(number)*
-                  - **`y`** *(number)*
-                  - **`width`** *(number)*
-                  - **`height`** *(number)*
-                  - **`rotation`** *(number)*
-                  - **`original_width`** *(integer)*
-                  - **`original_height`** *(integer)*
-                  - **`video_frame_number`** *(integer)*
-              - **`2`** *(object)*
-                - **`is_valid`** *(boolean)*
-                - **`errors`** *(array)*
-                  - **Items** *(string)*
-                - **`warnings`** *(array)*
-                  - **Items** *(string)*
-                - **`query_frame`** *(integer)*
-                - **`query_video_frame`** *(['integer', 'null'])*
-                - **`response_track`** *(array)*
-                  - **Items** *(object)*
+                - **`2`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                    - **Items** *(string)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`query_frame`** *(integer)*
+                  - **`query_video_frame`** *(['integer', 'null'])*
+                  - **`response_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
                     - **`frame_number`** *(integer)*
                     - **`x`** *(number)*
                     - **`y`** *(number)*
@@ -154,27 +165,27 @@ For NLQ and VQ, we ask annotators to generate language/visual queries and couple
                     - **`original_width`** *(integer)*
                     - **`original_height`** *(integer)*
                     - **`video_frame_number`** *(integer)*
-                - **`object_title`** *(string)*
-                - **`visual_crop`** *(object)*
-                  - **`frame_number`** *(integer)*
-                  - **`x`** *(number)*
-                  - **`y`** *(number)*
-                  - **`width`** *(number)*
-                  - **`height`** *(number)*
-                  - **`rotation`** *(number)*
-                  - **`original_width`** *(integer)*
-                  - **`original_height`** *(integer)*
-                  - **`video_frame_number`** *(integer)*
-              - **`3`** *(object)*
-                - **`is_valid`** *(boolean)*
-                - **`errors`** *(array)*
-                  - **Items** *(string)*
-                - **`warnings`** *(array)*
-                  - **Items** *(string)*
-                - **`query_frame`** *(integer)*
-                - **`query_video_frame`** *(['integer', 'null'])*
-                - **`response_track`** *(array)*
-                  - **Items** *(object)*
+                - **`3`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                    - **Items** *(string)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`query_frame`** *(integer)*
+                  - **`query_video_frame`** *(['integer', 'null'])*
+                  - **`response_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
                     - **`frame_number`** *(integer)*
                     - **`x`** *(number)*
                     - **`y`** *(number)*
@@ -184,26 +195,26 @@ For NLQ and VQ, we ask annotators to generate language/visual queries and couple
                     - **`original_width`** *(integer)*
                     - **`original_height`** *(integer)*
                     - **`video_frame_number`** *(integer)*
-                - **`object_title`** *(string)*
-                - **`visual_crop`** *(object)*
-                  - **`frame_number`** *(integer)*
-                  - **`x`** *(number)*
-                  - **`y`** *(number)*
-                  - **`width`** *(number)*
-                  - **`height`** *(number)*
-                  - **`rotation`** *(number)*
-                  - **`original_width`** *(integer)*
-                  - **`original_height`** *(integer)*
-                  - **`video_frame_number`** *(integer)*
-              - **`4`** *(object)*
-                - **`is_valid`** *(boolean)*
-                - **`errors`** *(array)*
-                - **`warnings`** *(array)*
-                  - **Items** *(string)*
-                - **`query_frame`** *(integer)*
-                - **`query_video_frame`** *(integer)*
-                - **`response_track`** *(array)*
-                  - **Items** *(object)*
+                - **`4`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`query_frame`** *(integer)*
+                  - **`query_video_frame`** *(integer)*
+                  - **`response_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(integer)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
                     - **`frame_number`** *(integer)*
                     - **`x`** *(number)*
                     - **`y`** *(number)*
@@ -213,56 +224,45 @@ For NLQ and VQ, we ask annotators to generate language/visual queries and couple
                     - **`original_width`** *(integer)*
                     - **`original_height`** *(integer)*
                     - **`video_frame_number`** *(integer)*
-                - **`object_title`** *(string)*
-                - **`visual_crop`** *(object)*
-                  - **`frame_number`** *(integer)*
-                  - **`x`** *(number)*
-                  - **`y`** *(number)*
-                  - **`width`** *(number)*
-                  - **`height`** *(number)*
-                  - **`rotation`** *(integer)*
-                  - **`original_width`** *(integer)*
-                  - **`original_height`** *(integer)*
-                  - **`video_frame_number`** *(integer)*
-            - **`warnings`** *(array)*
-              - **Items** *(string)*
+              - **`warnings`** *(array)*
+                - **Items** *(string)*
 
 </details>
 
 <details>
   <summary>Moments Queries - moments_&lt;set>.json schema</summary>
 
-- **`version`** *(string)*
-- **`date`** *(string)*
-- **`description`** *(string)*
-- **`manifest`** *(string)*
-- **`videos`** *(array)*
-  - **Items** *(object)*
-    - **`video_uid`** *(string)*
-    - **`split`** *(string)*
-    - **`clips`** *(array)*
-      - **Items** *(object)*
-        - **`clip_uid`** *(string)*
-        - **`video_start_sec`** *(number)*
-        - **`video_end_sec`** *(number)*
-        - **`video_start_frame`** *(integer)*
-        - **`video_end_frame`** *(integer)*
-        - **`clip_start_sec`** *(integer)*
-        - **`clip_end_sec`** *(number)*
-        - **`clip_start_frame`** *(integer)*
-        - **`clip_end_frame`** *(integer)*
-        - **`source_clip_uid`** *(string)*
-        - **`annotations`** *(array)*
-          - **Items** *(object)*
-            - **`annotator_uid`** *(string)*
-            - **`labels`** *(array)*
-              - **Items** *(object)*
-                - **`start_time`** *(number)*
-                - **`end_time`** *(number)*
-                - **`label`** *(string)*
-                - **`video_start_time`** *(number)*
-                - **`video_end_time`** *(number)*
-                - **`video_start_frame`** *(integer)*
-                - **`video_end_frame`** *(integer)*
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`manifest`** *(string)*
+  - **`videos`** *(array)*
+    - **Items** *(object)*
+      - **`video_uid`** *(string)*
+      - **`split`** *(string)*
+      - **`clips`** *(array)*
+        - **Items** *(object)*
+          - **`clip_uid`** *(string)*
+          - **`video_start_sec`** *(number)*
+          - **`video_end_sec`** *(number)*
+          - **`video_start_frame`** *(integer)*
+          - **`video_end_frame`** *(integer)*
+          - **`clip_start_sec`** *(integer)*
+          - **`clip_end_sec`** *(number)*
+          - **`clip_start_frame`** *(integer)*
+          - **`clip_end_frame`** *(integer)*
+          - **`source_clip_uid`** *(string)*
+          - **`annotations`** *(array)*
+            - **Items** *(object)*
+              - **`annotator_uid`** *(string)*
+              - **`labels`** *(array)*
+                - **Items** *(object)*
+                  - **`start_time`** *(number)*
+                  - **`end_time`** *(number)*
+                  - **`label`** *(string)*
+                  - **`video_start_time`** *(number)*
+                  - **`video_end_time`** *(number)*
+                  - **`video_start_frame`** *(integer)*
+                  - **`video_end_frame`** *(integer)*
 
 </details>
