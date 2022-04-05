@@ -27,8 +27,8 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 * [Audio-visual speaker diarization](https://eval.ai/web/challenges/challenge-page/1640/overview): Given an egocentric video clip, identify which person spoke and when they spoke.
 * [Audio-only Diarization Challenge](https://eval.ai/web/challenges/challenge-page/1641/overview)
 * [Speech transcription](https://eval.ai/web/challenges/challenge-page/1637/overview): Given an egocentric video clip, transcribe the speech of each person.
-* Talking to me: Given an egocentric video clip, identify whether someone in the scene is talking to the camera wearer.
-* Looking at me: Given an egocentric video clip, identify whether someone in the scene is looking at the camera wearer.
+* [Talking to me](https://eval.ai/web/challenges/challenge-page/1625/overview): Given an egocentric video clip, identify whether someone in the scene is talking to the camera wearer.
+* [Looking at me](https://eval.ai/web/challenges/challenge-page/1624/overview): Given an egocentric video clip, identify whether someone in the scene is looking at the camera wearer.
 
 ### [Forecasting](./benchmarks/forecasting.md): 
 
