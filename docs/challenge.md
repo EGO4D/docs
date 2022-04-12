@@ -18,7 +18,8 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 
 ### [Hands and Objects](./benchmarks/hands-and-objects.md): 
 
-* [Temporal localization](https://eval.ai/web/challenges/challenge-page/1622/overview) and [classification](https://eval.ai/web/challenges/challenge-page/1627/overview): Given an egocentric video clip, localize temporally the key frames that indicate an object state change and identify what kind of state change it is.
+* [Temporal localization](https://eval.ai/web/challenges/challenge-page/1622/overview): Given an egocentric video clip, localize temporally the key frames that indicate an object state change.
+* [Object state change classification](https://eval.ai/web/challenges/challenge-page/1627/overview): Given an egocentric video clip, indicate the presence or absence of an object state change.
 * [State change object detection](https://eval.ai/web/challenges/challenge-page/1632/overview): Given an egocentric video clip, identify the objects whose states are changing and outline them with bounding boxes. 
 
 ### [Audio-Visual Diarization & Social](./benchmarks/av-diarization.md):
