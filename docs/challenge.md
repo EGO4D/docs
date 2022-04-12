@@ -18,7 +18,7 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 
 ### [Hands and Objects](./benchmarks/hands-and-objects.md): 
 
-* [Temporal localization and classification](https://eval.ai/web/challenges/challenge-page/1622/overview): Given an egocentric video clip, localize temporally the key frames that indicate an object state change and identify what kind of state change it is.
+* [Temporal localization](https://eval.ai/web/challenges/challenge-page/1622/overview) and [classification](https://eval.ai/web/challenges/challenge-page/1627/overview): Given an egocentric video clip, localize temporally the key frames that indicate an object state change and identify what kind of state change it is.
 * [State change object detection](https://eval.ai/web/challenges/challenge-page/1632/overview): Given an egocentric video clip, identify the objects whose states are changing and outline them with bounding boxes. 
 
 ### [Audio-Visual Diarization & Social](./benchmarks/av-diarization.md):
@@ -47,29 +47,33 @@ Ego4D challenge participants will use Ego4D’s annotated data set of more than 
 
 ## Participation Guidelines
 
-Participate in the contest by registering on the [EvalAI challenge page](https://eval.ai/) and create a team. All participants must register as a part of a “participating team” on EvalAI to ensure the submission limits are honored. Participants will upload their predictions in the format specified for the specific challenge, and will be evaluated on AWS instance by comparing to ground truth predictions. Instructions for training, local evaluation, and online submission are provided at EvalAI. Please refer to the individual EvalAI pages for each challenge for submission guidelines, task specifications, and evaluation criteria: 
-
-* Visual Queries 
-* Natural Language Queries 
-* PNR Temporal Localization 
-* Object State Change Classification
-* Short-term Object Interaction Anticipation 
-* Long-term Action Anticipation
+Participate in the contest by registering on the [EvalAI challenge page](https://eval.ai/) and create a team. All participants must register as a part of a “participating team” on EvalAI to ensure the submission limits are honored. Participants will upload their predictions in the format specified for the specific challenge, and will be evaluated on AWS instance by comparing to ground truth predictions. Instructions for training, local evaluation, and online submission are provided at EvalAI. Please refer to the individual EvalAI pages for each challenge for submission guidelines, task specifications, and evaluation criteria.
 
 ## Dates 
 
-The Ego4D challenge begins with a subset of six competition tracks: 
+Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October, with the specific competition tracks below concluding respectively at these times. 
 
-* Visual Queries 
-* Natural Language Queries 
-* PNR Temporal Localization 
-* Object State Change Classification
-* Short-term Object Interaction Anticipation 
-* Long-term Action Anticipation
+**June 1, 2022 ([CVPR Workshop](https://ego4d-data.org/Workshop/CVPR22/#organisers), phase 1)**
 
-For these tracks, the challenge will begin in March 2022 with the leaderboard closing on June 1, 2022. Winners will be announced at the [Joint International 1st Ego4D and 10th EPIC Workshop at CVPR 2022](https://sites.google.com/view/cvpr2022w-ego4d-epic/). 
+Visual Queries
+Natural Language Queries
+PNR Temporal Localization
+Object State Change Classification
+Short-term Object Interaction Anticipation
+Long-term Action Anticipation
 
-The remaining challenges will launch later this month and run until October.  The challenges concluding at CVPR would be reopened after the winners are announced, and run until October.
+**October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2)**
+
+Moments Queries 
+3D Localization 
+State Change Object Detection 
+Localization and Tracking 
+Diarization (Audio)
+Diarization (Audio+Video)
+Transcription 
+Looking at Me
+Talking to Me
+Future Hand Prediction
 
 ## Competition Rules and Prize Information
 
