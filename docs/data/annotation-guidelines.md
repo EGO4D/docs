@@ -63,6 +63,17 @@ of the whole video.
 through which annotation phases. Provide a starting point for forming a
 taxonomy of labels for actions and objects.
 
+**Tags:**
+
+There are four flags that annotators use in the sentence boxes:
+- `#unsure` to denote they are unsure about a specific statement 
+- `#summary` to denote they are giving the overall video
+- `#C` to denote the sentence is an action done by the camera wearer (the person who recorded the video while wearing a camera on their head)
+- `#O` to denote that the sentence is an action done by someone other than the camera wearer
+
+Note that every sentence will have either `#C` or `#O`.  Only some sentences (or none) may have `#unsure`.  Only one sentence for the entire video clip will have `#summary`.
+
+
 **Annotation task:**
 
 
@@ -390,5 +401,3 @@ which the person is talking to the camera wearer.
 |--------|------------------|------------------|
 | 1 | *Watch the video with AV voice segmentation results (start-end time, person ID)* |
 | 2 | *Annotate segments where someone is talking to the camera wearer. Repeat the process for all cases in the video.* | 1. Identify a segment in which someone is talking to the camera wearer. <br/> 2. Click the time segment, then you can see the Voice activity annotation information on the left side bar. <br/> 3. Click the drop down box below the "Target of Speech."<br/>![](../media/image8.png) <br/> 4. In the dropdown menu, select "Camera-Wearer" if the speech is only toward the camera wearer. <br/> 5. Choose "Camera-Wearer and others" if the speech segment is toward multiple people including the camera wearer (e.g., talking to multiple audience members). <br/> 6. Repeat the process for all relevant segments.
-
-|--------------------------|
