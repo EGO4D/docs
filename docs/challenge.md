@@ -26,7 +26,7 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 
 * [Audio-visual localization](https://eval.ai/web/challenges/challenge-page/1633/overview): Given an egocentric video clip, localize the speakers in the visual field of view. 
 * [Audio-visual speaker diarization](https://eval.ai/web/challenges/challenge-page/1640/overview): Given an egocentric video clip, identify which person spoke and when they spoke.
-* [Audio-only Diarization Challenge](https://eval.ai/web/challenges/challenge-page/1641/overview)
+* [Audio-only Diarization Challenge](https://eval.ai/web/challenges/challenge-page/1641/overview): Given an egocentric video clip, identify which person spoke and when they spoke based on audio alone.
 * [Speech transcription](https://eval.ai/web/challenges/challenge-page/1637/overview): Given an egocentric video clip, transcribe the speech of each person.
 * [Talking to me](https://eval.ai/web/challenges/challenge-page/1625/overview): Given an egocentric video clip, identify whether someone in the scene is talking to the camera wearer.
 * [Looking at me](https://eval.ai/web/challenges/challenge-page/1624/overview): Given an egocentric video clip, identify whether someone in the scene is looking at the camera wearer.
@@ -56,25 +56,25 @@ Top performing teams will be invited to speak at our accepted CVPR and ECCV work
 
 **June 1, 2022 ([CVPR Workshop](https://ego4d-data.org/Workshop/CVPR22/#organisers), phase 1)**
 
-Visual Queries
-Natural Language Queries
-PNR Temporal Localization
-Object State Change Classification
-Short-term Object Interaction Anticipation
-Long-term Action Anticipation
+* Visual Queries
+* Natural Language Queries
+* PNR Temporal Localization
+* Object State Change Classification
+* Short-term Object Interaction Anticipation
+* Long-term Action Anticipation
 
 **October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2)**
 
-Moments Queries 
-3D Localization 
-State Change Object Detection 
-Localization and Tracking 
-Diarization (Audio)
-Diarization (Audio+Video)
-Transcription 
-Looking at Me
-Talking to Me
-Future Hand Prediction
+* Moments Queries 
+* 3D Localization 
+* State Change Object Detection 
+* Localization and Tracking 
+* Diarization (Audio)
+* Diarization (Audio+Video)
+* Transcription 
+* Looking at Me
+* Talking to Me
+* Future Hand Prediction
 
 ## Competition Rules and Prize Information
 
