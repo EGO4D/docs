@@ -44,11 +44,12 @@ These properties can be fixed by either:
 ## Canonical Videos
 
 The purpose of the canonical videos is to normalize the videos in
-order to simplify the usage of the dataset.
+order to simplify the usage of the dataset, and are the primary way we expect
+users to consume the dataset.
 
 Canonical videos are normalized videos constructed from the [video
-components](#video-components). Each canonical video has each video
-component concatenated together.
+components](#video-components), concatenated together with the following 
+characteristics:
 
 1. 30FPS
 2. Sample Aspect Ratio (SAR) set to 1:1

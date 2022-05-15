@@ -3,6 +3,10 @@ sidebar_position: 1
 slug: /
 ---
 
+:::note v1.1 Update + Form/Visualization Release
+Note the dataset was recently updated.  Please visit [the updates section here](./data/updates.md) for details.  Also note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
+:::
+
 # Welcome To EGO4D!
 
 EGO4D is the world's largest egocentric (first person) video ML dataset and benchmark suite, with 3,600 hrs (and counting) of densely narrated video and a wide range of [annotations](./data/annotation-guidelines.md) across five new [benchmark tasks](./benchmarks/overview.md).  It covers hundreds of scenarios (household, outdoor, workplace, leisure, etc.) of daily life activity captured in-the-wild by 926 unique camera wearers from 74 worldwide locations and 9 different countries.  Portions of the video are accompanied by audio, 3D meshes of the environment, eye gaze, stereo, and/or synchronized videos from multiple egocentric cameras at the same event.  The approach to data collection was designed to uphold rigorous privacy and ethics standards with consenting participants and robust de-identification procedures where relevant.
@@ -12,3 +16,5 @@ EGO4D is the world's largest egocentric (first person) video ML dataset and benc
 [Read the paper here](https://arxiv.org/abs/2110.07058) for a more complete introduction.
 
 [Read about the benchmarks here](./benchmarks/overview.md) for details on the specific tasks and annotations.
+
+[Vist our forum](https://discuss.ego4d-data.org/) or [contact us](./contact.md) to ask questions, make suggestions or discuss Ego4D or related research.
