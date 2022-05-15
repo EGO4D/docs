@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::note v1.1 Update + Form/Visualization Release
+Note the dataset was recently updated.  Please visit [the updates section here](./data/updates.md) for details.  Also note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
+:::
 
 # Start Here
 
@@ -10,6 +13,7 @@ Let's first walk through downloading the core dataset, what options are availabl
 The rough flow for a typical researcher will be:
 
 1. [Review and accept the terms of our license agreement.](#license-agreement)  (It takes 48 to receive credentials - do this first.)
+1. [Browse the dataset](#browse-dataset)
 1. [Download the CLI.](#cli-download)
 1. [Select your subset of interest](#select-subset)
 1. [Download The Data](#download-data)
@@ -21,6 +25,12 @@ Obtaining the dataset or any annotations requires you first review our license a
 Note that licenses have the option to execute our license agreements as either an individual or on behalf of your institution. You will likely sign the license as an individual. Typically, only institutional signatories at a director or executive level can agree to license terms on behalf of an entire organization.
 
 Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.
+
+## Browse The Dataset {#browse-dataset}
+
+Refer to the [benchmark](./benchmarks/overview.md) and [annotation](./data/annotation-guidelines.md) documentation for details of what's available.
+
+Use the [visualization tool](./viz.md) to browse the dataset.  
 
 ## Download The CLI {#cli-download}
 

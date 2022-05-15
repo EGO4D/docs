@@ -38,9 +38,9 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 * [Short-term hand object prediction](https://eval.ai/web/challenges/challenge-page/1623/overview): Given a video clip, predict the next active objects, the next action, and the time to contact. 
 * [Long-term activity prediction](https://eval.ai/web/challenges/challenge-page/1598/overview): Given a video clip, the goal is to predict what sequence of activities will happen in the future? For example, after kneading dough, what will the baker do next?  
 
-### Privacy: 
+<!-- ### Privacy: 
 
-* Beyond these challenges, we will launch a privacy-oriented challenge in the coming weeks, specifically calling for novel and impactful plans using annotations and data from the Ego4D AV and Social benchmarks for privacy-preserving research. 
+* Beyond these challenges, we will launch a privacy-oriented challenge in the coming weeks, specifically calling for novel and impactful plans using annotations and data from the Ego4D AV and Social benchmarks for privacy-preserving research.  -->
 
 ## Dataset 
 
@@ -83,6 +83,12 @@ Competition rules can be found [here](https://ego4d-interactive-fig1.s3.eu-west-
 * First place: $3,000 
 * Second place: $2,000
 * Third place: $1,000
+
+## Challenge Reports
+
+In addition to the submission on EvalAI, participants must submit a report describing their method to the workshop CMT (link TBD). In addition to your method and results, please remember to include examples of positive and negative results (limitations) of your model.
+
+For CVPR'22 challenges due June 1, the deadline for report submission will be June 6.
 
 ## Acknowledgements
 
