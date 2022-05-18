@@ -2,6 +2,10 @@
 sidebar_position: 9
 ---
 
+:::note VQ Test Annotations Released
+The VQ test annotations have been release for challenge submissions. Please update your local annotations to obtain them via the CLI, e.g. `python -m ego4d.cli.cli --output_directory="~/ego4d_data" --datasets annotations`
+:::
+
 # Ego4D Challenge 2022
 
 ## Overview

@@ -2,8 +2,8 @@
 sidebar_position: 2
 ---
 
-:::note v1.1 Update + Form/Visualization Release
-Note the dataset was recently updated.  Please visit [the updates section here](./data/updates.md) for details.  Also note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
+:::note Forum/Visualization Release + v1.1 Update Pending
+Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.  Also note that a dataset update is pending addressing a number of small annotation issues.  Full details will be provided [here](./data/updates.md) and at the forum after the current challenge round locks on June 1.
 :::
 
 # Start Here

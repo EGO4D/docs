@@ -2,10 +2,13 @@
 sidebar_position: 20
 ---
 
+In addition to the dataset updates below, note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [Visualization tool](./viz.md) are now available.
+
 # v1.1 Update
 
-In addition to the dataset updates below, note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [Visualization tool](./viz.md)
+An update to the dataset is pending.  We'll provide full details shortly (after the June 1 challenge lock). 
 
+<!-- 
 The [CHANGELOG](https://github.com/facebookresearch/Ego4d/blob/main/CHANGELOG) has more detailed specifics on the update as well.
 
 ## Stereo Videos Removed From Benchmarks
@@ -14,10 +17,12 @@ A small number (< 5, specific uids provided in the changelog) of stereo videos w
 
 ## VQ Annotation Updates
 
-Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  Benchmark/challenge results will be updated shortly.
+Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.
+
+## NLQ 
 
 ## Feature Updates
 
-Omnivore features have been updated.  Please see the changelog for details.
+An error in feature generation that added some noise was corrected.  Full detail will be provided shortly. -->
 
 
