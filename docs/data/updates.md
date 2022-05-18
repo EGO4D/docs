@@ -2,9 +2,11 @@
 sidebar_position: 20
 ---
 
-In addition to the dataset updates below, note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [Visualization tool](./viz.md) are now available.
-
 # v1.1 Update
+
+:::note Forum/Visualization Release
+Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
+:::
 
 An update to the dataset is pending.  We'll provide full details shortly (after the June 1 challenge lock). 
 
