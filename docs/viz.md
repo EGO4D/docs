@@ -25,17 +25,17 @@ Autocomplete helps you type these up. Once your query is entered, click anywhere
 ## Interactive Annotations
 
 <div style={{display: "flex", justifyContent: "space-between"}}>
-    <img alt="Interactive Annotations" src="/img/Interactive_Annotations_1.png" width="30%" />
-    <img alt="Interactive Annotations" src="/img/Interactive_Annotations_2.png" width="30%" />
-    <img alt="Interactive Annotations" src="/img/Interactive_Annotations_3.png" width="30%" />
+    <img alt="Interactive Annotations" src={require('@site/static/img/Interactive_Annotations_1.png').default} width="30%" />
+    <img alt="Interactive Annotations" src={require('/img/Interactive_Annotations_2.png').default} width="30%" />
+    <img alt="Interactive Annotations" src={require('/img/Interactive_Annotations_3.png').default} width="30%" />
 </div>
 
 Once you click into a video, you'll see it with all its annotations. Many annotations are interactive.<br/>
 These include:
 1. Video Frames
-1. Video Times
-1. Response Tracks
-1. Visual Crops
+2. Video Times
+3. Response Tracks
+4. Visual Crops
 
 Any annotation that shows an underline on hover is clickable and will usually take you to that moment in the video.
 
@@ -46,21 +46,21 @@ Each benchmark has modules to visualize its data types.<br />
 These include:
 1. ### Time Segments
 <div style={{display: "flex", justifyContent: "space-between", alignItems:"start"}}>
-    <img alt="Interactive Annotations" src="/img/Visualization_Modules_Time_Segments_1.png" width="45%" />
-    <img alt="Interactive Annotations" src="/img/Visualization_Modules_Time_Segments_2.png" width="45%" style={{objectFit:"cover"}} />
+    <img alt="Interactive Annotations" src={require('/img/Visualization_Modules_Time_Segments_1.png').default} width="45%" />
+    <img alt="Interactive Annotations" src={require('/img/Visualization_Modules_Time_Segments_2.png').default} width="45%" style={{objectFit:"cover"}} />
 </div>
 These show interactive start/end segments. Click a block to jump to the start, shift+click it to jump to the end. The black line indicates the streaming video's timestamp. A greedy algorithm assigns segments to tracks to show all segments without overlaps on a track and a minimal number of tracks. Colors are the same per label, but can be reused across multiple labels.
 <br /><br />
 
 1. ### Labeled Timestamps
 <div style={{display: "flex", justifyContent: "space-between", alignItems:"start"}}>
-    <img alt="Interactive Annotations" src="/img/Visualization_Modules_Labeled_Timestamps_1.png" width="50%" />
+    <img alt="Interactive Annotations" src={require('/img/Visualization_Modules_Labeled_Timestamps_1.png').default} width="50%" />
 </div>
 Some annotations like narrations are labeled times across the video. This module shows any timestamp labels near the current video time.
 <br /><br />
 
 1. ### Bounding Boxes
 <div style={{display: "flex", justifyContent: "space-between", alignItems:"start"}}>
-    <img alt="Interactive Annotations" src="/img/Visualization_Modules_Labeled_Bounding_Boxes_1.png" width="80%" />
+    <img alt="Interactive Annotations" src={require('/img/Visualization_Modules_Labeled_Bounding_Boxes_1.png').default} width="80%" />
 </div>
 Benchmarks with bounding boxes, like visual queries, are visualized directly on the video. Bounding boxes that track an object across frames (e.g. response tracks) are interpolated across them. The FHO hands benchmark uses points, not areas, to represent hands, so these are shown with fixed-size circles instead of bounding boxes.
