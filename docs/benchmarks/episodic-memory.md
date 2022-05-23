@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Episodic Memory
 
-Benchmark Repo: [https://github.com/EGO4D/episodic-memory](https://github.com/EGO4D-Consortium/episodic-memory)
+Benchmark Repo: [https://github.com/EGO4D/episodic-memory](https://github.com/EGO4D/episodic-memory)
 
 :::note Repo Updated
 Please note the repository was moved from the ego4d-consortium account to EGO4D (where the rest of the benchmark code is being released).  If you've already checked out a copy, you'll need to checkout again (or reset).  We apologize for the inconvenience!
