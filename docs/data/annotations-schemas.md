@@ -1,36 +1,36 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 ---
 
-# Annotations
+# Annotation Schemas
 
 Once you download the annotations with the cli, you'll have a set of json files. Here are their schemas for quick reference - see [annotation guidelines](/data/annotation-guidelines) and [benchmark tasks](/benchmarks/overview) for more information on what the fields represent.
 
 <details>
   <summary>Metadata - ego4d.json schema</summary>
 
-  - **`date`** *(string)*
-  - **`version`** *(string)*
+  - **`date`** *(string)*: Date of generation.
+  - **`version`** *(string)*: Dataset specific version.
   - **`description`** *(string)*
   - **`videos`** *(array)*
     - **Items** *(object)*
-      - **`video_uid`** *(string)*
+      - **`video_uid`** *(string)*: The unique, primary video id.
       - **`duration_sec`** *(number)*
       - **`scenarios`** *(array)*
         - **Items** *(string)*
       - **`video_metadata`** *(object)*
         - **`fps`** *(number)*
-        - **`num_frames`** *(integer)*
+        - **`num_frames`** *(integer)*: The number of frames in the video stream.
         - **`video_codec`** *(string)*
         - **`display_resolution_width`** *(['integer', 'null'])*
         - **`display_resolution_height`** *(['integer', 'null'])*
         - **`sample_resolution_width`** *(['integer', 'null'])*
         - **`sample_resolution_height`** *(['integer', 'null'])*
         - **`mp4_duration_sec`** *(number)*
-        - **`video_start_sec`** *(number)*
-        - **`video_duration_sec`** *(number)*
-        - **`audio_start_sec`** *(['null', 'number'])*
-        - **`audio_duration_sec`** *(['null', 'number'])*
+        - **`video_start_sec`** *(number)*: The start time of the vido stream (>= 0 for sync offset).
+        - **`video_duration_sec`** *(number)*: The duration of the video stream (<= container duration).
+        - **`audio_start_sec`** *(['null', 'number'])*: The start time of the audio stream (>= 0 for sync offset).
+        - **`audio_duration_sec`** *(['null', 'number'])*: The duration of the audio stream (<= container duration).
         - **`video_start_pts`** *(integer)*
         - **`video_duration_pts`** *(integer)*
         - **`video_base_numerator`** *(integer)*
@@ -39,17 +39,16 @@ Once you download the annotations with the cli, you'll have a set of json files.
         - **`audio_duration_pts`** *(['integer', 'null'])*
         - **`audio_base_numerator`** *(['integer', 'null'])*
         - **`audio_base_denominator`** *(['integer', 'null'])*
-      - **`split_em`** *(['null', 'string'])*
-      - **`split_av`** *(['null', 'string'])*
-      - **`split_fho`** *(['null', 'string'])*
-      - **`s3_path`** *(string)*
-      - **`manifold_path`** *(string)*
-      - **`origin_video_id`** *(string)*
-      - **`video_source`** *(string)*
+      - **`split_em`** *(['null', 'string'])*: Split (train/test/val) for Episodic Memory benchmark tasks (per video).
+      - **`split_av`** *(['null', 'string'])*: FHO splits are clip dependent - specified for video only where consistent (or multi).
+      - **`split_fho`** *(['null', 'string'])*: Split (train/test/val) for AV benchmark tasks (per video).
+      - **`s3_path`** *(string)*: Path on AWS share - for reference, download via the CLI.
+      - **`origin_video_id`** *(string)*: A university assigned id (no standardization across universities).
+      - **`video_source`** *(string)*: The origin university that collected the data.
       - **`device`** *(['null', 'string'])*
-      - **`physical_setting_name`** *(['null', 'string'])*
-      - **`fb_participant_id`** *(['integer', 'null'])*
-      - **`is_stereo`** *(boolean)*
+      - **`physical_setting_name`** *(['null', 'string'])*: The physical setting if a 3d scan exists.
+      - **`fb_participant_id`** *(['integer', 'null'])*: A sequentially assigned participant id - entirely unrelated to FB.
+      - **`is_stereo`** *(boolean)*: Is the video stereoscopic.
       - **`has_imu`** *(boolean)*
       - **`has_gaze`** *(boolean)*
       - **`imu_s3_path`** *(['null', 'string'])*
@@ -142,6 +141,7 @@ Once you download the annotations with the cli, you'll have a set of json files.
         - **`audio_base_denominator`** *(['integer', 'null'])*
       - **`s3_path`** *(string)*
       - **`manifold_path`** *(string)*
+
 
 </details>
 
@@ -522,38 +522,39 @@ Once you download the annotations with the cli, you'll have a set of json files.
 <details>
   <summary>Moments Queries - moments_&lt;set>.json schema</summary>
 
-  - **`version`** *(string)*
-  - **`date`** *(string)*
+  - **`version`** *(string)*: Dataset specific version.
+  - **`date`** *(string)*: Date of generation.
   - **`description`** *(string)*
-  - **`manifest`** *(string)*
+  - **`manifest`** *(string)*: Top level ego4d manifest json.
   - **`videos`** *(array)*
     - **Items** *(object)*
       - **`video_uid`** *(string)*
       - **`split`** *(string)*
       - **`clips`** *(array)*
         - **Items** *(object)*
-          - **`clip_uid`** *(string)*
-          - **`video_start_sec`** *(number)*
-          - **`video_end_sec`** *(number)*
-          - **`video_start_frame`** *(integer)*
-          - **`video_end_frame`** *(integer)*
-          - **`clip_start_sec`** *(integer)*
-          - **`clip_end_sec`** *(number)*
-          - **`clip_start_frame`** *(integer)*
-          - **`clip_end_frame`** *(integer)*
+          - **`clip_uid`** *(string)*: The exported clip clip_uid.
+          - **`video_start_sec`** *(number)*: Annotation start time relative to the canonical video.
+          - **`video_end_sec`** *(number)*: Annotation end time relative to the canonical video.
+          - **`video_start_frame`** *(integer)*: Annotation start frame relative to the canonical video.
+          - **`video_end_frame`** *(integer)*: Annotation end frame relative to the canonical video.
+          - **`clip_start_sec`** *(integer)*: Annotation start time relative to the canonical clip.
+          - **`clip_end_sec`** *(number)*: Annotation end time relative to the canonical clip.
+          - **`clip_start_frame`** *(integer)*: Annotation start frame relative to the canonical clip.
+          - **`clip_end_frame`** *(integer)*: Annotation end frame relative to the canonical clip.
           - **`source_clip_uid`** *(string)*
           - **`annotations`** *(array)*
             - **Items** *(object)*
               - **`annotator_uid`** *(string)*
               - **`labels`** *(array)*
                 - **Items** *(object)*
-                  - **`start_time`** *(number)*
-                  - **`end_time`** *(number)*
-                  - **`label`** *(string)*
+                  - **`start_time`** *(number)*: Canonical clip label start time.
+                  - **`end_time`** *(number)*: Canonical clip label end time.
+                  - **`label`** *(string)*: Moments label class.
                   - **`video_start_time`** *(number)*
                   - **`video_end_time`** *(number)*
                   - **`video_start_frame`** *(integer)*
                   - **`video_end_frame`** *(integer)*
+                  - **`primary`** *(boolean)*: Primary label used for Moments baseline task.
 
 </details>
 

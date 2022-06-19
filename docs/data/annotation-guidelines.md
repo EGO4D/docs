@@ -3,7 +3,7 @@ title: "Annotation Guidelines"
 sidebar_position: 1
 ---
 
-This page contains context mostly on the annotation guidelines used in each tasks.  Please also see [annotations](./data/annotations.md) for the specific formats and [benchmark tasks](./benchmarks/overview.md) for more detail on the tasks themselves.  And please [read the paper here](https://arxiv.org/abs/2110.07058) for the most comprehensive introduction.
+This page contains context mostly on the annotation guidelines used in each tasks.  Please also see [annotations](./data/annotations-schemas.md) for the specific formats and [benchmark tasks](./benchmarks/overview.md) for more detail on the tasks themselves.  And please [read the paper here](https://arxiv.org/abs/2110.07058) for the most comprehensive introduction.
 
 <!-- 
 ## Key Information

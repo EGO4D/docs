@@ -9,7 +9,7 @@ scenarios.  The original source videos (**video components**) that were captured
 
 Accordingly, video data is available in three forms for the dataset. Each form can be identified with a unique identifier string (uuid4):
 1. **Canonical videos** - Derived from the video components
-2. **Canonical Clips** - Clips associated to specific [annotation](annotations.md) data and derived from the canonical videos.
+2. **Canonical Clips** - Clips associated to specific [annotation](annotations-schemas.md) data and derived from the canonical videos.
 3. Video Components - The raw components used to construct the videos and primary provided as an ancillarly export for thoroughness.
 
 The canonical videos or the canonical clips are the **recomended** way to use the dataset.
