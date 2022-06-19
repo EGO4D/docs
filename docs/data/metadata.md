@@ -9,28 +9,28 @@ Top level metadata for the set can be found primarily through `ego4d.json` avail
 <details>
   <summary>Metadata - ego4d.json schema</summary>
 
-  - **`date`** *(string)*
-  - **`version`** *(string)*
+  - **`date`** *(string)*: Date of generation.
+  - **`version`** *(string)*: Dataset specific version.
   - **`description`** *(string)*
   - **`videos`** *(array)*
     - **Items** *(object)*
-      - **`video_uid`** *(string)*
+      - **`video_uid`** *(string)*: The unique, primary video id.
       - **`duration_sec`** *(number)*
       - **`scenarios`** *(array)*
         - **Items** *(string)*
       - **`video_metadata`** *(object)*
         - **`fps`** *(number)*
-        - **`num_frames`** *(integer)*
+        - **`num_frames`** *(integer)*: The number of frames in the video stream.
         - **`video_codec`** *(string)*
         - **`display_resolution_width`** *(['integer', 'null'])*
         - **`display_resolution_height`** *(['integer', 'null'])*
         - **`sample_resolution_width`** *(['integer', 'null'])*
         - **`sample_resolution_height`** *(['integer', 'null'])*
         - **`mp4_duration_sec`** *(number)*
-        - **`video_start_sec`** *(number)*
-        - **`video_duration_sec`** *(number)*
-        - **`audio_start_sec`** *(['null', 'number'])*
-        - **`audio_duration_sec`** *(['null', 'number'])*
+        - **`video_start_sec`** *(number)*: The start time of the vido stream (>= 0 for sync offset).
+        - **`video_duration_sec`** *(number)*: The duration of the video stream (<= container duration).
+        - **`audio_start_sec`** *(['null', 'number'])*: The start time of the audio stream (>= 0 for sync offset).
+        - **`audio_duration_sec`** *(['null', 'number'])*: The duration of the audio stream (<= container duration).
         - **`video_start_pts`** *(integer)*
         - **`video_duration_pts`** *(integer)*
         - **`video_base_numerator`** *(integer)*
@@ -39,17 +39,16 @@ Top level metadata for the set can be found primarily through `ego4d.json` avail
         - **`audio_duration_pts`** *(['integer', 'null'])*
         - **`audio_base_numerator`** *(['integer', 'null'])*
         - **`audio_base_denominator`** *(['integer', 'null'])*
-      - **`split_em`** *(['null', 'string'])*
-      - **`split_av`** *(['null', 'string'])*
-      - **`split_fho`** *(['null', 'string'])*
-      - **`s3_path`** *(string)*
-      - **`manifold_path`** *(string)*
-      - **`origin_video_id`** *(string)*
-      - **`video_source`** *(string)*
+      - **`split_em`** *(['null', 'string'])*: Split (train/test/val) for Episodic Memory benchmark tasks (per video).
+      - **`split_av`** *(['null', 'string'])*: FHO splits are clip dependent - specified for video only where consistent (or multi).
+      - **`split_fho`** *(['null', 'string'])*: Split (train/test/val) for AV benchmark tasks (per video).
+      - **`s3_path`** *(string)*: Path on AWS share - for reference, download via the CLI.
+      - **`origin_video_id`** *(string)*: A university assigned id (no standardization across universities).
+      - **`video_source`** *(string)*: The origin university that collected the data.
       - **`device`** *(['null', 'string'])*
-      - **`physical_setting_name`** *(['null', 'string'])*
-      - **`fb_participant_id`** *(['integer', 'null'])*
-      - **`is_stereo`** *(boolean)*
+      - **`physical_setting_name`** *(['null', 'string'])*: The physical setting if a 3d scan exists.
+      - **`fb_participant_id`** *(['integer', 'null'])*: A sequentially assigned participant id - entirely unrelated to FB.
+      - **`is_stereo`** *(boolean)*: Is the video stereoscopic.
       - **`has_imu`** *(boolean)*
       - **`has_gaze`** *(boolean)*
       - **`imu_s3_path`** *(['null', 'string'])*

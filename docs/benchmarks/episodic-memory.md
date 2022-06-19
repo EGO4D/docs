@@ -232,37 +232,38 @@ For NLQ and VQ, we ask annotators to generate language/visual queries and couple
 <details>
   <summary>Moments Queries - moments_&lt;set>.json schema</summary>
 
-  - **`version`** *(string)*
-  - **`date`** *(string)*
-  - **`description`** *(string)*
-  - **`manifest`** *(string)*
-  - **`videos`** *(array)*
-    - **Items** *(object)*
-      - **`video_uid`** *(string)*
-      - **`split`** *(string)*
-      - **`clips`** *(array)*
-        - **Items** *(object)*
-          - **`clip_uid`** *(string)*
-          - **`video_start_sec`** *(number)*
-          - **`video_end_sec`** *(number)*
-          - **`video_start_frame`** *(integer)*
-          - **`video_end_frame`** *(integer)*
-          - **`clip_start_sec`** *(integer)*
-          - **`clip_end_sec`** *(number)*
-          - **`clip_start_frame`** *(integer)*
-          - **`clip_end_frame`** *(integer)*
-          - **`source_clip_uid`** *(string)*
-          - **`annotations`** *(array)*
-            - **Items** *(object)*
-              - **`annotator_uid`** *(string)*
-              - **`labels`** *(array)*
-                - **Items** *(object)*
-                  - **`start_time`** *(number)*
-                  - **`end_time`** *(number)*
-                  - **`label`** *(string)*
-                  - **`video_start_time`** *(number)*
-                  - **`video_end_time`** *(number)*
-                  - **`video_start_frame`** *(integer)*
-                  - **`video_end_frame`** *(integer)*
+   - **`version`** *(string)*: Dataset specific version.
+   - **`date`** *(string)*: Date of generation.
+   - **`description`** *(string)*
+   - **`manifest`** *(string)*: Top level ego4d manifest json.
+   - **`videos`** *(array)*
+     - **Items** *(object)*
+       - **`video_uid`** *(string)*
+       - **`split`** *(string)*
+       - **`clips`** *(array)*
+         - **Items** *(object)*
+           - **`clip_uid`** *(string)*: The exported clip clip_uid.
+           - **`video_start_sec`** *(number)*: Annotation start time relative to the canonical video.
+           - **`video_end_sec`** *(number)*: Annotation end time relative to the canonical video.
+           - **`video_start_frame`** *(integer)*: Annotation start frame relative to the canonical video.
+           - **`video_end_frame`** *(integer)*: Annotation end frame relative to the canonical video.
+           - **`clip_start_sec`** *(integer)*: Annotation start time relative to the canonical clip.
+           - **`clip_end_sec`** *(number)*: Annotation end time relative to the canonical clip.
+           - **`clip_start_frame`** *(integer)*: Annotation start frame relative to the canonical clip.
+           - **`clip_end_frame`** *(integer)*: Annotation end frame relative to the canonical clip.
+           - **`source_clip_uid`** *(string)*
+           - **`annotations`** *(array)*
+             - **Items** *(object)*
+               - **`annotator_uid`** *(string)*
+               - **`labels`** *(array)*
+                 - **Items** *(object)*
+                   - **`start_time`** *(number)*: Canonical clip label start time.
+                   - **`end_time`** *(number)*: Canonical clip label end time.
+                   - **`label`** *(string)*: Moments label class.
+                   - **`video_start_time`** *(number)*
+                   - **`video_end_time`** *(number)*
+                   - **`video_start_frame`** *(integer)*
+                   - **`video_end_frame`** *(integer)*
+                   - **`primary`** *(boolean)*: Primary label used for Moments baseline task.
 
 </details>
