@@ -34,7 +34,13 @@ Use the [visualization tool](./viz.md) to browse the dataset.
 
 ## Download The CLI {#cli-download}
 
-Download the CLI from **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
+Instal via pip (conda support coming):
+
+```
+pip install ego4d
+```
+
+Alternatively, or in addition for utils/examples/etc, download the CLI: **[EGO4D CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**
 
 ## Select Your Subset Of Interest {#select-subset}
 
@@ -42,7 +48,13 @@ For most purposes, you'll want to select the baseline, benchmark, scenario, or d
 
 ## Download The Data {#download-data}
 
-Run the CLI to download the dataset (likely to a network share if you're download the full scale videos):
+Run the CLI to download the dataset (likely to a network share if you're download the full scale videos) via python/pip:
+
+```
+ego4d --output_directory="~/ego4d_data" --datasets full_scale annotations
+```
+
+Alternatively, if you downloaded the repo:
 
 ```
 python -m ego4d.cli.cli --output_directory="~/ego4d_data" --datasets full_scale annotations
