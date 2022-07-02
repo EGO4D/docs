@@ -20,8 +20,8 @@ Window Size and Stride are in frames.
 | Feature Type            | Dataset(s) Trained On       | Model Arch                    | Window Size | Stride | Model Weights Location                                    |
 |-------------------------|-----------------------------|-------------------------------|-------------|--------|-----------------------------------------------------------|
 | `slowfast8x8_r101_k400` | Kinetics 400                | SlowFast 8x8 (R101 backbone)  | 32          | 16     | torchub path: facebookresearch/pytorchvideo/slowfast_r101 |
-| `omnivore_video`        | Kinetics 400 / ImageNet-1K  | Omnivore (swin B); video head | 32          | 6      | https://github.com/facebookresearch/omnivore#model-zoo    |
-| `omnivore_image` (WIP) | Kinetics 400 / ImageNet-1K  | Omnivore (swin B); image head | 1           | 6      | https://github.com/facebookresearch/omnivore#model-zoo    |
+| `omnivore_video_swinl`        | Kinetics 400 / ImageNet-1K  | Omnivore (swin B); video head | 32          | 6      | https://github.com/facebookresearch/omnivore#model-zoo    |
+| `omnivore_image_swinl` (WIP) | Kinetics 400 / ImageNet-1K  | Omnivore (swin B); image head | 1           | 6      | https://github.com/facebookresearch/omnivore#model-zoo    |
 | Audio                   | N/A                         | N/A; planned                  |             |        |                                                           |
 
 
