@@ -56,9 +56,9 @@ Participate in the contest by registering on the [EvalAI challenge page](https:/
 
 ## Dates 
 
-Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October, with the specific competition tracks below concluding respectively at these times. 
+Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October.  For the current ECCV challenge set, submissions will be due Sept 18th, 2022. 
 
-**June 1, 2022 ([CVPR Workshop](https://ego4d-data.org/Workshop/CVPR22/#organisers), phase 1)**
+**October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2)**
 
 * Visual Queries
 * Natural Language Queries
@@ -66,9 +66,6 @@ Top performing teams will be invited to speak at our accepted CVPR and ECCV work
 * Object State Change Classification
 * Short-term Object Interaction Anticipation
 * Long-term Action Anticipation
-
-**October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2)**
-
 * Moments Queries 
 * 3D Localization 
 * State Change Object Detection 
@@ -91,8 +88,6 @@ Competition rules can be found [here](https://ego4d-interactive-fig1.s3.eu-west-
 ## Challenge Reports
 
 In addition to the submission on EvalAI, participants must submit a report describing their method to the workshop CMT (link TBD). In addition to your method and results, please remember to include examples of positive and negative results (limitations) of your model.
-
-For CVPR'22 challenges due June 1, the deadline for report submission will be June 6.
 
 ## Acknowledgements
 
