@@ -4,8 +4,8 @@ sidebar_position: 9
 
 # Ego4D Challenge 2022
 
-:::note VQ Test Annotations Released
-The VQ test annotations have been release for challenge submissions. Please update your local annotations to obtain them via the CLI, e.g. `ego4d --output_directory="~/ego4d_data" --datasets annotations`
+:::note Challenge Ends 9/18/22
+Please note, the challenge end date has been changed to September 18th to allow for more time for report submission and evaluation.
 :::
 
 ## Overview
