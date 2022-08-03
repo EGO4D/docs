@@ -8,6 +8,13 @@ Pre-extracted feature vectors are available for every video in the
 dataset. They can be accessed with the **[EGO4D
 CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md)**. Please consult the table below for the appropriate `--dataset` option.
 
+## Want to Add a Model?
+
+Refer to the features [README on the Ego4D
+github](https://github.com/facebookresearch/Ego4d/tree/main/ego4d/features).
+
+If you need support in running the job to extract features, please open an issue
+on the github repository.
 
 ## Description
 
@@ -20,9 +27,8 @@ Window Size and Stride are in frames.
 | Feature Type            | Dataset(s) Trained On       | Model Arch                    | Window Size | Stride | Model Weights Location                                    |
 |-------------------------|-----------------------------|-------------------------------|-------------|--------|-----------------------------------------------------------|
 | `slowfast8x8_r101_k400` | Kinetics 400                | SlowFast 8x8 (R101 backbone)  | 32          | 16     | torchub path: facebookresearch/pytorchvideo/slowfast_r101 |
-| `omnivore_video_swinl`        | Kinetics 400 / ImageNet-1K  | Omnivore (swin B); video head | 32          | 6      | https://github.com/facebookresearch/omnivore#model-zoo    |
-| `omnivore_image_swinl` (WIP) | Kinetics 400 / ImageNet-1K  | Omnivore (swin B); image head | 1           | 6      | https://github.com/facebookresearch/omnivore#model-zoo    |
-| Audio                   | N/A                         | N/A; planned                  |             |        |                                                           |
+| `omnivore_video_swinl`  | Kinetics 400 / ImageNet-1K  | Omnivore (swin L); video head | 32          | 16      | https://github.com/facebookresearch/omnivore#model-zoo    |
+| `omnivore_image_swinl`  | Kinetics 400 / ImageNet-1K  | Omnivore (swin L); image head | 1           | 5      | https://github.com/facebookresearch/omnivore#model-zoo    |
 
 
 Features are extracted in a moving window fashion. At every extraction

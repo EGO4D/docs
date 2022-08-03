@@ -18,4 +18,6 @@ Go back to [https://ego4ddataset.com/](https://ego4ddataset.com/) and re-enter t
 
 Two answers: Yes & coming soon. For each of the benchmarks, there is a dataloader available that was used to generate the benchmark results and that should cover most purposes.  There's also a set of common dataloaders coming, which will be available sometime in May. 
 
+## Where's binaural audio and other types of data mentioned in the paper?
 
+Please refer to the [unprocessed data](./data/unprocessed_data.md) section.
