@@ -5,7 +5,7 @@ sidebar_position: 2
 # Start Here
 
 :::note Forum/Visualization Release + v1.1 Update Pending
-Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.  Also note that a dataset update is pending addressing a number of small annotation issues.  Full details will be provided [here](./data/updates.md) and at the forum after the current challenge round locks on June 1.
+Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
 :::
 
 Let's first walk through downloading the core dataset, what options are available and how we suggest you start with the data.

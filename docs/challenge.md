@@ -6,6 +6,8 @@ sidebar_position: 9
 
 :::note Challenge Ends 9/18/22
 Please note, the challenge end date has been changed to September 18th to allow for more time for report submission and evaluation.
+
+Also note for VQ specifically, you'll need to follow instructions [here](https://eval.ai/web/challenges/challenge-page/1843/overview) to download updated annotations for the challenge.
 :::
 
 ## Overview
