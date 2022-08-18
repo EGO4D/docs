@@ -37,7 +37,6 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 
 ### [Forecasting](./benchmarks/forecasting.md): 
 
-* **Locomotion forecasting**: Given a video frame and the past trajectory, predict the future ego positions of the camera wearer (in the form of a 3D trajectory).
 * [Hand forecasting](https://eval.ai/web/challenges/challenge-page/1630/overview): Given a short preceding video clip, predict where the hand will be visible in the future, in terms of a bounding box center in keyframes.  
 * [Short-term hand object prediction](https://eval.ai/web/challenges/challenge-page/1623/overview): Given a video clip, predict the next active objects, the next action, and the time to contact. 
 * [Long-term activity prediction](https://eval.ai/web/challenges/challenge-page/1598/overview): Given a video clip, the goal is to predict what sequence of activities will happen in the future? For example, after kneading dough, what will the baker do next?  
