@@ -27,7 +27,7 @@ export default function DiscourseCarousel() {
 
   return (
     <section className={styles.discourseCarousel}>
-        <h3 style={{color: '#555'}}>Latest Posts from the Forum:</h3>
+        <h3 style={{color: 'var(--ifm-color-secondary-contrast-foreground)'}}>Latest Posts from the Forum:</h3>
         <div style={{ width: '100%', padding: '3% 2% 5% 2%', overflowX: 'auto', overflowY: 'hidden', margin: 'auto'}}>
           <div className={styles.postContainer}>
             {post_elems}

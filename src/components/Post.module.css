@@ -1,11 +1,19 @@
+:root {
+    --foreground-box-shadow-color: 0, 0, 0;
+}
+
+html[data-theme='dark'] {
+    --foreground-box-shadow-color: 255, 255, 255;
+}
+
 .post {
     display: block;
     position: relative;
     min-width: 30%;
     margin: 0 1%;
 
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    background-color: var(--ifm-background-color);
+    box-shadow: rgba(var(--foreground-box-shadow-color), 0.1) -4px 9px 25px -6px;
     border-radius: 3px;
     overflow: hidden;
 
@@ -15,7 +23,7 @@
 
 .post:hover {
     transform: scale(1.05);
-    box-shadow: rgba(0, 0, 0, 0.09) -4px 9px 15px -6px;
+    box-shadow: rgba(var(--foreground-box-shadow-color), 0.09) -4px 9px 15px -6px;
 }
 
 .postHeader {
