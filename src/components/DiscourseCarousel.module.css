@@ -1,0 +1,11 @@
+.discourseCarousel {
+  margin-top: 50px;
+}
+
+.postContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
