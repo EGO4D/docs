@@ -17,8 +17,9 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 ### [Episodic memory](./benchmarks/episodic-memory.md):
 
 * [Visual queries with 2D localization](https://eval.ai/web/challenges/challenge-page/1843/overview) and [VQ 3D localization](https://eval.ai/web/challenges/challenge-page/1646/overview): Given an egocentric video clip and an image crop depicting the query object, return the last time the object was seen in the input video, in terms of the tracked bounding box (2D + temporal localization) or the 3D displacement vector from the camera to the object in the environment. 
-  * [Visual Query 2D Localization Quickstart](https://colab.research.google.com/drive/1vtVOQzLarBCspQjH5RtHZ8qzH0VZxrmZ?usp=sharing)
+  * [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1vtVOQzLarBCspQjH5RtHZ8qzH0VZxrmZ?usp=sharing) Quickstart
 * [Natural language queries](https://eval.ai/web/challenges/challenge-page/1629/overview): Given a video clip and a query expressed in natural language, localize the temporal window within all the video history where the answer to the question is evident.   
+  * [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1S1LTplak-Fno3lMumCLoIfzYsx_TfNes?usp=sharing) Quickstart
 * [Moments queries](https://eval.ai/web/challenges/challenge-page/1626/overview): Given an egocentric video and an activity name (e.g., a “moment”), localize all instances of that activity in the past video 
 
    
@@ -42,6 +43,7 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 
 * [Hand forecasting](https://eval.ai/web/challenges/challenge-page/1630/overview): Given a short preceding video clip, predict where the hand will be visible in the future, in terms of a bounding box center in keyframes.  
 * [Short-term hand object prediction](https://eval.ai/web/challenges/challenge-page/1623/overview): Given a video clip, predict the next active objects, the next action, and the time to contact. 
+  * [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1Ok_6F1O6K8kX1S4sEnU62HoOBw_CPngR?usp=sharing) Quickstart
 * [Long-term activity prediction](https://eval.ai/web/challenges/challenge-page/1598/overview): Given a video clip, the goal is to predict what sequence of activities will happen in the future? For example, after kneading dough, what will the baker do next?  
 
 <!-- ### Privacy: 
@@ -97,61 +99,35 @@ The Ego4D challenge would not have been possible without the infrastructure and 
 
 ### Organizers
 
-**Rohit Girdhar**
+- **Rohit Girdhar**
+- Santhosh Kumar Ramakrishnan	
+- Chen Zhao
+- Merey Ramazanova
+- Satwik Kottur	
+- Mengmeng Xu
+- Vincent Cartillier	
+- Yifei Huang	
+- Qichen Fu	
+- Siddhant Bansal	
+- Hao Jiang	
+- Vamsi Ithapu
+- Jachym Kolar
+- Christian Fuegen
+- Leda Sari
+- Eric Zhongcong Xu	 
+- Yunyi Zhu  
+- Murong Ma 
+- Zachary Chavis	
+- Wenqi Jia
+- Miao Liu
+- Antonino Furnari	
+- Tushar Nagarajan
+- Karttikeya Mangalam 
+- Dima Damen
+- Giovanni Maria Farinella
+- Michael Wray
+- Gene Byrne
+- Andrew Westbury
 
-Santhosh Kumar Ramakrishnan	
 
-Chen Zhao
-
-Merey Ramazanova
-
-Satwik Kottur	
-
-Mengmeng Xu
-
-Vincent Cartillier	
-
-Yifei Huang	
-
-Qichen Fu	
-
-Siddhant Bansal	
-
-Hao Jiang	
-
-Vamsi Ithapu
-
-Jachym Kolar
-
-Christian Fuegen,
-
-Leda Sari
-
-Eric Zhongcong Xu	 
-
-Yunyi Zhu  
-
-Murong Ma 
-
-Zachary Chavis	
-
-Wenqi Jia
-
-Miao Liu
-
-Antonino Furnari	
-
-Tushar Nagarajan
-
-Karttikeya Mangalam 
-
-Dima Damen
-
-Giovanni Maria Farinella
-
-Michael Wray
-
-Gene Byrne
-
-Andrew Westbury
-
+[Colab Badge]:          https://colab.research.google.com/assets/colab-badge.svg
