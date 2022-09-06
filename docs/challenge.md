@@ -66,7 +66,7 @@ Participate in the contest by registering on the [EvalAI challenge page](https:/
 
 Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October.  For the current ECCV challenge set, submissions will be due Sept 18th, 2022. 
 
-**October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2)**
+**[ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2**
 
 * Visual Queries
 * Natural Language Queries
