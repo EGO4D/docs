@@ -4,8 +4,8 @@ sidebar_position: 9
 
 # Ego4D Challenge 2022
 
-:::note Office Hours Zoom 9/8/22 10AM EST
-We'll be holding an office hours zoom to discuss the challenge, future of the dataset, any issues or really anything at all - 10AM EST on 9/8: [Forum Link](https://discuss.ego4d-data.org/t/9-8-ego4d-zoom-office-hours/98)
+:::note Office Hours Zoom 9/14/22 10AM EST
+We'll be holding an office hours zoom to discuss the challenge, future of the dataset, any issues or really anything at all - 10AM EST on 9/14: [Forum Link](https://discuss.ego4d-data.org/t/9-14-zoom-office-hours/106)
 :::
 
 :::note Challenge Ends 9/18/22
