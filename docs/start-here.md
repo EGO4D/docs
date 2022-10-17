@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # Start Here
 
-:::note Forum/Visualization Release + v1.1 Update Pending
-Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
+:::note Forum/Visualization Release + Intros
+Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are available.  Additionally there is a playlist of intro videos available [on youtube here](https://www.youtube.com/watch?v=9V_QfuXhgas&list=PLBinSqdH1M9miMiHwYJvZvBcLmLNcwOmx).
 :::
 
 Let's first walk through downloading the core dataset, what options are available and how we suggest you start with the data.
