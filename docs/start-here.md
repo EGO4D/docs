@@ -12,7 +12,7 @@ Let's first walk through downloading the core dataset, what options are availabl
 
 The rough flow for a typical researcher will be:
 
-1. [Review and accept the terms of our license agreement.](#license-agreement)  (It takes 48 to receive credentials - do this first.)
+1. [Review and accept the terms of our license agreement.](#license-agreement)  (It takes 48 hours to receive credentials - do this first.)
 1. [Browse the dataset](#browse-dataset)
 1. [Download the CLI.](#cli-download)
 1. [Select your subset of interest](#select-subset)

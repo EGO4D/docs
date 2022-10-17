@@ -4,15 +4,10 @@ sidebar_position: 9
 
 # Ego4D Challenge 2022
 
-:::note Office Hours Zoom 9/8/22 10AM EST
-We'll be holding an office hours zoom to discuss the challenge, future of the dataset, any issues or really anything at all - 10AM EST on 9/8: [Forum Link](https://discuss.ego4d-data.org/t/9-8-ego4d-zoom-office-hours/98)
+:::note ECCV 2022 Challenges Have Concluded!
+Congrats to all the winners and participants! Tune in to our ECCV Workshop on October 24th to see the final leaderboards and hear from the winning teams!
 :::
 
-:::note Challenge Ends 9/18/22
-Please note, the challenge end date has been changed to September 18th to allow for more time for report submission and evaluation.
-
-Also note for VQ specifically, you'll need to follow instructions [here](https://eval.ai/web/challenges/challenge-page/1843/overview) to download updated annotations for the challenge.
-:::
 
 ## Overview
 
@@ -21,9 +16,9 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 ### [Episodic memory](./benchmarks/episodic-memory.md):
 
 * [Visual queries with 2D localization](https://eval.ai/web/challenges/challenge-page/1843/overview) and [VQ 3D localization](https://eval.ai/web/challenges/challenge-page/1646/overview): Given an egocentric video clip and an image crop depicting the query object, return the last time the object was seen in the input video, in terms of the tracked bounding box (2D + temporal localization) or the 3D displacement vector from the camera to the object in the environment. 
-  * [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1vtVOQzLarBCspQjH5RtHZ8qzH0VZxrmZ?usp=sharing) Quickstart
+  * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1vtVOQzLarBCspQjH5RtHZ8qzH0VZxrmZ?usp=sharing)
 * [Natural language queries](https://eval.ai/web/challenges/challenge-page/1629/overview): Given a video clip and a query expressed in natural language, localize the temporal window within all the video history where the answer to the question is evident.   
-  * [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1S1LTplak-Fno3lMumCLoIfzYsx_TfNes?usp=sharing) Quickstart
+  * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1S1LTplak-Fno3lMumCLoIfzYsx_TfNes?usp=sharing)
 * [Moments queries](https://eval.ai/web/challenges/challenge-page/1626/overview): Given an egocentric video and an activity name (e.g., a “moment”), localize all instances of that activity in the past video 
 
    
@@ -47,7 +42,7 @@ In 2022, we will host 16 challenges, representing each of Ego4D’s five benchma
 
 * [Hand forecasting](https://eval.ai/web/challenges/challenge-page/1630/overview): Given a short preceding video clip, predict where the hand will be visible in the future, in terms of a bounding box center in keyframes.  
 * [Short-term hand object prediction](https://eval.ai/web/challenges/challenge-page/1623/overview): Given a video clip, predict the next active objects, the next action, and the time to contact. 
-  * [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1Ok_6F1O6K8kX1S4sEnU62HoOBw_CPngR?usp=sharing) Quickstart
+  * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1Ok_6F1O6K8kX1S4sEnU62HoOBw_CPngR?usp=sharing)
 * [Long-term activity prediction](https://eval.ai/web/challenges/challenge-page/1598/overview): Given a video clip, the goal is to predict what sequence of activities will happen in the future? For example, after kneading dough, what will the baker do next?  
 
 <!-- ### Privacy: 
@@ -66,7 +61,7 @@ Participate in the contest by registering on the [EvalAI challenge page](https:/
 
 Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October.  For the current ECCV challenge set, submissions will be due Sept 18th, 2022. 
 
-**[ECCV Workshop](https://ego4d-data.org/Workshop/ECCV22/), phase 2**
+**October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/workshops/eccv22/), phase 2)**
 
 * Visual Queries
 * Natural Language Queries
@@ -133,5 +128,12 @@ The Ego4D challenge would not have been possible without the infrastructure and 
 - Gene Byrne
 - Andrew Westbury
 
+## Past Challenges / Winners
+**[CVPR Workshop 2022](https://ego4d-data.org/workshops/cvpr22/)** (June 19, 2022)
+- Visual Queries
+- Natural Language Queries
+- PNR Temporal Localization
+- Object State Change Classification
+- Long Term Anticipation
 
 [Colab Badge]:          https://colab.research.google.com/assets/colab-badge.svg
