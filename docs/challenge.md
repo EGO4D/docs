@@ -2,16 +2,16 @@
 sidebar_position: 9
 ---
 
-# Ego4D Challenge 2022
+# Ego4D Challenge 2023
 
-:::note ECCV 2022 Challenges Have Concluded!
-Congrats to all the winners and participants! Tune in to our ECCV Workshop on October 24th to see the final leaderboards and hear from the winning teams!
+:::note CVPR 2023 Challenges Are Open!
+The EGO4D challenges have reopened after the [ECCV Workshop 2022](https://ego4d-data.org/workshops/eccv22/).  Please find details below and join in for CVPR 2023!
 :::
 
 
 ## Overview
 
-In 2022, we will host 16 challenges, representing each of Ego4D’s five benchmarks. These are: 
+In 2023, we will host 16 challenges, representing each of Ego4D’s five benchmarks. These are: 
 
 ### [Episodic memory](./benchmarks/episodic-memory.md):
 
@@ -59,9 +59,9 @@ Participate in the contest by registering on the [EvalAI challenge page](https:/
 
 ## Dates 
 
-Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October.  For the current ECCV challenge set, submissions will be due Sept 18th, 2022. 
+Top performing teams will be invited to speak at our accepted CVPR and ECCV workshops in June and October.  For the current CVPR '23 challenge set, submissions will be due May 14th, 2023. 
 
-**October 1, 2022 ([ECCV Workshop](https://ego4d-data.org/workshops/eccv22/), phase 2)**
+**June, 2023 ([CVPR Workshop](https://ego4d-data.org/workshops/), phase 3)**
 
 * Visual Queries
 * Natural Language Queries
@@ -129,11 +129,8 @@ The Ego4D challenge would not have been possible without the infrastructure and 
 - Andrew Westbury
 
 ## Past Challenges / Winners
+**[ECCV Workshop 2022](https://ego4d-data.org/workshops/eccv22/)** (Oct 24, 2022)
+
 **[CVPR Workshop 2022](https://ego4d-data.org/workshops/cvpr22/)** (June 19, 2022)
-- Visual Queries
-- Natural Language Queries
-- PNR Temporal Localization
-- Object State Change Classification
-- Long Term Anticipation
 
 [Colab Badge]:          https://colab.research.google.com/assets/colab-badge.svg
