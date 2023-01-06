@@ -2,29 +2,24 @@
 sidebar_position: 20
 ---
 
-# v1.1 Update
+Two dataset updates are pending for Ego4D:
 
-:::note Forum/Visualization Release
-Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are now available.
-:::
+* v2.0 (Jan 16) - Focused on a number of video fixes, additional NLQ & FHO data.  Details below.
+* v2.1 (early March) - Focused on additional AV/Social, VQ & Moments data & additional utilities. 
 
-An update to the dataset is pending.  We'll provide full details on release shortly (by mid early July).  For the vast majority of the dataset we expect a de minimis impact on results, but we will be confirming with updated numbers as we release.
+CVPR Challenges will be based on the updated datasets.  And going forward, updates to the dataset will occur annually in Jan. 
 
-## Downsampled Videos
+# v2.0 Update (Jan '23)
 
-Downsampled videos have been added - download as dataset `video_540ss` via the [CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md).  Videos have been scaled to 540px on the short side - more details available via the [docs](./videos.md)
+## Erroneous Videos Removed From Dataset & Benchmarks
 
-## VQ Annotation Updates
+A small number of videos were removed outright from the dataset - 1 video with frozen frames, 1 with varying resolution, and several videos too short to be practically useful.  A small number (< 5) of stereo videos were in benchmark splits (including test in some cases) and were removed (but remain in the dataset appropriately flagged in metadata).  
 
-Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  This is the only set of corrections which is expected to have a significant impact on results and we will share updated baseline numbers with the release.
+Specific uids removed are provided in the changelog and the ego4d.json metadata has been updated appropriately.
 
-## AV Tracking Paths
+## Additional annotations formats (fho_master.json)
 
-A small but non-negligible set of AV tracking paths had two paths merged from distant parts of the videos.  Those have been appropriately separated in the update.  (The paths themselves have not changed beyond the separation.)
-
-## Stereo Videos Removed From Benchmarks
-
-A small number (< 5, specific uids provided in the changelog) of stereo videos were in benchmark splits (including test in some cases) and were removed in v1.1.  The future challenges will be evaluated without those videos in the test splits (naturally).  Those videos are all still available to use as one sees fit though, and are now flagged appropriately in the top level ego4d.json metadata.
+There's been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, and that will be release shortly with the update.
 
 ## Feature Updates
 
@@ -32,9 +27,23 @@ An error in feature generation that added some noise was corrected.  Full detail
 
 Additional features will be released shortly as well.  (EgoVLP & Narration Embeddings)
 
-## Additional annotations formats
+## VQ Annotation Updates
 
-There's been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, and that will be release shortly with the update.
+Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  This is the only set of corrections which is expected to have a significant impact on results and we will share updated baseline numbers with the release.  Note that this was corrected in the v1.0.5 version of the dataset for the prior VQ challenge and was the 
+
+# v2.1 Updates (Feb/Mar '23)
+
+## Additional annotations (AV/Social, VQ, MQ)
+
+## AV Tracking Paths
+
+A small but non-negligible set of AV tracking paths had two paths merged from distant parts of the videos.  Those have been appropriately separated in the update.  (The paths themselves have not changed beyond the separation.)
+
+# Prior Incremental Updates
+
+## Downsampled Videos
+
+Downsampled videos have been added - download as dataset `video_540ss` via the [CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md).  Videos have been scaled to 540px on the short side - more details available via the [docs](./videos.md)
 
 # Further Details
 
