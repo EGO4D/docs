@@ -4,12 +4,22 @@ sidebar_position: 20
 
 Two dataset updates are pending for Ego4D:
 
-* v2.0 (Jan 16) - Focused on a number of video fixes, additional NLQ & FHO data.  Details below.
+* v2.0 (Jan '23) - Focused on a number of video fixes, additional NLQ & FHO data.  Details below.
 * v2.1 (early March) - Focused on additional AV/Social, VQ & Moments data & additional utilities. 
 
 CVPR Challenges will be based on the updated datasets.  And going forward, updates to the dataset will occur annually in Jan. 
 
+As ever, we would love any questions or feedback on current or future changes, observed issues with the dataset and requests for future updates/utilities/dataloaders/examples/etc.  Please join us on the Ego4D Forum: [https://discuss.ego4d-data.org/](https://discuss.ego4d-data.org/)
+
 # v2.0 Update (Jan '23)
+
+## NLQ Annotation Updates
+
+Natural Language Queries has been updated to include additional query and video coverage.  For train and val, there are now XXX queries vs XXX in v1, in addition to a small number of fixes for specific queries.  
+
+## FHO Annotation Updates
+
+TODO
 
 ## Erroneous Videos Removed From Dataset & Benchmarks
 
@@ -19,13 +29,7 @@ Specific uids removed are provided in the changelog and the ego4d.json metadata 
 
 ## Additional annotations formats (fho_master.json)
 
-There's been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, and that will be release shortly with the update.
-
-## Feature Updates
-
-An error in feature generation that added some noise was corrected.  Full detail will be provided shortly, and the features have already been updated.
-
-Additional features will be released shortly as well.  (EgoVLP & Narration Embeddings)
+There's been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, which is now available. Please see the schemas page for additional details: [annotation schemas](./data/annotations-schemas.md)
 
 ## VQ Annotation Updates
 
@@ -35,15 +39,27 @@ Some bounding boxes were incorrectly rotated for VQ2D annotations and have been 
 
 ## Additional annotations (AV/Social, VQ, MQ)
 
+Roughly 2X annotations will be made publicly available for AV/Social, Visual Queries (including higher quality queries for existing objects) and Moments.
+
 ## AV Tracking Paths
 
 A small but non-negligible set of AV tracking paths had two paths merged from distant parts of the videos.  Those have been appropriately separated in the update.  (The paths themselves have not changed beyond the separation.)
+
+## Moments hierarchy updates
+
+The moments hierarchy will be updated with a multi-level hierarchy to correct common concerns about the granularity of the classes.  In addition, the multiple time segements for each "natural" moment will be resolved into a single time interval to be more inline with common practices.  More details coming shortly, though please join us on the forum to discuss. 
 
 # Prior Incremental Updates
 
 ## Downsampled Videos
 
 Downsampled videos have been added - download as dataset `video_540ss` via the [CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md).  Videos have been scaled to 540px on the short side - more details available via the [docs](./videos.md)
+
+## Feature Corrections
+
+An error in feature generation that added some noise was corrected.  Full detail will be provided shortly, and the features have already been updated.
+
+Additional features will be released shortly as well.  (EgoVLP & Narration Embeddings)
 
 # Further Details
 
