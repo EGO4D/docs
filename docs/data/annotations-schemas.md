@@ -256,6 +256,71 @@ Once you download the annotations with the cli, you'll have a set of json files.
 </details>
 
 <details>
+  <summary>Forecasting Hands & Objects Master File - fho_master.json schema</summary>
+
+  - **`version`** *(string)*
+  - **`date`** *(string)*
+  - **`description`** *(string)*
+  - **`metadata`** *(string)*
+  - **`videos`** *(array)*
+    - **Items** *(object)*
+      - **`annotated_intervals`** *(array)*
+        - **Items** *(object)*
+          - **`clip_id`** *(string)*
+          - **`clip_uid`** *(['null', 'string'])*
+          - **`start_sec`** *(number)*
+          - **`end_sec`** *(number)*
+          - **`clip_parent_start_sec`** *(number)*
+          - **`clip_parent_end_sec`** *(number)*
+          - **`narrated_actions`** *(array)*
+            - **Items** *(object)*
+              - **`warnings`** *(array)*
+              - **`uid`** *(['null', 'string'])*
+              - **`start_sec`** *(number)*
+              - **`end_sec`** *(number)*
+              - **`start_frame`** *(integer)*
+              - **`end_frame`** *(integer)*
+              - **`is_valid_action`** *(boolean)*
+              - **`is_partial`** *(boolean)*
+              - **`clip_start_sec`** *(number)*
+              - **`clip_end_sec`** *(number)*
+              - **`clip_start_frame`** *(integer)*
+              - **`clip_end_frame`** *(integer)*
+              - **`narration_timestamp_sec`** *(number)*
+              - **`clip_narration_timestamp_sec`** *(number)*
+              - **`narration_text`** *(string)*
+              - **`narration_annotation_uid`** *(string)*
+              - **`structured_verb`** *(['null', 'string'])*
+              - **`freeform_verb`** *(['null', 'string'])*
+              - **`state_transition`** *(['null', 'string'])*
+              - **`critical_frames`**
+              - **`clip_critical_frames`**
+              - **`frames`**
+              - **`is_rejected`** *(boolean)*
+              - **`is_invalid_annotation`** *(boolean)*
+              - **`reject_reason`** *(['null', 'string'])*
+              - **`stage`** *(['null', 'string'])*
+          - **`start_frame`** *(integer)*
+          - **`end_frame`** *(integer)*
+          - **`clip_parent_start_frame`** *(integer)*
+          - **`clip_parent_end_frame`** *(integer)*
+          - **`redacted`** *(boolean)*
+      - **`video_metadata`** *(object)*
+        - **`video_start_pts`** *(integer)*
+        - **`video_base_numerator`** *(integer)*
+        - **`video_base_denominator`** *(integer)*
+        - **`duration_sec`** *(number)*
+        - **`num_frames`** *(integer)*
+        - **`fps`** *(number)*
+        - **`width`** *(integer)*
+        - **`height`** *(integer)*
+        - **`rotation`** *(null)*
+      - **`video_uid`** *(string)*
+
+</details>
+
+
+<details>
   <summary>Forecasting Hands & Objects - fho_hands_&lt;set>.json schema</summary>
 
   - **`version`** *(string)*
