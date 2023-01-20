@@ -3,9 +3,9 @@ title: "Annotation Guidelines"
 sidebar_position: 1
 ---
 
-This page contains context mostly on the annotation guidelines used in each tasks.  Please also see [annotations](./data/annotations-schemas.md) for the specific formats and [benchmark tasks](./benchmarks/overview.md) for more detail on the tasks themselves.  And please [read the paper here](https://arxiv.org/abs/2110.07058) for the most comprehensive introduction.
+This page contains context mostly on the annotation guidelines used in each tasks.  Please also see [annotations](./annotations-schemas.md) for the specific formats and [benchmark tasks](/benchmarks/overview.md) for more detail on the tasks themselves.  And please [read the paper here](https://arxiv.org/abs/2110.07058) for the most comprehensive introduction.
 
-<!-- 
+<!--
 ## Key Information
 
 -   3,670 hours of unscripted, in-the-wild video data across:
@@ -15,7 +15,7 @@ This page contains context mostly on the annotation guidelines used in each task
 
     > 3.85M dense textual "narrations" (= individual text sentences describing the entirety of the video data) -->
 
-:::note 
+:::note
 Numbers quoted below are those available at the time of writing this documentation; authoritative information is found in our arxiv paper.
 :::
 
@@ -66,7 +66,7 @@ taxonomy of labels for actions and objects.
 **Tags:**
 
 There are four flags that annotators use in the sentence boxes:
-- `#unsure` to denote they are unsure about a specific statement 
+- `#unsure` to denote they are unsure about a specific statement
 - `#summary` to denote they are giving the overall video
 - `#C` to denote the sentence is an action done by the camera wearer (the person who recorded the video while wearing a camera on their head)
 - `#O` to denote that the sentence is an action done by someone other than the camera wearer
@@ -258,7 +258,7 @@ b.  Example: "put down wood" (object already in hands, no CONTACT frame)
 **Objective:** Label bounding boxes and roles for hands (right/left) and
 objects (objects of change and tools).
 
-**Annotation Task:** 
+**Annotation Task:**
 <ins>Note</ins>: clips annotated from previous stage play in reverse from CONTACT to PRE frame:
 
 | **\#** | **Step**         | **Sub-step**     | **Example**      |
