@@ -24,7 +24,7 @@ Obtaining the dataset or any annotations requires you first review our license a
 
 Note that licenses have the option to execute our license agreements as either an individual or on behalf of your institution. You will likely sign the license as an individual. Typically, only institutional signatories at a director or executive level can agree to license terms on behalf of an entire organization.
 
-Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.
+Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.  You can easily renew your license once it expires though:  [license renewal FAQ](./FAQ/#my-credentials-expired--how-do-i-renew)
 
 ## Browse The Dataset {#browse-dataset}
 
