@@ -83,7 +83,31 @@ the following steps:
 
 ## Canonical Clips
 
-TODO
+Canonical clips are trimmed videos, produced for each benchmark. They are produced by trimming/processing the canonical videos. The purpose and aim of the canonical clips is to make training on each benchmark more accessible than the full canonical video. As with the full scale videos, there are two variants of the canonical clips: clips and clips_540ss. 540ss indicates these clips are downscaled to have their shortest side 540 pixels wide or high.
+
+To be clear, since the canonical clips are based off the canonical videos. They are at a constant frame rate of 30FPS. 
+
+If you have feedback on how these clips are generated, please post to the forum (TODO: link)
+
+Each clip is constructed with PyAV with the following compression parameters:
+* Codec: VP9
+* Crf: 18
+* Pixel Format: match original
+* Constant FPS: 30
+* Range: [start_frame, end_frame)
+   Note: the end frame is not included in the clip
+
+### Using the Annotations with Canonical Clips
+
+Each annotation file has their fields prefixed with "clip_" if it is referring to a canonical clip time/frame or "video_" if it is referring to the canonical video time/frame.
+
+### Obtaining the Clips
+
+You can download the canonical clips with the CLI via:
+
+`ego4d --output_directory="~/ego4d_data" --datasets clips`
+
+This will download all clips for each benchmark. Provide the `--benchmarks` filter if you want to filter via a specific benchmark (av, fho, em, nlq, vq, mq). Provide clips_540ss instead if you want the downscaled clips to 540 pixels on the shorter side. See the [CLI documentation](/CLI.md) for more detail.
 
 ## Video Components
 
