@@ -2,7 +2,7 @@
 sidebar_position: 18
 ---
 
-Ego4D was recently updated to version v2.0 (Feb '23) - focused on additional Forecasting, Hands & Objects (243 hrs vs 120 hrs) and Natural Language Queries (27k vs 19k queries) annotations, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO object and EgoTracks tracking path annotations).  Details below.
+Ego4D was recently updated to version v2.0 (Feb '23) - focused on additional Forecasting, Hands & Objects (243 hrs vs 120 hrs) and Natural Language Queries (27k vs 17.3k queries) annotations, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO object and EgoTracks tracking path annotations).  Details below.
 
 CVPR challenges for this year will be based on the updated dataset for FHO & NLQ benchmarks.
 
@@ -18,7 +18,9 @@ Forecasting, Hands & Objects has roughly double the annotations compared to v1 (
 
 ## NLQ Annotation Updates
 
-Natural Language Queries has been updated to include additional query and video coverage.  For train and val, there are now 27k queries vs 19k in v1, in addition to a small number of fixes for specific queries.  (Specifically, a number of query time intervals were specified as point in time with start=end and have been updated to include the time interval.)  
+Natural Language Queries has been updated to include additional query and video coverage. For train and val, there are now 27k validated queries vs 17.3k in v1.
+
+In addition to a a number of queries were 0s (i.e. point in time with start=end) and those intervals have been annotated to correct that. (See: [https://github.com/EGO4D/episodic-memory/issues/14](https://github.com/EGO4D/episodic-memory/issues/14) & special thanks to @[md-mohaiminul](https://github.com/md-mohaiminul) for the flag there.)   
 
 ## Erroneous Videos Removed From Dataset & Benchmarks
 
@@ -28,11 +30,11 @@ Specific uids removed are provided in the changelog and the ego4d.json metadata 
 
 ## Additional annotations formats (fho_main.json)
 
-There's been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, which is now available. Please see the schemas page for additional details: [annotation schemas](./data/annotations-schemas.md)
+There have been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, which is now available. Please see the schemas page for additional details: [annotation schemas](./data/annotations-schemas.md)
 
 ## VQ Annotation Updates
 
-Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  This is the only set of corrections which is expected to have a significant impact on results and we will share updated baseline numbers with the release.  Note that this was corrected in the v1.0.5 version of the dataset for the prior VQ challenge and was the 
+Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  This is the only set of corrections which is expected to have a significant impact on results and we will share updated baseline numbers with the release.  Note that this was corrected in the v1.0.5 version of the dataset for the prior '22 VQ challenge and was the existing annotations for that challenge.
 
 ## PACO (Parts and Attributes of Common Objects) Dataset
 
