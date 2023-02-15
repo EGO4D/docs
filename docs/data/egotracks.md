@@ -27,65 +27,201 @@ You can download the egotracks dataset via the [CLI](/CLI.md) using `--datasets 
 Once you download the annotations with the cli, you'll have a set of json files. Here are their schemas for quick reference:
 
 <details>
-  <summary>Forecasting Hands & Objects Master File - fho_main.json schema</summary>
+  <summary>Visual Queries - EgoTracks_&lt;set>.json schema</summary>
 
   - **`version`** *(string)*
   - **`date`** *(string)*
   - **`description`** *(string)*
-  - **`metadata`** *(string)*
+  - **`manifest`** *(string)*
   - **`videos`** *(array)*
     - **Items** *(object)*
-      - **`annotated_intervals`** *(array)*
-        - **Items** *(object)*
-          - **`clip_id`** *(string)*
-          - **`clip_uid`** *(['null', 'string'])*
-          - **`start_sec`** *(number)*
-          - **`end_sec`** *(number)*
-          - **`clip_parent_start_sec`** *(number)*
-          - **`clip_parent_end_sec`** *(number)*
-          - **`narrated_actions`** *(array)*
-            - **Items** *(object)*
-              - **`warnings`** *(array)*
-              - **`uid`** *(['null', 'string'])*
-              - **`start_sec`** *(number)*
-              - **`end_sec`** *(number)*
-              - **`start_frame`** *(integer)*
-              - **`end_frame`** *(integer)*
-              - **`is_valid_action`** *(boolean)*
-              - **`is_partial`** *(boolean)*
-              - **`clip_start_sec`** *(number)*
-              - **`clip_end_sec`** *(number)*
-              - **`clip_start_frame`** *(integer)*
-              - **`clip_end_frame`** *(integer)*
-              - **`narration_timestamp_sec`** *(number)*
-              - **`clip_narration_timestamp_sec`** *(number)*
-              - **`narration_text`** *(string)*
-              - **`narration_annotation_uid`** *(string)*
-              - **`structured_verb`** *(['null', 'string'])*
-              - **`freeform_verb`** *(['null', 'string'])*
-              - **`state_transition`** *(['null', 'string'])*
-              - **`critical_frames`**
-              - **`clip_critical_frames`**
-              - **`frames`**
-              - **`is_rejected`** *(boolean)*
-              - **`is_invalid_annotation`** *(boolean)*
-              - **`reject_reason`** *(['null', 'string'])*
-              - **`stage`** *(['null', 'string'])*
-          - **`start_frame`** *(integer)*
-          - **`end_frame`** *(integer)*
-          - **`clip_parent_start_frame`** *(integer)*
-          - **`clip_parent_end_frame`** *(integer)*
-          - **`redacted`** *(boolean)*
-      - **`video_metadata`** *(object)*
-        - **`video_start_pts`** *(integer)*
-        - **`video_base_numerator`** *(integer)*
-        - **`video_base_denominator`** *(integer)*
-        - **`duration_sec`** *(number)*
-        - **`num_frames`** *(integer)*
-        - **`fps`** *(number)*
-        - **`width`** *(integer)*
-        - **`height`** *(integer)*
-        - **`rotation`** *(null)*
       - **`video_uid`** *(string)*
+      - **`split`** *(string)*
+      - **`clips`** *(array)*
+        - **Items** *(object)*
+          - **`clip_uid`** *(string)*
+          - **`video_start_sec`** *(number)*
+          - **`video_end_sec`** *(number)*
+          - **`video_start_frame`** *(integer)*
+          - **`video_end_frame`** *(integer)*
+          - **`clip_start_sec`** *(integer)*
+          - **`clip_end_sec`** *(number)*
+          - **`clip_start_frame`** *(integer)*
+          - **`clip_end_frame`** *(integer)*
+          - **`clip_fps`** *(number)*
+          - **`annotation_complete`** *(boolean)*
+          - **`source_clip_uid`** *(string)*
+          - **`annotations`** *(array)*
+            - **Items** *(object)*
+              - **`query_sets`** *(object)*
+                - **`1`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                    - **Items** *(string)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`lt_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
+                    - **`frame_number`** *(integer)*
+                    - **`x`** *(number)*
+                    - **`y`** *(number)*
+                    - **`width`** *(number)*
+                    - **`height`** *(number)*
+                    - **`rotation`** *(number)*
+                    - **`original_width`** *(integer)*
+                    - **`original_height`** *(integer)*
+                    - **`video_frame_number`** *(integer)*
+                    - **`exported_clip_frame_number`** *(integer)*
+                  - **`visual_clip`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                - **`2`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                    - **Items** *(string)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`lt_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
+                    - **`frame_number`** *(integer)*
+                    - **`x`** *(number)*
+                    - **`y`** *(number)*
+                    - **`width`** *(number)*
+                    - **`height`** *(number)*
+                    - **`rotation`** *(number)*
+                    - **`original_width`** *(integer)*
+                    - **`original_height`** *(integer)*
+                    - **`video_frame_number`** *(integer)*
+                    - **`exported_clip_frame_number`** *(integer)*
+                  - **`visual_clip`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                - **`3`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                    - **Items** *(string)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`lt_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
+                    - **`frame_number`** *(integer)*
+                    - **`x`** *(number)*
+                    - **`y`** *(number)*
+                    - **`width`** *(number)*
+                    - **`height`** *(number)*
+                    - **`rotation`** *(number)*
+                    - **`original_width`** *(integer)*
+                    - **`original_height`** *(integer)*
+                    - **`video_frame_number`** *(integer)*
+                    - **`exported_clip_frame_number`** *(integer)*
+                  - **`visual_clip`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                - **`4`** *(object)*
+                  - **`is_valid`** *(boolean)*
+                  - **`errors`** *(array)*
+                  - **`warnings`** *(array)*
+                    - **Items** *(string)*
+                  - **`lt_track`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+                  - **`object_title`** *(string)*
+                  - **`visual_crop`** *(object)*
+                    - **`frame_number`** *(integer)*
+                    - **`x`** *(number)*
+                    - **`y`** *(number)*
+                    - **`width`** *(number)*
+                    - **`height`** *(number)*
+                    - **`rotation`** *(number)*
+                    - **`original_width`** *(integer)*
+                    - **`original_height`** *(integer)*
+                    - **`video_frame_number`** *(integer)*
+                    - **`exported_clip_frame_number`** *(integer)*
+                  - **`visual_clip`** *(array)*
+                    - **Items** *(object)*
+                      - **`frame_number`** *(integer)*
+                      - **`x`** *(number)*
+                      - **`y`** *(number)*
+                      - **`width`** *(number)*
+                      - **`height`** *(number)*
+                      - **`rotation`** *(number)*
+                      - **`original_width`** *(integer)*
+                      - **`original_height`** *(integer)*
+                      - **`video_frame_number`** *(integer)*
+                      - **`exported_clip_frame_number`** *(integer)*
+              - **`warnings`** *(array)*
+                - **Items** *(string)*
 
 </details>
