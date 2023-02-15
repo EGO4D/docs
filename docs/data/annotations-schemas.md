@@ -256,7 +256,7 @@ Once you download the annotations with the cli, you'll have a set of json files.
 </details>
 
 <details>
-  <summary>Forecasting Hands & Objects Master File - fho_master.json schema</summary>
+  <summary>Forecasting Hands & Objects Master File - fho_main.json schema</summary>
 
   - **`version`** *(string)*
   - **`date`** *(string)*
