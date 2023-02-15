@@ -87,8 +87,6 @@ Canonical clips are trimmed videos, produced for each benchmark. They are produc
 
 To be clear, since the canonical clips are based off the canonical videos. They are at a constant frame rate of 30FPS. 
 
-If you have feedback on how these clips are generated, please post to the forum (TODO: link)
-
 Each clip is constructed with PyAV with the following compression parameters:
 * Codec: VP9
 * Crf: 18
@@ -107,7 +105,7 @@ You can download the canonical clips with the CLI via:
 
 `ego4d --output_directory="~/ego4d_data" --datasets clips`
 
-This will download all clips for each benchmark. Provide the `--benchmarks` filter if you want to filter via a specific benchmark (av, fho, em, nlq, vq, mq). Provide clips_540ss instead if you want the downscaled clips to 540 pixels on the shorter side. See the [CLI documentation](/CLI.md) for more detail.
+This will download all clips for each benchmark. Provide the `--benchmarks` filter if you want to filter via a specific benchmark (av, fho, em, nlq, vq, mq). Provide clips_540ss instead if you want the downscaled clips to 540 pixels on the shorter side. See the [CLI documentation](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md) for more detail.
 
 ## Video Components
 
