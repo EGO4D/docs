@@ -2,20 +2,19 @@
 sidebar_position: 20
 ---
 
-Two dataset updates are pending for Ego4D:
+Ego4D was recently updated to version v2.0 (Feb '23) - focused on additional Forecasting, Hands & Objects (243 hrs vs 120 hrs) and Natural Language Queries (27k vs 19k queries) annotations, and a number of corrections and usability enhancements.  Details below.
 
-* v2.0 (Jan '23) - Focused on a number of video fixes, additional NLQ & FHO data.  Details below.
-* v2.1 (early March) - Focused on additional AV/Social, VQ & Moments data & additional utilities. 
+CVPR challenges for this year will be based on the updated dataset for FHO & NLQ benchmarks.
 
-CVPR Challenges will be based on the updated datasets.  And going forward, updates to the dataset will occur annually in Jan. 
+A v2.1 update will occur after CVPR (July '23), focusing on additional AV/Social, VQ & Moments data & additional utilities.  Going forward, primary updates will occur to the dataset in January each year.
 
 As ever, we would love any questions or feedback on current or future changes, observed issues with the dataset and requests for future updates/utilities/dataloaders/examples/etc.  Please join us on the Ego4D Forum: [https://discuss.ego4d-data.org/](https://discuss.ego4d-data.org/)
 
-# v2.0 Update (Jan '23)
+# v2.0 Update
 
 ## NLQ Annotation Updates
 
-Natural Language Queries has been updated to include additional query and video coverage.  For train and val, there are now XXX queries vs XXX in v1, in addition to a small number of fixes for specific queries.  
+Natural Language Queries has been updated to include additional query and video coverage.  For train and val, there are now 27k queries vs 19k in v1, in addition to a small number of fixes for specific queries.  (Specifically, a number of query time intervals were specified as point in time with start=end and have been updated to include the time interval.)  
 
 ## FHO Annotation Updates
 
@@ -35,7 +34,7 @@ There's been several requests for additional annotation formats, particularly fo
 
 Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  This is the only set of corrections which is expected to have a significant impact on results and we will share updated baseline numbers with the release.  Note that this was corrected in the v1.0.5 version of the dataset for the prior VQ challenge and was the 
 
-# v2.1 Updates (Feb/Mar '23)
+# v2.1 Updates (July '23)
 
 ## Additional annotations (AV/Social, VQ, MQ)
 
@@ -55,9 +54,11 @@ The moments hierarchy will be updated with a multi-level hierarchy to correct co
 
 Downsampled videos have been added - download as dataset `video_540ss` via the [CLI](https://github.com/facebookresearch/Ego4d/blob/main/ego4d/cli/README.md).  Videos have been scaled to 540px on the short side - more details available via the [docs](./videos.md)
 
-## Feature Corrections
+## Feature Updates
 
 An error in feature generation that added some noise was corrected.  Full detail will be provided shortly, and the features have already been updated.
+
+Omnivore FP16 features were added: [Features](https://ego4d-data.org/docs/data/features/)
 
 Additional features will be released shortly as well.  (EgoVLP & Narration Embeddings)
 
