@@ -6,8 +6,6 @@ Ego4D was recently updated to version v2.0 (Feb '23) - focused on additional For
 
 CVPR challenges for this year will be based on the updated dataset for FHO & NLQ benchmarks.
 
-A v2.1 update will occur after CVPR (July '23) with additional annotations/corrections for other benchmarks and utilities.  Going forward, primary updates will occur to the dataset in January each year.
-
 As ever, we would love any questions or feedback on current or future changes, observed issues with the dataset and requests for future updates/utilities/dataloaders/examples/etc.  Please join us on the Ego4D Forum: [https://discuss.ego4d-data.org/](https://discuss.ego4d-data.org/)
 
 
