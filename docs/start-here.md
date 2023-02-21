@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # Start Here
 
-:::note Forum/Visualization Release + Intros
-Note that the [Ego4D forum](https://discuss.ego4d-data.org/) and [visualization tool](./viz.md) are available.  Additionally there is a playlist of intro videos available [on youtube here](https://www.youtube.com/watch?v=9V_QfuXhgas&list=PLBinSqdH1M9miMiHwYJvZvBcLmLNcwOmx).
+:::note Ego4D v2.0 Update Available
+The [Ego4D v2.0 update](/updates.md) is now publicly available. 
 :::
 
 Let's first walk through downloading the core dataset, what options are available and how we suggest you start with the data.
@@ -24,7 +24,7 @@ Obtaining the dataset or any annotations requires you first review our license a
 
 Note that licenses have the option to execute our license agreements as either an individual or on behalf of your institution. You will likely sign the license as an individual. Typically, only institutional signatories at a director or executive level can agree to license terms on behalf of an entire organization.
 
-Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.
+Also note that once approved your access credentials will expire in 14 days - you're expected to download the data locally, not to consume it from AWS.  You can easily renew your license once it expires though:  [license renewal FAQ](./FAQ.md#my-credentials-expired--how-do-i-renew)
 
 ## Browse The Dataset {#browse-dataset}
 

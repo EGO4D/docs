@@ -14,10 +14,11 @@ the original CSV files (please see "Notes" below as for why)
 
 Unprocessed gaze data is available (directly from the consortium). Please refer to [unprocessed data](./unprocessed_data.md) for details on downloading burned-in gaze videos.
 
+We refer to a recent paper for data split (insert this link: https://github.com/BolinLai/GLC/blob/main/slowfast/datasets/DATASET.md) and preprocessing scripts on egocentric gaze estimation task.
+
 ## Download
 
 You can download the gaze data with the CLI using `--datasets gaze`.
-
 
 ## Sample
 
@@ -46,3 +47,7 @@ component_idx,component_timestamp_s,canonical_timestamp_s,world_index,confidence
 - Data is recorded at a higher frequency than the frame rate of the video
 - As of writing, the only fields populated in each CSV are `"world_index"`, `"confidence"`, `"norm_pos_x"` and `"norm_pos_y"`
 - Every video with gaze has only one video component, with relatively normal properties; such as, the video stream always starts at `t=0`, etc.
+
+## EGTEA Gaze+
+
+For the EGTEA Gaze+ dataset, we refer to a [recent paper](https://github.com/BolinLai/GLC/blob/main/slowfast/datasets/DATASET.md) for data splits and preprocessing scripts on the egocentric gaze estimation task.
