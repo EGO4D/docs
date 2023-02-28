@@ -4,6 +4,10 @@ sidebar_position: 18
 
 # Updates
 
+:::note FHO hands & SCOD train/val pending
+Note that the FHO hands & SCOD (state change object detection) v2 train & val jsons are currently not yet available and will be released shortly.
+:::
+
 Ego4D was recently updated to version v2.0 (Feb '23) - focused on additional Forecasting, Hands & Objects (243 hrs vs 120 hrs) and Natural Language Queries (27k vs 17.3k queries) annotations, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO object and EgoTracks tracking path annotations).  Details below.
 
 CVPR challenges for this year will be based on the updated dataset for FHO & NLQ benchmarks.
