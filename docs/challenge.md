@@ -83,7 +83,7 @@ The challenge will launch on March 1, 2023 with the leaderboard closing on May 1
 
 ## Competition Rules and Prize Information
 
-Competition rules can be found [here](/tc.pdf). Additionally, we are thrilled that FAIR is able to offer the following prize thresholds per challenges:
+Competition rules can be found [here](pathname:///tc.pdf). Additionally, we are thrilled that FAIR is able to offer the following prize thresholds per challenges:
 
 
 * First place: $1500
