@@ -13,13 +13,13 @@ In CVPR 2023, we will host **14** challenges including 2 new challenges (EgoTrac
 ### [Episodic memory](./benchmarks/episodic-memory.md):
 
 
-* [Visual queries with 2D localization](https://eval.ai/web/challenges/challenge-page/1843/overview) and [VQ 3D localization](https://eval.ai/web/challenges/challenge-page/1646/overview): Given an egocentric video clip and an image crop depicting the query object, return the most recent occurrence of the object in the input video, in terms of contiguous bounding boxes (2D + temporal localization) or the 3D displacement vector from the camera to the object in the environment.
- * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1vtVOQzLarBCspQjH5RtHZ8qzH0VZxrmZ?usp=sharing)
-* [Natural language queries](https://eval.ai/web/challenges/challenge-page/1629/overview): Given a video clip and a query expressed in natural language, localize the temporal window within all the video history where the answer to the question is evident.  
- * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1S1LTplak-Fno3lMumCLoIfzYsx_TfNes?usp=sharing)
-* [Moments queries](https://eval.ai/web/challenges/challenge-page/1626/overview): Given an egocentric video and an activity name (e.g., a “moment”), localize all instances of that activity in the past video
-* [EgoTracks](https://eval.ai/web/challenges/challenge-page/1969/overview): Given an egocentric video and a visual template of an object, localize the bounding box containing the object in each frame of the video along with a confidence score representing the presence of the object. [NEW for 2023]
-* [EgoObjects Parts & Attributes Queries (PACO Zero-Shot):](https://eval.ai/web/challenges/challenge-page/1970/overview) Retrieve the bounding box of a specific object instance from a dataset, based on a textual query describing the instance. Query is composed using object and part attributes describing the object of interest. [NEW for 2023]
+* [Visual queries with 2D localization (VQ2D)](https://eval.ai/web/challenges/challenge-page/1843/overview) and [Visual Queries 3D localization (VQ3D)](https://eval.ai/web/challenges/challenge-page/1646/overview): Given an egocentric video clip and an image crop depicting the query object, return the most recent occurrence of the object in the input video, in terms of contiguous bounding boxes (2D + temporal localization) or the 3D displacement vector from the camera to the object in the environment. 
+    * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1vtVOQzLarBCspQjH5RtHZ8qzH0VZxrmZ?usp=sharing)
+* [Natural language queries (NLQ)](https://eval.ai/web/challenges/challenge-page/1629/overview): Given a video clip and a query expressed in natural language, localize the temporal window within all the video history where the answer to the question is evident.
+    * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1S1LTplak-Fno3lMumCLoIfzYsx_TfNes?usp=sharing)
+* [Moments queries (MQ)](https://eval.ai/web/challenges/challenge-page/1626/overview): Given an egocentric video and an activity name (e.g., a “moment”), localize all instances of that activity in the past video
+* [EgoTracks](https://eval.ai/web/challenges/challenge-page/1969/overview): Given an egocentric video and a visual template of an object, localize the bounding box containing the object in each frame of the video along with a confidence score representing the presence of the object. **[NEW for 2023]**
+* [EgoObjects Parts & Attributes Queries:](https://eval.ai/web/challenges/challenge-page/1970/overview) Retrieve the bounding box of a specific object instance from a dataset, based on a textual query describing the instance. Query is composed using object and part attributes describing the object of interest. **[NEW for 2023]**
  
 ### [Hands and Objects](./benchmarks/hands-and-objects.md):
 
@@ -44,7 +44,7 @@ In CVPR 2023, we will host **14** challenges including 2 new challenges (EgoTrac
 
 
 * [Short-term hand object prediction](https://eval.ai/web/challenges/challenge-page/1623/overview): Given a video clip, predict the next active objects, and, for each of them, predict the next action, and the time to contact.
- * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1Ok_6F1O6K8kX1S4sEnU62HoOBw_CPngR?usp=sharing)
+    * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1Ok_6F1O6K8kX1S4sEnU62HoOBw_CPngR?usp=sharing)
 * [Long-term activity prediction](https://eval.ai/web/challenges/challenge-page/1598/overview): Given a video clip, the goal is to predict what sequence of activities will happen in the future. For example, after kneading dough, list the actions that the baker will do next. 
 
 
@@ -63,7 +63,7 @@ Other Ego4D challenges which are not part of CVPR 2023 workshop remain open on E
 Ego4D challenge participants will use Ego4D’s annotated data set of more than 3,670 hours of video data, capturing the daily-life scenarios of more than 900 unique individuals from nine different countries around the world. Unique train, validation and unannotated test sets are available to download per challenge at [https://ego4d-data.org/docs/](https://ego4d-data.org/docs/).
 
 
-This year's challenge will use Ego4D v2.0 which contains ~2X train and val annotations for Forecasting, Hands & Objects and NLQ, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO & EgoTracks). The test set remains the same as previous versions of the challenge. More details can be found [here](https://ego4d-data.org/docs/updates/)
+This year's challenge will use Ego4D v2.0 which contains ~2X train and val annotations for Forecasting, Hands & Objects and NLQ, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO & EgoTracks). The test set remains the same as previous versions of the challenge. More details can be found [here](https://ego4d-data.org/docs/updates/). We have also updated the baselines for NLQ, MQ, VQ2D and forecasting tasks leveraging more training data available in Ego4D v2.0 release. 
 
 
 ## Participation Guidelines
