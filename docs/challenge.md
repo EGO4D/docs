@@ -19,8 +19,9 @@ In CVPR 2023, we will host **14** challenges including 2 new challenges (EgoTrac
     * Quickstart: [![Open in Colab][Colab Badge]](https://colab.research.google.com/drive/1S1LTplak-Fno3lMumCLoIfzYsx_TfNes?usp=sharing)
 * [Moments queries (MQ)](https://eval.ai/web/challenges/challenge-page/1626/overview): Given an egocentric video and an activity name (e.g., a “moment”), localize all instances of that activity in the past video
 * [EgoTracks](https://eval.ai/web/challenges/challenge-page/1969/overview): Given an egocentric video and a visual template of an object, localize the bounding box containing the object in each frame of the video along with a confidence score representing the presence of the object. **[NEW for 2023]**
-* [EgoObjects Parts & Attributes Queries:](https://eval.ai/web/challenges/challenge-page/1970/overview) Retrieve the bounding box of a specific object instance from a dataset, based on a textual query describing the instance. Query is composed using object and part attributes describing the object of interest. **[NEW for 2023]**
+* [PACO Zero-Shot:](https://eval.ai/web/challenges/challenge-page/1970/overview) Retrieve the bounding box of a specific object instance from a dataset, based on a textual query describing the instance. Query is composed using object and part attributes describing the object of interest. **[NEW for 2023]**
  
+
 ### [Hands and Objects](./benchmarks/hands-and-objects.md):
 
 
