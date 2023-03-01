@@ -83,8 +83,7 @@ The challenge will launch on March 1, 2023 with the leaderboard closing on May 1
 
 ## Competition Rules and Prize Information
 
-
-Competition rules can be found [here](https://ego4d-interactive-fig1.s3.eu-west-2.amazonaws.com/tc.pdf). Additionally, we are thrilled that FAIR is able to offer the following prize thresholds per challenges:
+Competition rules can be found [here](/tc.pdf). Additionally, we are thrilled that FAIR is able to offer the following prize thresholds per challenges:
 
 
 * First place: $1500
@@ -172,7 +171,7 @@ The Ego4D challenge would not have been possible without the infrastructure and 
 
 * [Hand forecasting](https://eval.ai/web/challenges/challenge-page/1630/overview): Given a short preceding video clip, predict where the hand will be visible in the future, in terms of a bounding box center in keyframes.
 
-
+Competition rules can be found [here](https://ego4d-interactive-fig1.s3.eu-west-2.amazonaws.com/tc.pdf). 
 -->
 
 
