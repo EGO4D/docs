@@ -36,6 +36,8 @@ Specific uids removed are provided in the changelog and the ego4d.json metadata 
 
 There have been several requests for additional annotation formats, particularly for a unified json across the FHO tasks, which is now available. Please see the schemas page for additional details: [annotation schemas](./data/annotations-schemas.md)
 
+Please refer to [FHO Overview](tutorials/FHO_Overview.md) for details.
+
 ### VQ Annotation Updates
 
 Some bounding boxes were incorrectly rotated for VQ2D annotations and have been corrected.  This is the only set of corrections which is expected to have a significant impact on results and we will share updated baseline numbers with the release.  Note that this was corrected in the v1.0.5 version of the dataset for the prior '22 VQ challenge and was the existing annotations for that challenge.

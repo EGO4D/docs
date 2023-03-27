@@ -24,6 +24,8 @@ Object state changes can be viewed along temporal, spatial, and semantic axes, l
 
 We select the data to annotate based on activities that are likely to involve hand-object interactions (e.g., knitting, carpentry, baking, etc.). We start by labeling each narrated hand-object interaction. For each, we label three moments in time (pre, PNR, post) and the bounding boxes for the hands, tools, and objects in each of the three frames. We also annotate the state change types (remove, burn, etc.), action verbs, and nouns for the objects.
 
+Please refer to the [FHO Overview](../tutorials/FHO_Overview.md) for details about the main JSON file, which has links to the associated narrations. The following JSON file is derived from the main file.
+
 <details>
   <summary>Point-of-no-Return Temporal Localization - fho_hands_&lt;set>.json schema</summary>
 
