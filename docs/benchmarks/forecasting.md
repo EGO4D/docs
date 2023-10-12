@@ -26,6 +26,8 @@ The Forecasting benchmark includes four tasks:
 
 Using the narrations, we identify the occurrence of each object interaction, assigning a verb and a target object class. The verb and noun taxonomies are seeded from the narrations and then hand-refined. For each action, we identify a contact frame and a precondition frame in which we annotate bounding boxes around active objects. The same objects as well as hands are annotated in three frames preceding the pre-condition frame by 0.5s, 1s and 1.5s. We obtain ground truth ego-trajectories of the camera wearer using structure from motion.
 
+Please refer to the [FHO Overview](../tutorials/FHO_Overview.md) for details about the main JSON file, which has links to the associated narrations. The following JSON file is derived from the main file.
+
 <details>
   <summary>Forecasting Hands & Objects - fho_hands_&lt;set>.json schema</summary>
 
