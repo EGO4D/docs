@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Ego4D',
-  tagline: 'Ego4D Dataset',
+  title: 'Ego4D & EgoExo4D Documentation',
+  tagline: 'The Ego4D & EgoExo4D Dataset',
   url: 'https://ego4d-data.org/',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
@@ -23,7 +23,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebar.js'),
+          path: 'docs',
+          breadcrumbs: false,
           routeBasePath: '/',
         },
         theme: {
@@ -33,17 +35,51 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ego4d',
+        path: 'ego4d',
+        routeBasePath: 'ego4d',
+        breadcrumbs: false,
+        sidebarPath: require.resolve('./sidebar-ego4d.js'),
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'egoexo',
+        path: 'egoexo',
+        routeBasePath: 'egoexo',
+        breadcrumbs: false,
+        sidebarPath: require.resolve('./sidebar-egoexo.js'),
+        // ... other options
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Ego4D',
+        title: 'Ego4D & EgoExo4D',
         logo: {
           alt: 'Ego4d Logo',
           src: 'img/ego-4d-logo.png',
           srcDark: 'img/ego-4d-logo-dark.png',
         },
-        items: [],
+        items: [
+          {
+            label: 'Ego4D',
+            to: '/ego4d/',
+          },
+          {
+            label: 'EgoExo',
+            to: '/egoexo/',
+          },
+        ],
       },
       footer: {
         style: 'dark',
@@ -52,16 +88,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Intro',
+                label: 'Introduction',
                 to: '/',
               },
               {
-                label: 'Annotation Guidelines',
-                to: '/data/annotation-guidelines',
+                label: 'Ego4D Annotation Guidelines',
+                to: '/ego4d/data/annotation-guidelines',
               },
               {
                 label: 'Ego4D Challenge',
-                to: '/challenge',
+                to: '/ego4d/challenge',
               },
               {
                 label: 'Contact Us',
@@ -72,18 +108,18 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Ego4d',
+                href: 'https://github.com/EGO4D',
               },
               {
                 label: 'Ego4D Main Site',
                 href: 'https://ego4d-data.org/'
-              }
+              },
+              {
+                label: 'Dataset GH Repository',
+                href: 'https://github.com/facebookresearch/Ego4d',
+              },
             ],
           },
         ],
