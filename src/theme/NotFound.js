@@ -2,12 +2,12 @@ import React from 'react';
 import Translate, {translate} from '@docusaurus/Translate';
 import {PageMetadata} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import {Redirect} from '@docusaurus/router';
 
 export default function NotFound() {
 
-  const url = window.location.href
-  let descTxt = <>
+  const descDefault = <>
       <p>
       <Translate
         id="theme.NotFound.p2"
@@ -18,19 +18,27 @@ export default function NotFound() {
     </p>
   </>
 
-  if(!url.includes("ego4d") && !url.includes("egoexo") && url.includes("/docs/")) {
-    const gotoUrl = url.replace("/docs/", "/docs/ego4d/")
-    const displayGotoUrl = "/docs/" + gotoUrl.split("/docs/")[1]
-    descTxt = (<>
-      <p>
-        This might be an old link. Attempting to redirect to: <a href={gotoUrl}>{displayGotoUrl}</a>... Click the link if this does not happen automatically.
-      </p>
-      <p>
-        <Redirect to={displayGotoUrl}/>
-      </p>
-    </>)
-  }
-
+  const descToUse = <BrowserOnly fallback={descDefault}>
+    {
+      () => {
+        const url = window.location.href
+        if(!url.includes("ego4d") && !url.includes("egoexo") && url.includes("/docs/")) {
+          const gotoUrl = url.replace("/docs/", "/docs/ego4d/")
+          const displayGotoUrl = "/docs/" + gotoUrl.split("/docs/")[1]
+          return (<>
+              <p>
+                 This might be an old link. Attempting to redirect to: <a href={gotoUrl}>{displayGotoUrl}</a>... Click the link if this does not happen automatically.
+              </p>
+              <p>
+                <Redirect to={displayGotoUrl}/>
+              </p>
+            </>
+          )
+        }
+        return descDefault;
+      }
+    }
+  </BrowserOnly>
 
   return (
     <>
@@ -58,7 +66,7 @@ export default function NotFound() {
                   We could not find what you were looking for.
                 </Translate>
               </p>
-              {descTxt}
+              {descToUse}
             </div>
           </div>
         </main>

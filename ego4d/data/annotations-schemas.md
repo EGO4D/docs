@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Annotation Schemas
 
-Once you download the annotations with the cli, you'll have a set of json files. Here are their schemas for quick reference - see [annotation guidelines](/data/annotation-guidelines) and [benchmark tasks](/benchmarks/overview) for more information on what the fields represent.
+Once you download the annotations with the cli, you'll have a set of json files. Here are their schemas for quick reference - see [annotation guidelines](/docs/ego4d/data/annotation-guidelines) and [benchmark tasks](/docs/ego4d/benchmarks/overview) for more information on what the fields represent.
 
 <details>
   <summary>Metadata - ego4d.json schema</summary>

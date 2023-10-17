@@ -24,6 +24,6 @@ EGO4D is the world's largest egocentric (first person) video ML dataset and benc
 
 [Explore the data before downloading here](./viz.md) (you will first need to accept the license agreement).
 
-[Vist our forum](https://discuss.ego4d-data.org/) or [contact us](./contact.md) to ask questions, make suggestions or discuss Ego4D or related research.
+[Vist our forum](https://discuss.ego4d-data.org/) or [contact us](/docs/contact) to ask questions, make suggestions or discuss Ego4D or related research.
 
 <DiscourseCarousel />
