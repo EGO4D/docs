@@ -8,6 +8,11 @@ import DiscourseCarousel from '@site/src/components/DiscourseCarousel';
 
 # Welcome To EGO4D!
 
+:::note Ego4D Goalstep Release
+Ego4D GoalStep annotations and grouped videos are release. Please refer to
+[v2.1 updates](/updates.md) for more details.
+:::
+
 :::note Ego4D v2.0 Update Available
 The [Ego4D v2.0 update](/updates.md) is now publicly available. 
 :::
