@@ -39,7 +39,7 @@ Note that if you want to use the AWS credentials stored in a different [named pr
 | `--dataset` |  [Required] A list of identifiers to download: [annotations, full_scale, clips]  Each dataset will be stored in folders in the output directory with the name of the dataset (e.g. output_dir/v1/full_scale/) and manifest. |
 | `--output_directory`  | [Required]A local path where the downloaded files and metadata will be stored |
 | `--metadata`  |  [Optional] Download the primary `ego4d.json` metadata at the top level (Default: True) |
-| `--benchmarks`  |  [Optional] A list of benchmarks to filter dataset downloads by - e.g. Narrations/EM/FHO/AV |
+| `--benchmarks`  |  [Optional] A list of benchmarks to filter dataset downloads. One of `{'AV', 'EM', 'FHO', 'MQ', 'NLQ', 'VQ', 'goalstep'}` |
 | `-y` `--yes` | [Optional] If this flag is set, then the CLI will not show a prompt asking the user to confirm the download. This is so that the tool can be used as part of shell scripts. |
 | `--aws_profile_name` | [Optional] Defaults to “default”. Specifies the AWS profile name from ~/.aws/credentials to use for the download |
 | `--video_uids` | [Optional] List of video or clip UIDs to be downloaded. If not specified, all relevant UIDs will be downloaded. |

@@ -4,17 +4,52 @@ sidebar_position: 18
 
 # Updates
 
-:::note FHO hands & SCOD train/val pending
-Note that the FHO hands & SCOD (state change object detection) v2 train & val jsons are currently not yet available and will be released shortly.
+:::note
+**DATASET RELEASE:** Ego4D **v2.1** has been released due to the additional of Goal-Step annotations and grouped
+videos. Please see below for more details.
 :::
 
-Ego4D was recently updated to version v2.0 (Feb '23) - focused on additional Forecasting, Hands & Objects (243 hrs vs 120 hrs) and Natural Language Queries (27k vs 17.3k queries) annotations, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO object and EgoTracks tracking path annotations).  Details below.
+Ego4D was recently updated to version v2 (Feb '23) - focused on additional Forecasting, Hands & Objects (243 hrs vs 120 hrs) and Natural Language Queries (27k vs 17.3k queries) annotations, a number of corrections and usability enhancements, and two new related dataset enhancements (PACO object and EgoTracks tracking path annotations). Details below.
 
 CVPR challenges for this year will be based on the updated dataset for FHO & NLQ benchmarks.
 
-As ever, we would love any questions or feedback on current or future changes, observed issues with the dataset and requests for future updates/utilities/dataloaders/examples/etc.  Please join us on the Ego4D Forum: [https://discuss.ego4d-data.org/](https://discuss.ego4d-data.org/)
+As always, we would love any questions or feedback on current or future changes, observed issues with the dataset and requests for future updates/utilities/dataloaders/examples/etc.  Please join us on the Ego4D Forum: [https://discuss.ego4d-data.org/](https://discuss.ego4d-data.org/)
+
+## v2.1 Update
+
+### Ego4D Goal-Step & Grouped Videos
+
+[Goal-Step](https://openreview.net/pdf?id=3BxYAaovKr) is now available for download via the [CLI](./CLI.md) downloader. This release includes:
+- Annotation files
+- "Grouped" videos
+    - Grouped videos are multiple videos combined together to form a
+      group. They are composed of previously existing data.
+    - The videos were noticed to be connected due to annotating 
+      the dataset for Goal-Step.
+
+To download Goal-Step relevant annotations and videos (including the grouped
+videos), please filter the data on the [CLI](./CLI.md) tool via the flag
+`--benchmarks goalstep`. To download the videos use `--datasets full_scale`, to
+download just the annotations use `--dataset annotations`, and finally to
+download both the videos and annotations use `--dataset annotations full_scale`.
+
+For example:
+
+```
+python3 -m 
+```
+
+As of writing, the PyPi package has been updated for Ego4D. As such, you will
+have to clone the repository and run the script as shown above. To setup the
+repository, please follow the following instructions on the [GitHub
+README](https://github.com/facebookresearch/Ego4d).
+
 
 ## v2.0 Update
+
+:::note FHO hands & SCOD train/val pending
+Note that the FHO hands & SCOD (state change object detection) v2 train & val jsons are currently not available.
+:::
 
 ### FHO Annotation Updates
 
