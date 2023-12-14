@@ -94,6 +94,17 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      require.resolve("docusaurus-plugin-search-local"),
+      {
+        indexDocs: true,
+        indexPages: true,
+        hashed: true,
+      },
+    ],
+  ],
 };
 
 module.exports = config;
