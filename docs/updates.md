@@ -24,8 +24,10 @@ As always, we would love any questions or feedback on current or future changes,
 - "Grouped" videos
     - Grouped videos are multiple videos combined together to form a
       group. They are composed of previously existing data.
-    - The videos were noticed to be connected due to annotating 
-      the dataset for Goal-Step.
+    - The videos were noticed to be connected during the annotating 
+      the dataset for Goal-Step. That is some videos in the existing Ego4D V1&V2
+      release were supposed to be combined into one video, but due to metadata
+      issues they were not combined together. This affects 210 videos in Ego4D.
 
 To download Goal-Step relevant annotations and videos (including the grouped
 videos), please filter the data on the [CLI](./CLI.md) tool via the flag
@@ -36,14 +38,8 @@ download both the videos and annotations use `--dataset annotations full_scale`.
 For example:
 
 ```
-python3 -m 
+ego4d -o <out-dir> --dataset annotations full_scale --benchmarks goalstep
 ```
-
-As of writing, the PyPi package has been updated for Ego4D. As such, you will
-have to clone the repository and run the script as shown above. To setup the
-repository, please follow the following instructions on the [GitHub
-README](https://github.com/facebookresearch/Ego4d).
-
 
 ## v2.0 Update
 
