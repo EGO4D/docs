@@ -1,7 +1,7 @@
 ---
 sidebar_position: 10
 ---
-# Ego4D Challenge 2023
+# Ego4D Challenge 2024
 
 
 ## Overview
