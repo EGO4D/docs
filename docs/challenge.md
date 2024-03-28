@@ -1,12 +1,12 @@
 ---
 sidebar_position: 10
 ---
-# Ego4D Challenge 2024
+# Ego4D and EgoExo4D Challenge 2024
 
 
 ## **Overview**
 
-At CVPR 2024, we will host **16** challenges including 2 new challenges (Goal Step and Ego Schema), representing each of Ego4D’s five benchmarks. Included in the 16 challenges hosted at CVPR are two teaser Ego-Exo4D challenges (Ego-Pose Body and Ego-Pose Hands) which will be announced on March 22, 2024. Please find details below on the challenges:
+At CVPR 2024, we will host **16** challenges including 2 new challenges (Goal Step and Ego Schema), representing each of Ego4D’s five benchmarks. Included in the 16 challenges hosted at CVPR are two teaser Ego-Exo4D challenges (Ego-Pose Body and Ego-Pose Hands). Please find details below on the challenges:
 
 ## **Ego4D challenges**
 
@@ -55,25 +55,21 @@ Other Ego4D challenges which are not part of CVPR 2024 workshop remain open on E
 
 ## **EgoExo4D challenges**
 
-Announcement coming soon on March 22, 2024.
+Ego-Exo4D is a diverse, large-scale multi-modal multi view video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously-captured ego-centric and exocentric video of skilled human activities (e.g., sports, music, dance, bike repair). 
+
+Here are the specific teaser challenge tracks we will host at this year CVPR EgoVis workshop:
+
+* [Ego-Pose Body](https://eval.ai/web/challenges/challenge-page/2245/overview): Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame.
+
+* [Ego-Pose Hands](https://eval.ai/web/challenges/challenge-page/2249/overview): Estimate the 3D locations of the defined hand joints for visible hand(s). Specifically, estimate the (x,y,z) coordinates of each joint in the egocentric coordinate frame.
+
 
 <!-- ### Privacy:
 
-
 * Beyond these challenges, we will launch a privacy-oriented challenge in the coming weeks, specifically calling for novel and impactful plans using annotations and data from the Ego4D AV and Social benchmarks for privacy-preserving research.  -->
-
-  
-<!--
-**Ego-Exo4D Teaser Challenges**: Ego-Exo4D is a diverse, large-scale multi-modal multiveiw video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously-captured ego-centric and exocentric video of skilled human activities (e.g., sports, music, dance, bike repair).  Please find details below on the Ego-Exo4D Teaser Challenges:
-
-Ego-Pose Body: 
-
-Ego-Pose Hands: 
--->
 
 
 ## Dataset
-
 
 Ego4D challenge participants will use Ego4D’s annotated data set of more than 3,670 hours of video data, capturing the daily-life scenarios of more than 900 unique individuals from nine different countries around the world. Unique train, validation and unannotated test sets are available to download per challenge at [https://ego4d-data.org/docs/](https://ego4d-data.org/docs/).
 
