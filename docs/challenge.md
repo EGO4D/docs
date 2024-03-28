@@ -53,17 +53,6 @@ At CVPR 2024, we will host **16** challenges including 2 new challenges (Goal St
 
 Other Ego4D challenges which are not part of CVPR 2024 workshop remain open on EvalAI website for submissions but are not eligible for prizes.
 
-## **EgoExo4D challenges**
-
-Ego-Exo4D is a diverse, large-scale multi-modal multi view video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously-captured ego-centric and exocentric video of skilled human activities (e.g., sports, music, dance, bike repair). 
-
-Here are the specific teaser challenge tracks we will host at this year CVPR EgoVis workshop:
-
-* [Ego-Pose Body](https://eval.ai/web/challenges/challenge-page/2245/overview): Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame.
-
-* [Ego-Pose Hands](https://eval.ai/web/challenges/challenge-page/2249/overview): Estimate the 3D locations of the defined hand joints for visible hand(s). Specifically, estimate the (x,y,z) coordinates of each joint in the egocentric coordinate frame.
-
-
 <!-- ### Privacy:
 
 * Beyond these challenges, we will launch a privacy-oriented challenge in the coming weeks, specifically calling for novel and impactful plans using annotations and data from the Ego4D AV and Social benchmarks for privacy-preserving research.  -->
@@ -76,6 +65,18 @@ Ego4D challenge participants will use Ego4D’s annotated data set of more than 
 
 This year's challenge we will continue to use Ego4D v2.0 which contains ~2X train and val annotations for Forecasting, Hands & Objects and NLQ, a number of corrections and usability enhancements, and two new related dataset enhancements (Ego Schema and Goal Step). The test set remains the same as previous versions of the challenge. More details can be found [here](https://ego4d-data.org/docs/updates/). 
 
+## **EgoExo4D teaser challenges**
+
+Ego-Exo4D is a diverse, large-scale multi-modal multi view video dataset and benchmark challenge. Ego-Exo4D centers around simultaneously-captured ego-centric and exocentric video of skilled human activities (e.g., sports, music, dance, bike repair). 
+
+Here are the specific teaser challenge tracks we will host at [EgoVis workshop](https://egovis.github.io/cvpr24/) during CVPR 2024.
+
+* [Ego-Pose Body](https://eval.ai/web/challenges/challenge-page/2245/overview): Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame.
+
+* [Ego-Pose Hands](https://eval.ai/web/challenges/challenge-page/2249/overview): Estimate the 3D locations of the defined hand joints for visible hand(s). Specifically, estimate the (x,y,z) coordinates of each joint in the egocentric coordinate frame.
+
+We will be using EgoExo4D dataset for running these challenges. Please find the [documentation](https://docs.ego-exo4d-data.org/) here for the dataset.
+
 
 ## Participation Guidelines
 
@@ -86,7 +87,9 @@ Participate in the contest by registering on the [EvalAI challenge page](https:/
 ## Dates
 
 
-Ego4D challenges will launch on March 15, 2024 with the leaderboard closing on May 30, 2024. EgoExo4D challenges will launch on March 22, 2024 with the leaderboard closing on May 30, 2024. Winners for both will be announced at the [FIrst Joint Egocentric Vision Workshop](https://egovis.github.io/cvpr24/) at CVPR 2024. 
+* Ego4D challenges will launch on March 15, 2024 with the leaderboard closing on May 30, 2024. 
+* EgoExo4D challenges will launch on March 29, 2024 with the leaderboard closing on May 30, 2024. 
+* Winners for both will be announced at the [FIrst Joint Egocentric Vision Workshop](https://egovis.github.io/cvpr24/) at CVPR 2024. 
 
 
 
