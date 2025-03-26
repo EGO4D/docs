@@ -5,7 +5,7 @@ sidebar_position: 10
 
 ## **Overview**
 
-At [EgoVis](https://egovis.github.io/cvpr25/) workshop during CVPR 2025, we will host **14** challenges representing Ego4D and EgoExo4D benchmarks. This year we will have **9** challenges from Ego4D and **5** challenges from EgoExo4D dataset. Please find details below on the challenges:
+At [EgoVis](https://egovis.github.io/cvpr25/) workshop during CVPR 2025, we will host **15** challenges representing Ego4D and EgoExo4D benchmarks. This year we will have **9** challenges from Ego4D and **6** challenges from EgoExo4D dataset. Please find details below on the challenges:
 
 ## **Ego4D challenges**
 
@@ -43,20 +43,20 @@ Ego-Exo4D is a diverse, large-scale multi-modal multi view video dataset and ben
 
 Here are the specific challenge tracks we will host at [EgoVis workshop](https://egovis.github.io/cvpr25/) during CVPR 2025.
 
-* [Ego-Pose Body](https://eval.ai/web/challenges/challenge-page/2245/overview): Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame.
-    * Refer to the [github](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/bodypose) repository and EgoExo4D [tutorials](https://docs.ego-exo4d-data.org/tutorials/) to get started.
+### EgoPose Benchmark
 
-* [Ego-Pose Hands](https://eval.ai/web/challenges/challenge-page/2249/overview): Estimate the 3D locations of the defined hand joints for visible hand(s). Specifically, estimate the (x,y,z) coordinates of each joint in the egocentric coordinate frame.
-    * Refer to the [github](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/handpose) repository and EgoExo4D [tutorials](https://docs.ego-exo4d-data.org/tutorials/) to get started.
+* [Ego-Pose Body](https://eval.ai/web/challenges/challenge-page/2245/overview): Given an egocentric video, estimate the 3D body pose of the camera-wearer. Specifically, predict the 3D position of the 17 annotated body joints for each frame. [[github]](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/bodypose) [[tutorials]](https://docs.ego-exo4d-data.org/tutorials/)
+* [Ego-Pose Hands](https://eval.ai/web/challenges/challenge-page/2249/overview): Estimate the 3D locations of the defined hand joints for visible hand(s). Specifically, estimate the (x,y,z) coordinates of each joint in the egocentric coordinate frame. [[github]](https://github.com/EGO4D/ego-exo4d-egopose/tree/main/handpose) [[tutorials]](https://docs.ego-exo4d-data.org/tutorials/)
 
-* [Correspondence](https://eval.ai/web/challenges/challenge-page/2288/overview): Given a pair of timesynchronized egocentric and exocentric videos, as well as a query object track in one of the views, the goal is to output the corresponding mask for the same object instance in the other view for all frames where the object is visible in both views.
-    * Refer to the [github](https://github.com/EGO4D/ego-exo4d-relation/tree/main/correspondence/) repository to get started.
+### Relations Benchmark
+* [Correspondence](https://eval.ai/web/challenges/challenge-page/2288/overview): Given a pair of timesynchronized egocentric and exocentric videos, as well as a query object track in one of the views, the goal is to output the corresponding mask for the same object instance in the other view for all frames where the object is visible in both views. [[github]](https://github.com/EGO4D/ego-exo4d-relation/tree/main/correspondence/)
 
-* [Fine-grained Keystep Recognition](https://eval.ai/web/challenges/challenge-page/2273/overview): The objective of this task is to predict the keystep label for a trimmed egocentric video clip.
-    * Refer to the [github](https://github.com/EGO4D/ego-exo4d-keystep/tree/main/fine_grained/) repository to get started.
+### Keystep Benchmark
+* [Fine-grained Keystep Recognition](https://eval.ai/web/challenges/challenge-page/2273/overview): The objective of this task is to predict the keystep label for a trimmed egocentric video clip. [[github]](https://github.com/EGO4D/ego-exo4d-keystep/tree/main/fine_grained/)
+* [Procedure Understanding](https://eval.ai/web/challenges/challenge-page/2286/overview): The objective of this task is to infer a procedure's underlying structure from observing natural videos of subjects performing the procedure. [[github]](https://github.com/EGO4D/ego-exo4d-keystep/tree/main/procedure_understanding)
 
-* [Demonstrator Proficiency](https://eval.ai/web/challenges/challenge-page/2291/overview):Given synchronized egocentric and exocentric video of a demonstrator performing a task, classify the proficiency skill level of the demonstrator.
-    * Refer to the [github](https://github.com/EGO4D/ego-exo4d-proficiency/blob/main/demonstrator_proficiency/) repository to get started.
+### Proficiency Benchmark
+* [Demonstrator Proficiency](https://eval.ai/web/challenges/challenge-page/2291/overview):Given synchronized egocentric and exocentric video of a demonstrator performing a task, classify the proficiency skill level of the demonstrator. [github](https://github.com/EGO4D/ego-exo4d-proficiency/blob/main/demonstrator_proficiency/)
 
 Other EgoExo4D challenges which are not part of CVPR 2025 workshop remain open on EvalAI website for submissions but are not eligible for prizes.
 
@@ -111,7 +111,8 @@ The Ego4D and EgoExo4D challenges would not have been possible without the infra
 - **Andrew Westbury**
 - Chen Zhao
 - Merey Ramazanova
-- Francesco Ragusa 
+- Francesco Ragusa
+- Seminara Luigi 
 - Tushar Nagarajan
 - Karttikeya Mangalam
 - Raiymbek Akshulakov
@@ -124,6 +125,7 @@ The Ego4D and EgoExo4D challenges would not have been possible without the infra
 - Arjun Somayazulu
 - Sanjay Haresh
 - Yale Song
+- Antonino Furnari
 - Manolis Savva
 - Giovanni Maria Farinella
 - Pablo Arbelaez
