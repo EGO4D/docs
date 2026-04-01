@@ -12,7 +12,7 @@ Those sections of the video have been redacted.  The decision was made to keep t
 
 ## My credentials expired.  How do I renew?
 
-Go back to [https://ego4ddataset.com/](https://ego4ddataset.com/) and re-enter the same info you originally regstered with and you'll receive an updated set of credentials immediately.
+Go back to [https://ego4d.dev/request/ego4d](https://ego4d.dev/request/ego4d) and re-enter the same info you originally regstered with and you'll receive an updated set of credentials immediately.
 
 ## Are there dataloaders available for the dataset. 
 
