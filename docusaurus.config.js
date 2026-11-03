@@ -36,6 +36,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Licensing moved to Lab22 (2026-11-02): the same banner lab22.ai shows.
+      announcementBar: {
+        id: 'lab22_move',
+        content:
+          '<span style="font-size:15px;font-weight:600;">Ego4D and Ego-Exo4D access has moved to Lab22. <a href="https://lab22.ai" style="color:#ffffff;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;margin-left:8px;">Learn more &rarr;</a></span>',
+        backgroundColor: '#1f3fae',
+        textColor: '#ffffff',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Ego4D',
         logo: {
